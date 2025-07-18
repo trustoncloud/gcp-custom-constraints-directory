@@ -96,7 +96,7 @@ def fetch_fields(doc_url):
                     # Fallback to previous split_ops logic for other operators
                     split_ops = [
                         "=", "!", ">", "<", ">", "<", " "
-                    ]
+                    ] # I want this to be before the regex (as it is slow). AI!
                     min_idx = None
                     for op in split_ops:
                         idx = txt.find(op)
