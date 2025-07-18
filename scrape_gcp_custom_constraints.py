@@ -133,39 +133,29 @@ def fetch_fields(doc_url) -> list | dict[list]:
                                 resource_fields.setdefault(None, set()).add(val)
             return resource_fields
 
-        # Special handling for Dataflow and Filestore custom constraints docs and similar
-        if (
-            doc_url.startswith("https://cloud.google.com/dataflow/docs/custom-constraints")
-            or doc_url.startswith("https://cloud.google.com/filestore/docs/create-custom-constraints") 
-        ): # You need to generalize it, if the table is in the page or not, that's it. Remove the hardcoded URLs. AI!
-            # Find the first table with a header containing "field"
-            table = None
-            for t in soup.find_all("table"):
-                headers = [th.get_text(strip=True).lower() for th in t.find_all("th")]
-                if any("field" in h for h in headers):
-                    table = t
-                    break
-            if table:
-                resource_fields = parse_resource_field_table(table)
-                # If only one resource_type in this doc, attach all fields to it
-                if None in resource_fields:
-                    # Try to infer the resource_type from the doc context
-                    # For Filestore, the doc lists resource types in a bullet list above the table
-                    # We'll try to find the first code block with file.googleapis.com/...
-                    resource_type = None
-                    code = soup.find("code", string=re.compile(r"file\.googleapis\.com/"))
-                    if code:
-                        resource_type = code.get_text(strip=True)
-                    # Fallback: if only one resource_type in constraints.json for this doc_url, use that
-                    if not resource_type:
-                        # This is a fallback for the main script, not for fetch_fields, so just return the fields
-                        return sorted(resource_fields[None])
-                    return {resource_type: sorted(resource_fields[None])}
-                else:
-                    # Return dict of resource_type -> sorted fields
-                    return {k: sorted(v) for k, v in resource_fields.items() if k}
+        # Generalised: If there is a table with a "field" header, extract fields as per table structure
+        table = None
+        for t in soup.find_all("table"):
+            headers = [th.get_text(strip=True).lower() for th in t.find_all("th")]
+            if any("field" in h for h in headers):
+                table = t
+                break
+        if table:
+            resource_fields = parse_resource_field_table(table)
+            # If only one resource_type in this doc, attach all fields to it
+            if None in resource_fields:
+                # Try to infer the resource_type from the doc context
+                resource_type = None
+                code = soup.find("code", string=re.compile(r"\w+\.googleapis\.com/"))
+                if code:
+                    resource_type = code.get_text(strip=True)
+                if not resource_type:
+                    return sorted(resource_fields[None])
+                return {resource_type: sorted(resource_fields[None])}
             else:
-                return []
+                return {k: sorted(v) for k, v in resource_fields.items() if k}
+        else:
+            return []
 
         # Find all <code> tags with text starting with 'resource.'
         fields = set()
