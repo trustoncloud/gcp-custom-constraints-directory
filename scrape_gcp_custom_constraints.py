@@ -84,7 +84,7 @@ def fetch_fields(doc_url):
         for span in soup.find_all("span", class_=lambda c: c and c.startswith("devsite-syntax")):
             txt = span.get_text(strip=True)
             txt = txt.strip('"')
-            if txt.startswith("resource."):
+            if txt.startswith("resource."): # Move the below logic into its own function. And use it also for the "code" tag. AI!
                 # Fallback to previous split_ops logic for other operators (do this before regex, as it is faster)
                 split_ops = [
                     "=", "!", ">", "<", ">", "<", " "
@@ -101,10 +101,13 @@ def fetch_fields(doc_url):
                     # Generalise: find the first occurrence of a dot, then a word, then a (
                     # e.g. resource.foo.contains(, resource.bar.startsWith(
                     # If found, cut the field at the dot before the function call
-                    match = re.search(r"\.[a-zA-Z]+\(", txt)
-                    if match:
-                        idx = match.start()
-                        field = txt[:idx].strip()
+                    if '.' in txt and '(' in txt:
+                        match = re.search(r"\.[a-zA-Z]+\(", txt)
+                        if match:
+                            idx = match.start()
+                            field = txt[:idx].strip()
+                        else:
+                            field = txt.strip()
                     else:
                         field = txt.strip()
                 if field.startswith("resource."):
