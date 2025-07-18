@@ -27,14 +27,19 @@ def parse_table(table):
     current_service = None
     for row in table.find_all("tr"):
         cols = row.find_all(["td", "th"])
-        if len(cols) < 3:
+        if len(cols) == 3:
+            # Service name is only in the first col of a new group
+            service = cols[0].get_text(strip=True) or current_service
+            index_shift = 0
+            if service:
+                current_service = service
+        elif len(cols) == 2:
+            service = current_service
+            index_shift = 1
+        else:
             continue
-        # Service name is only in the first col of a new group
-        service = cols[0].get_text(strip=True) or current_service
-        if service:
-            current_service = service
-        resource_type_html = cols[1]
-        launch_status = cols[2].get_text(strip=True)
+        resource_type_html = cols[1 - index_shift]
+        launch_status = cols[2 - index_shift].get_text(strip=True)
         # Find resource type and doc link
         code = resource_type_html.find("code")
         if not code:
@@ -76,6 +81,7 @@ OVERWRITE_URL = {
     'https://cloud.google.com/service-mesh/docs/custom-constraints': 'https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints'
 }
 
+# Add a lru cache of 300. AI!
 def fetch_fields(doc_url):
     if not doc_url:
         return []
