@@ -97,12 +97,11 @@ def fetch_fields(doc_url) -> list | dict[list]:
 
         # Special handling for Dataflow custom constraints doc
         if doc_url.startswith("https://cloud.google.com/dataflow/docs/custom-constraints"):
-            # Find the table with Expression field
-            # Look for a table with a header containing "Expression field"
+            # Find the table with a header containing any column with "field" in its name (case-insensitive)
             table = None
             for t in soup.find_all("table"):
                 headers = [th.get_text(strip=True).lower() for th in t.find_all("th")]
-                if any("expression field" in h for h in headers): # instead of exact match of "expression field" is want to be able to get and extract any table with the header including lower("field") in it. AI!
+                if any("field" in h for h in headers):
                     table = t
                     break
             if table:
