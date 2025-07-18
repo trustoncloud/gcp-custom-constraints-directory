@@ -187,20 +187,17 @@ def main():
 
     for c in constraints:
         if c["doc_url"]:
+            print(c["doc_url"])
             time.sleep(0.5)  # Be polite to GCP docs
             fields = fetch_fields(c["doc_url"])
-            if isinstance(fields, list):
-                # Only assign fields if this doc_url is used by a single resource_type
-                if url_count[c["doc_url"]] == 1:
-                    c["fields"] = fields
-                else:
-                    c["fields"] = []
+            if isinstance(fields, list) and url_count[c["doc_url"]] == 1:
+                c["fields"] = fields
             elif isinstance(fields, dict):
                 c["fields"] = fields.get(c['resource_type'], [])
+            else:
+                c["fields"] = []
         else:
             c["fields"] = []
-        print(c)
-        input('???')
     out = {"constraints": constraints}
     with open("custom_constraints.json", "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
