@@ -44,6 +44,7 @@ def parse_table(table):
         doc_url = BASE_URL + a["href"] if a and a["href"].startswith("/") else a["href"] if a else None
         constraints.append({
             "service": current_service,
+            "namespace": resource_type.split('.')[0],
             "resource_type": resource_type,
             "launch_status": launch_status,
             "doc_url": doc_url,
