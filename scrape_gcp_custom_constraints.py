@@ -93,11 +93,49 @@ def fetch_fields(doc_url) -> list | dict[list]:
         resp = requests.get(doc_url)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
-        fields = set()
 
-        # Special handling for Dataflow custom constraints doc
-        if doc_url.startswith("https://cloud.google.com/dataflow/docs/custom-constraints"):
-            # Find the table with a header containing any column with "field" in its name (case-insensitive)
+        # Helper: parse a table and return a dict of resource_type -> set(fields)
+        def parse_resource_field_table(table):
+            header_cells = [th.get_text(strip=True).lower() for th in table.find_all("th")]
+            resource_idx = None
+            field_indices = []
+            for i, h in enumerate(header_cells):
+                if "resource" in h:
+                    resource_idx = i
+                if "field" in h:
+                    field_indices.append(i)
+            resource_fields = {}
+            for row in table.find_all("tr"):
+                cells = row.find_all(["td", "th"])
+                if not cells or all(not c.get_text(strip=True) for c in cells):
+                    continue
+                # If both resource and field columns
+                if resource_idx is not None and field_indices:
+                    if len(cells) > max(resource_idx, max(field_indices)):
+                        resource_val = cells[resource_idx].get_text(strip=True)
+                        for idx in field_indices:
+                            val = cells[idx].get_text(strip=True)
+                            if val and "field" not in val.lower():
+                                if not val.startswith("resource."):
+                                    val = "resource." + val
+                                resource_fields.setdefault(resource_val, set()).add(val)
+                # If only field columns (single resource type for this doc)
+                elif resource_idx is None and field_indices:
+                    for idx in field_indices:
+                        if len(cells) > idx:
+                            val = cells[idx].get_text(strip=True)
+                            if val and "field" not in val.lower():
+                                if not val.startswith("resource."):
+                                    val = "resource." + val
+                                resource_fields.setdefault(None, set()).add(val)
+            return resource_fields
+
+        # Special handling for Dataflow and Filestore custom constraints docs and similar
+        if (
+            doc_url.startswith("https://cloud.google.com/dataflow/docs/custom-constraints")
+            or doc_url.startswith("https://cloud.google.com/filestore/docs/create-custom-constraints")
+        ):
+            # Find the first table with a header containing "field"
             table = None
             for t in soup.find_all("table"):
                 headers = [th.get_text(strip=True).lower() for th in t.find_all("th")]
@@ -105,23 +143,29 @@ def fetch_fields(doc_url) -> list | dict[list]:
                     table = t
                     break
             if table:
-                # Find all column indices whose header contains "field" (case-insensitive)
-                header_cells = [th.get_text(strip=True).lower() for th in table.find_all("th")]
-                field_indices = [i for i, h in enumerate(header_cells) if "field" in h]
-                if field_indices:
-                    for row in table.find_all("tr"):
-                        cells = row.find_all(["td", "th"])
-                        for idx in field_indices:
-                            if len(cells) > idx:
-                                val = cells[idx].get_text(strip=True)
-                                if val and "field" not in val.lower():
-                                    # Add "resource." prefix if not already present
-                                    if not val.startswith("resource."):
-                                        val = "resource." + val
-                                    fields.add(val)
-            return sorted(fields)
+                resource_fields = parse_resource_field_table(table)
+                # If only one resource_type in this doc, attach all fields to it
+                if None in resource_fields:
+                    # Try to infer the resource_type from the doc context
+                    # For Filestore, the doc lists resource types in a bullet list above the table
+                    # We'll try to find the first code block with file.googleapis.com/...
+                    resource_type = None
+                    code = soup.find("code", string=re.compile(r"file\.googleapis\.com/"))
+                    if code:
+                        resource_type = code.get_text(strip=True)
+                    # Fallback: if only one resource_type in constraints.json for this doc_url, use that
+                    if not resource_type:
+                        # This is a fallback for the main script, not for fetch_fields, so just return the fields
+                        return sorted(resource_fields[None])
+                    return {resource_type: sorted(resource_fields[None])}
+                else:
+                    # Return dict of resource_type -> sorted fields
+                    return {k: sorted(v) for k, v in resource_fields.items() if k}
+            else:
+                return []
 
         # Find all <code> tags with text starting with 'resource.'
+        fields = set()
         for code in soup.find_all("code"):
             txt = code.get_text(strip=True)
             field = _extract_resource_field(txt)
