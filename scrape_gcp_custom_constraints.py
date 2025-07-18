@@ -86,6 +86,35 @@ def fetch_fields(doc_url):
         soup = BeautifulSoup(resp.text, "html.parser")
         fields = set()
 
+        # Special handling for Dataflow custom constraints doc
+        if doc_url.startswith("https://cloud.google.com/dataflow/docs/custom-constraints"):
+            # Find the table with Expression field
+            # Look for a table with a header containing "Expression field"
+            table = None
+            for t in soup.find_all("table"):
+                headers = [th.get_text(strip=True).lower() for th in t.find_all("th")]
+                if any("expression field" in h for h in headers):
+                    table = t
+                    break
+            if table:
+                # Find the column index for "Expression field"
+                header_cells = [th.get_text(strip=True).lower() for th in table.find_all("th")]
+                try:
+                    expr_idx = header_cells.index("expression field")
+                except ValueError:
+                    expr_idx = None
+                if expr_idx is not None:
+                    for row in table.find_all("tr"):
+                        cells = row.find_all(["td", "th"])
+                        if len(cells) > expr_idx:
+                            val = cells[expr_idx].get_text(strip=True)
+                            if val and val != "Expression field":
+                                # Add "resource." prefix if not already present
+                                if not val.startswith("resource."):
+                                    val = "resource." + val
+                                fields.add(val)
+            return sorted(fields)
+
         # Find all <code> tags with text starting with 'resource.'
         for code in soup.find_all("code"):
             txt = code.get_text(strip=True)
