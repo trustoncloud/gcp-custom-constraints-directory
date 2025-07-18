@@ -50,6 +50,39 @@ def parse_table(table):
         })
     return constraints
 
+def _extract_resource_field(txt):
+    txt = txt.strip('"')
+    if not txt.startswith("resource."):
+        return None
+    # Fallback to previous split_ops logic for other operators (do this before regex, as it is faster)
+    split_ops = [
+        "=", "!", ">", "<", ">", "<", " "
+    ]
+    min_idx = None
+    for op in split_ops:
+        idx = txt.find(op)
+        if idx != -1:
+            if min_idx is None or idx < min_idx:
+                min_idx = idx
+    if min_idx is not None:
+        field = txt[:min_idx].strip()
+    else:
+        # Generalise: find the first occurrence of a dot, then a word, then a (
+        # e.g. resource.foo.contains(, resource.bar.startsWith(
+        # If found, cut the field at the dot before the function call
+        if '.' in txt and '(' in txt:
+            match = re.search(r"\.[a-zA-Z]+\(", txt)
+            if match:
+                idx = match.start()
+                field = txt[:idx].strip()
+            else:
+                field = txt.strip()
+        else:
+            field = txt.strip()
+    if field.startswith("resource."):
+        return field
+    return None
+
 def fetch_fields(doc_url):
     if not doc_url:
         return []
@@ -62,56 +95,16 @@ def fetch_fields(doc_url):
         # Find all <code> tags with text starting with 'resource.'
         for code in soup.find_all("code"):
             txt = code.get_text(strip=True)
-            txt = txt.strip('"')
-            if txt.startswith("resource."):
-                split_ops = [
-                    "=", "!", ">", "<", ">", "<", ".contains", ".startsWith", ".endsWith", " "
-                ]
-                min_idx = None
-                for op in split_ops:
-                    idx = txt.find(op)
-                    if idx != -1:
-                        if min_idx is None or idx < min_idx:
-                            min_idx = idx
-                if min_idx is not None:
-                    field = txt[:min_idx].strip()
-                else:
-                    field = txt.strip()
-                if field.startswith("resource."):
-                    fields.add(field)
+            field = _extract_resource_field(txt)
+            if field:
+                fields.add(field)
 
         # Also look for <span> with class starting with "devsite-syntax"
         for span in soup.find_all("span", class_=lambda c: c and c.startswith("devsite-syntax")):
             txt = span.get_text(strip=True)
-            txt = txt.strip('"')
-            if txt.startswith("resource."): # Move the below logic into its own function. And use it also for the "code" tag. AI!
-                # Fallback to previous split_ops logic for other operators (do this before regex, as it is faster)
-                split_ops = [
-                    "=", "!", ">", "<", ">", "<", " "
-                ]
-                min_idx = None
-                for op in split_ops:
-                    idx = txt.find(op)
-                    if idx != -1:
-                        if min_idx is None or idx < min_idx:
-                            min_idx = idx
-                if min_idx is not None:
-                    field = txt[:min_idx].strip()
-                else:
-                    # Generalise: find the first occurrence of a dot, then a word, then a (
-                    # e.g. resource.foo.contains(, resource.bar.startsWith(
-                    # If found, cut the field at the dot before the function call
-                    if '.' in txt and '(' in txt:
-                        match = re.search(r"\.[a-zA-Z]+\(", txt)
-                        if match:
-                            idx = match.start()
-                            field = txt[:idx].strip()
-                        else:
-                            field = txt.strip()
-                    else:
-                        field = txt.strip()
-                if field.startswith("resource."):
-                    fields.add(field)
+            field = _extract_resource_field(txt)
+            if field:
+                fields.add(field)
 
         return sorted(fields)
     except Exception as e:
