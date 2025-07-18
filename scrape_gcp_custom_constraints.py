@@ -77,11 +77,13 @@ def _extract_resource_field(txt):
         return field
     return None
 
+from functools import lru_cache
+
 OVERWRITE_URL = {
     'https://cloud.google.com/service-mesh/docs/custom-constraints': 'https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints'
 }
 
-# Add a lru cache of 300. AI!
+@lru_cache(maxsize=300)
 def fetch_fields(doc_url):
     if not doc_url:
         return []
