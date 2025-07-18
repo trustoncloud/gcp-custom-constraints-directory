@@ -105,7 +105,7 @@ def fetch_fields(doc_url) -> list | dict[list]:
                     table = t
                     break
             if table:
-                # Find the column index for "Expression field"
+                # Find the column index for "Expression field". No, match any field with lower("field") in it. Replace all below. AI!
                 header_cells = [th.get_text(strip=True).lower() for th in table.find_all("th")]
                 try:
                     expr_idx = header_cells.index("expression field")
