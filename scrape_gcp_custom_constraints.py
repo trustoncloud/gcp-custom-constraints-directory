@@ -85,26 +85,26 @@ def fetch_fields(doc_url):
             txt = span.get_text(strip=True)
             txt = txt.strip('"')
             if txt.startswith("resource."):
-                # Generalise: find the first occurrence of a dot, then a word, then a (
-                # e.g. resource.foo.contains(, resource.bar.startsWith(
-                # If found, cut the field at the dot before the function call
-                match = re.search(r"\.[a-zA-Z]+\(", txt)
-                if match:
-                    idx = match.start()
-                    field = txt[:idx].strip()
+                # Fallback to previous split_ops logic for other operators (do this before regex, as it is faster)
+                split_ops = [
+                    "=", "!", ">", "<", ">", "<", " "
+                ]
+                min_idx = None
+                for op in split_ops:
+                    idx = txt.find(op)
+                    if idx != -1:
+                        if min_idx is None or idx < min_idx:
+                            min_idx = idx
+                if min_idx is not None:
+                    field = txt[:min_idx].strip()
                 else:
-                    # Fallback to previous split_ops logic for other operators
-                    split_ops = [
-                        "=", "!", ">", "<", ">", "<", " "
-                    ] # I want this to be before the regex (as it is slow). AI!
-                    min_idx = None
-                    for op in split_ops:
-                        idx = txt.find(op)
-                        if idx != -1:
-                            if min_idx is None or idx < min_idx:
-                                min_idx = idx
-                    if min_idx is not None:
-                        field = txt[:min_idx].strip()
+                    # Generalise: find the first occurrence of a dot, then a word, then a (
+                    # e.g. resource.foo.contains(, resource.bar.startsWith(
+                    # If found, cut the field at the dot before the function call
+                    match = re.search(r"\.[a-zA-Z]+\(", txt)
+                    if match:
+                        idx = match.start()
+                        field = txt[:idx].strip()
                     else:
                         field = txt.strip()
                 if field.startswith("resource."):
