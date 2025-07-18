@@ -179,16 +179,24 @@ def main():
     constraints = parse_table(table)
     print(f"Found {len(constraints)} resource types. Fetching fields...")
 
-    # I want to count how many time each url appear in constraints. If it is more than once, then I want to add an additional condition below on if isinstance(fields, list): to make sure that that url is only in one resource_type. AI!
+    # Count how many times each doc_url appears in constraints
+    url_count = {}
+    for c in constraints:
+        if c["doc_url"]:
+            url_count[c["doc_url"]] = url_count.get(c["doc_url"], 0) + 1
 
     for c in constraints:
         if c["doc_url"]:
             time.sleep(0.5)  # Be polite to GCP docs
             fields = fetch_fields(c["doc_url"])
             if isinstance(fields, list):
-                c["fields"] = fetch_fields(c["doc_url"])
+                # Only assign fields if this doc_url is used by a single resource_type
+                if url_count[c["doc_url"]] == 1:
+                    c["fields"] = fields
+                else:
+                    c["fields"] = []
             elif isinstance(fields, dict):
-                c["fields"] = fetch_fields(c["doc_url"]).get(c['resource_type'], [])
+                c["fields"] = fields.get(c['resource_type'], [])
         else:
             c["fields"] = []
         print(c)
