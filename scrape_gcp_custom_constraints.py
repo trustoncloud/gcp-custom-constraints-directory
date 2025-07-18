@@ -105,6 +105,7 @@ def fetch_fields(doc_url) -> list | dict[list]:
                 if "field" in h:
                     field_indices.append(i)
             resource_fields = {}
+            current_resource = None
             for row in table.find_all("tr"):
                 cells = row.find_all(["td", "th"])
                 if not cells or all(not c.get_text(strip=True) for c in cells):
@@ -112,7 +113,9 @@ def fetch_fields(doc_url) -> list | dict[list]:
                 # If both resource and field columns
                 if resource_idx is not None and field_indices:
                     if len(cells) > max(resource_idx, max(field_indices)):
-                        resource_val = cells[resource_idx].get_text(strip=True)
+                        resource_val = cells[resource_idx].get_text(strip=True) or current_resource
+                        if resource_val:
+                            current_resource == resource_val
                         for idx in field_indices:
                             val = cells[idx].get_text(strip=True)
                             if val and "field" not in val.lower():
@@ -133,8 +136,8 @@ def fetch_fields(doc_url) -> list | dict[list]:
         # Special handling for Dataflow and Filestore custom constraints docs and similar
         if (
             doc_url.startswith("https://cloud.google.com/dataflow/docs/custom-constraints")
-            or doc_url.startswith("https://cloud.google.com/filestore/docs/create-custom-constraints")
-        ):
+            or doc_url.startswith("https://cloud.google.com/filestore/docs/create-custom-constraints") 
+        ): # You need to generalize it, if the table is in the page or not, that's it. Remove the hardcoded URLs. AI!
             # Find the first table with a header containing "field"
             table = None
             for t in soup.find_all("table"):
