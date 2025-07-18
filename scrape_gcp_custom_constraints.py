@@ -84,7 +84,7 @@ OVERWRITE_URL = {
 }
 
 @lru_cache(maxsize=300)
-def fetch_fields(doc_url):
+def fetch_fields(doc_url) -> list | dict[list]:
     if not doc_url:
         return []
     try:
@@ -102,7 +102,7 @@ def fetch_fields(doc_url):
             table = None
             for t in soup.find_all("table"):
                 headers = [th.get_text(strip=True).lower() for th in t.find_all("th")]
-                if any("expression field" in h for h in headers):
+                if any("expression field" in h for h in headers): # instead of exact match of "expression field" is want to be able to get and extract any table with the header including lower("field") in it. AI!
                     table = t
                     break
             if table:
