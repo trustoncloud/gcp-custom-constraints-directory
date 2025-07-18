@@ -98,12 +98,16 @@ def fetch_fields(doc_url) -> list | dict[list]:
         def parse_resource_field_table(table):
             header_cells = [th.get_text(strip=True).lower() for th in table.find_all("th")]
             resource_idx = None
-            field_indices = []
+            field_idx = None
             for i, h in enumerate(header_cells):
                 if "resource" in h:
                     resource_idx = i
                 if "field" in h:
-                    field_indices.append(i)
+                    field_idx = i
+            if resource_idx and resource_idx != 0:
+                raise ValueError(f"Different table for resource types in {doc_url}")
+            if field_idx and field_idx != 1:
+                raise ValueError(f"Different table for fields in {doc_url}")
             resource_fields = {}
             current_resource = None
             for row in table.find_all("tr"):
@@ -111,26 +115,25 @@ def fetch_fields(doc_url) -> list | dict[list]:
                 if not cells or all(not c.get_text(strip=True) for c in cells):
                     continue
                 # If both resource and field columns
-                if resource_idx is not None and field_indices:
-                    if len(cells) > max(resource_idx, max(field_indices)):
-                        resource_val = cells[resource_idx].get_text(strip=True) or current_resource
-                        if resource_val:
-                            current_resource == resource_val
-                        for idx in field_indices:
-                            val = cells[idx].get_text(strip=True)
-                            if val and "field" not in val.lower():
-                                if not val.startswith("resource."):
-                                    val = "resource." + val
-                                resource_fields.setdefault(resource_val, set()).add(val)
+                if resource_idx is not None and field_idx is not None:
+                    if len(cells) == 2:
+                        resource_val = cells[resource_idx].get_text(strip=True)
+                        current_resource = resource_val
+                        val = cells[field_idx].get_text(strip=True)
+                    elif len(cells) == 1:
+                        resource_val = current_resource
+                        val = cells[field_idx-1].get_text(strip=True)
+                    if val and "field" not in val.lower():
+                        if not val.startswith("resource."):
+                            val = "resource." + val
+                        resource_fields.setdefault(resource_val, set()).add(val)
                 # If only field columns (single resource type for this doc)
-                elif resource_idx is None and field_indices:
-                    for idx in field_indices:
-                        if len(cells) > idx:
-                            val = cells[idx].get_text(strip=True)
-                            if val and "field" not in val.lower():
-                                if not val.startswith("resource."):
-                                    val = "resource." + val
-                                resource_fields.setdefault(None, set()).add(val)
+                elif resource_idx is None and field_idx is not None:
+                    val = cells[field_idx].get_text(strip=True)
+                    if val and "field" not in val.lower():
+                        if not val.startswith("resource."):
+                            val = "resource." + val
+                        resource_fields.setdefault(None, set()).add(val)
             return resource_fields
 
         # Generalised: If there is a table with a "field" header, extract fields as per table structure
@@ -154,8 +157,6 @@ def fetch_fields(doc_url) -> list | dict[list]:
                 return {resource_type: sorted(resource_fields[None])}
             else:
                 return {k: sorted(v) for k, v in resource_fields.items() if k}
-        else:
-            return []
 
         # Find all <code> tags with text starting with 'resource.'
         fields = set()
@@ -166,6 +167,7 @@ def fetch_fields(doc_url) -> list | dict[list]:
                 fields.add(field)
 
         return sorted(fields)
+
     except Exception as e:
         print(f"Failed to fetch fields from {doc_url}: {e}")
         raise
@@ -176,12 +178,21 @@ def main():
     print("Parsing table...")
     constraints = parse_table(table)
     print(f"Found {len(constraints)} resource types. Fetching fields...")
+
+    # I want to count how many time each url appear in constraints. If it is more than once, then I want to add an additional condition below on if isinstance(fields, list): to make sure that that url is only in one resource_type. AI!
+
     for c in constraints:
         if c["doc_url"]:
             time.sleep(0.5)  # Be polite to GCP docs
-            c["fields"] = fetch_fields(c["doc_url"])
+            fields = fetch_fields(c["doc_url"])
+            if isinstance(fields, list):
+                c["fields"] = fetch_fields(c["doc_url"])
+            elif isinstance(fields, dict):
+                c["fields"] = fetch_fields(c["doc_url"]).get(c['resource_type'], [])
         else:
             c["fields"] = []
+        print(c)
+        input('???')
     out = {"constraints": constraints}
     with open("custom_constraints.json", "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
