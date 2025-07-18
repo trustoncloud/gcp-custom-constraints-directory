@@ -61,8 +61,29 @@ def fetch_fields(doc_url):
         fields = set()
         for code in soup.find_all("code"):
             txt = code.get_text(strip=True)
+            # Remove quotes if present
+            if txt.startswith('"') and txt.endswith('"'):
+                txt = txt[1:-1]
+            # Only process if starts with resource.
             if txt.startswith("resource."):
-                fields.add(txt)
+                # Remove everything after '==' or '=' or '!=' or '>' or '<' or ' in ' or ' not in ' or ' contains ' or ' startsWith ' or ' endsWith '
+                # Also handle spaces before/after operator
+                split_ops = [
+                    "==", "!=", ">=", "<=", ">", "<", " in ", " not in ", " contains ", " startsWith ", " endsWith ", "="
+                ]
+                min_idx = None
+                for op in split_ops:
+                    idx = txt.find(op)
+                    if idx != -1:
+                        if min_idx is None or idx < min_idx:
+                            min_idx = idx
+                if min_idx is not None:
+                    field = txt[:min_idx].strip()
+                else:
+                    field = txt.strip()
+                # Only add if still starts with resource.
+                if field.startswith("resource."):
+                    fields.add(field)
         return sorted(fields)
     except Exception as e:
         print(f"Failed to fetch fields from {doc_url}: {e}")
