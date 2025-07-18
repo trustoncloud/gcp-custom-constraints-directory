@@ -57,15 +57,13 @@ def fetch_fields(doc_url):
         resp = requests.get(doc_url)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
-        # Find all <code> tags with text starting with 'resource.'
         fields = set()
+
+        # Find all <code> tags with text starting with 'resource.'
         for code in soup.find_all("code"):
             txt = code.get_text(strip=True)
-            # Remove quotes if present
             txt = txt.strip('"')
-            # Only process if starts with resource.
             if txt.startswith("resource."):
-                # Remove everything after before/after operator
                 split_ops = [
                     "=", "!", ">", "<", ">", "<", ".contains", ".startsWith", ".endsWith", " "
                 ]
@@ -79,9 +77,30 @@ def fetch_fields(doc_url):
                     field = txt[:min_idx].strip()
                 else:
                     field = txt.strip()
-                # Only add if still starts with resource.
                 if field.startswith("resource."):
                     fields.add(field)
+
+        # Also look for <span> with class starting with "devsite-syntax"
+        for span in soup.find_all("span", class_=lambda c: c and c.startswith("devsite-syntax")):
+            txt = span.get_text(strip=True)
+            txt = txt.strip('"')
+            if txt.startswith("resource."):
+                split_ops = [
+                    "=", "!", ">", "<", ">", "<", ".contains", ".startsWith", ".endsWith", " "
+                ]
+                min_idx = None
+                for op in split_ops:
+                    idx = txt.find(op)
+                    if idx != -1:
+                        if min_idx is None or idx < min_idx:
+                            min_idx = idx
+                if min_idx is not None:
+                    field = txt[:min_idx].strip()
+                else:
+                    field = txt.strip()
+                if field.startswith("resource."):
+                    fields.add(field)
+
         return sorted(fields)
     except Exception as e:
         print(f"Failed to fetch fields from {doc_url}: {e}")
