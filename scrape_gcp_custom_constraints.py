@@ -87,7 +87,7 @@ def fetch_fields(doc_url):
             if txt.startswith("resource."):
                 split_ops = [
                     "=", "!", ">", "<", ">", "<", ".contains", ".startsWith", ".endsWith", " "
-                ]
+                ] # instead of ".contains", ".startsWith", ".endsWith". I want to generalize to any terms after a . then letter then a ( AI!
                 min_idx = None
                 for op in split_ops:
                     idx = txt.find(op)
