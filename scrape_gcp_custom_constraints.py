@@ -105,22 +105,20 @@ def fetch_fields(doc_url) -> list | dict[list]:
                     table = t
                     break
             if table:
-                # Find the column index for "Expression field". No, match any field with lower("field") in it. Replace all below. AI!
+                # Find all column indices whose header contains "field" (case-insensitive)
                 header_cells = [th.get_text(strip=True).lower() for th in table.find_all("th")]
-                try:
-                    expr_idx = header_cells.index("expression field")
-                except ValueError:
-                    expr_idx = None
-                if expr_idx is not None:
+                field_indices = [i for i, h in enumerate(header_cells) if "field" in h]
+                if field_indices:
                     for row in table.find_all("tr"):
                         cells = row.find_all(["td", "th"])
-                        if len(cells) > expr_idx:
-                            val = cells[expr_idx].get_text(strip=True)
-                            if val and val != "Expression field":
-                                # Add "resource." prefix if not already present
-                                if not val.startswith("resource."):
-                                    val = "resource." + val
-                                fields.add(val)
+                        for idx in field_indices:
+                            if len(cells) > idx:
+                                val = cells[idx].get_text(strip=True)
+                                if val and "field" not in val.lower():
+                                    # Add "resource." prefix if not already present
+                                    if not val.startswith("resource."):
+                                        val = "resource." + val
+                                    fields.add(val)
             return sorted(fields)
 
         # Find all <code> tags with text starting with 'resource.'
