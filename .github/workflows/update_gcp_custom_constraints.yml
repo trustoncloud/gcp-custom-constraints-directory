@@ -28,6 +28,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update GuardDuty findings"
+            git commit -m "Update GCP Custom Constraints"
             git push
           fi
