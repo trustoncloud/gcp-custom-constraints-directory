@@ -1,9 +1,8 @@
 name: Update GCP Custom Constraints
-
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 2 * * *'  # daily at 02:00 UTC
-  workflow_dispatch:
 
 permissions:
   contents: write
@@ -21,8 +20,14 @@ jobs:
         run: pip install -r requirements.txt
       - name: Scrape GCP custom constraints
         run: python scrape_gcp_custom_constraints.py
-      - name: Commit and push if changed
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update GCP custom constraints"
-          file_pattern: custom_constraints.json
+      - name: Commit changes
+        run: |
+          git config user.email "github-actions@github.com"
+          git config user.name "github-actions"
+          git add custom_constraints.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update GuardDuty findings"
+            git push
+          fi
