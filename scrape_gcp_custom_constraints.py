@@ -62,14 +62,12 @@ def fetch_fields(doc_url):
         for code in soup.find_all("code"):
             txt = code.get_text(strip=True)
             # Remove quotes if present
-            if txt.startswith('"') and txt.endswith('"'):
-                txt = txt[1:-1]
+            txt = txt.strip('"')
             # Only process if starts with resource.
             if txt.startswith("resource."):
-                # Remove everything after '==' or '=' or '!=' or '>' or '<' or ' in ' or ' not in ' or ' contains ' or ' startsWith ' or ' endsWith '
-                # Also handle spaces before/after operator
+                # Remove everything after before/after operator
                 split_ops = [
-                    "==", "!=", ">=", "<=", ">", "<", " in ", " not in ", " contains ", " startsWith ", " endsWith ", "="
+                    "=", "!", ">", "<", ">", "<", ".contains", ".startsWith", ".endsWith", " "
                 ]
                 min_idx = None
                 for op in split_ops:
