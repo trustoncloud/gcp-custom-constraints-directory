@@ -50,43 +50,37 @@ def parse_table(table):
         })
     return constraints
 
+OPERATIONS_TO_REMOVE = ['.matches(', '.startsWith(', '.endsWith(', '.contains(']
 def _extract_resource_field(txt):
     txt = txt.strip('"')
+    for operation in OPERATIONS_TO_REMOVE:
+        txt = txt.replace(operation, ' ')
     if not txt.startswith("resource."):
         return None
     # Fallback to previous split_ops logic for other operators (do this before regex, as it is faster)
     split_ops = [
         "=", "!", ">", "<", ">", "<", " "
     ]
-    min_idx = None
     for op in split_ops:
-        idx = txt.find(op)
-        if idx != -1:
-            if min_idx is None or idx < min_idx:
-                min_idx = idx
-    if min_idx is not None:
-        field = txt[:min_idx].strip()
-    else:
-        # Generalise: find the first occurrence of a dot, then a word, then a (
-        # e.g. resource.foo.contains(, resource.bar.startsWith(
-        # If found, cut the field at the dot before the function call
-        if '.' in txt and '(' in txt:
-            match = re.search(r"\.[a-zA-Z]+\(", txt)
-            if match:
-                idx = match.start()
-                field = txt[:idx].strip()
-            else:
-                field = txt.strip()
-        else:
-            field = txt.strip()
+        if op in txt:
+            txt = txt.split(op)[0]
+    field = txt.strip()
+    if '(' in field:
+        return None
     if field.startswith("resource."):
         return field
     return None
+
+OVERWRITE_URL = {
+    'https://cloud.google.com/service-mesh/docs/custom-constraints': 'https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints'
+}
 
 def fetch_fields(doc_url):
     if not doc_url:
         return []
     try:
+        if doc_url in OVERWRITE_URL:
+            doc_url = OVERWRITE_URL[doc_url]
         resp = requests.get(doc_url)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
@@ -99,17 +93,10 @@ def fetch_fields(doc_url):
             if field:
                 fields.add(field)
 
-        # Also look for <span> with class starting with "devsite-syntax"
-        for span in soup.find_all("span", class_=lambda c: c and c.startswith("devsite-syntax")):
-            txt = span.get_text(strip=True)
-            field = _extract_resource_field(txt)
-            if field:
-                fields.add(field)
-
         return sorted(fields)
     except Exception as e:
         print(f"Failed to fetch fields from {doc_url}: {e}")
-        return []
+        raise
 
 def main():
     print("Fetching main table...")
