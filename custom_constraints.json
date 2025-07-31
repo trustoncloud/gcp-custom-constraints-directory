@@ -4365,7 +4365,7 @@
       ]
     },
     {
-      "service": "Workflows",
+      "service": "Workspace Flows",
       "namespace": "workflows",
       "resource_type": "workflows.googleapis.com/Workflow",
       "launch_status": "GA",
