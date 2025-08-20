@@ -89,7 +89,8 @@ def fetch_fields(doc_url) -> list | dict[list]:
     if not doc_url:
         return []
     try:
-        if doc_url in OVERWRITE_URL:
+        if doc_url in OVERWRITE_URL.keys():
+            print(f'Overwrite {doc_url} to {OVERWRITE_URL[doc_url]}')
             doc_url = OVERWRITE_URL[doc_url]
         resp = requests.get(doc_url)
         resp.raise_for_status()
@@ -188,7 +189,6 @@ def main():
 
     for c in constraints:
         if c["doc_url"]:
-            print(c["doc_url"])
             time.sleep(0.5)  # Be polite to GCP docs
             fields = fetch_fields(c["doc_url"])
             if isinstance(fields, list) and url_count[c["doc_url"]] == 1:
