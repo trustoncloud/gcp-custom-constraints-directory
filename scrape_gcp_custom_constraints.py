@@ -80,7 +80,7 @@ def _extract_resource_field(txt):
 from functools import lru_cache
 
 OVERWRITE_URL = {
-    'https://cloud.google.com/service-mesh/docs/custom-constraints': 'https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints',
+    'https://cloud.google.com/service-mesh/docs/custom-constraints': 'https://cloud.google.com/service-mesh/docs/service-routing/custom-constraints',
     'https://cloud.google.com/vertex-ai/docs/prediction/custom-constraints': 'https://cloud.google.com/vertex-ai/docs/predictions/custom-constraints'
 }
 
