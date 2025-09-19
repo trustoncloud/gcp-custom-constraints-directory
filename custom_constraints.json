@@ -1424,7 +1424,7 @@
       ]
     },
     {
-      "service": "Dataproc Serverless",
+      "service": "Google Cloud Serverless for Apache Spark",
       "namespace": "dataproc",
       "resource_type": "dataproc.googleapis.com/Batch",
       "launch_status": "GA",
@@ -1432,7 +1432,7 @@
       "fields": []
     },
     {
-      "service": "Dataproc Serverless",
+      "service": "Google Cloud Serverless for Apache Spark",
       "namespace": "dataproc",
       "resource_type": "dataproc.googleapis.com/Session",
       "launch_status": "GA",
@@ -4574,7 +4574,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/DeploymentResourcePool",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/vertex-ai/docs/predictions/custom-constraints",
+      "doc_url": "https://cloud.google.com/vertex-ai/docs/prediction/custom-constraints",
       "fields": [
         "resource.dedicatedResources.machineSpec.acceleratorCount",
         "resource.dedicatedResources.machineSpec.acceleratorType",
