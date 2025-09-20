@@ -1440,6 +1440,14 @@
       "fields": []
     },
     {
+      "service": "Google Cloud Serverless for Apache Spark",
+      "namespace": "dataproc",
+      "resource_type": "dataproc.googleapis.com/SessionTemplate",
+      "launch_status": "Preview",
+      "doc_url": "https://cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints",
+      "fields": []
+    },
+    {
       "service": "Cloud Deploy",
       "namespace": "clouddeploy",
       "resource_type": "clouddeploy.googleapis.com/Automation",
