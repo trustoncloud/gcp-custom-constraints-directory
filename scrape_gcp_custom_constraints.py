@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import re
 import time
+from datetime import datetime, timezone
 
 BASE_URL = "https://cloud.google.com"
 MAIN_URL = "https://cloud.google.com/resource-manager/docs/organization-policy/custom-constraint-supported-services"
@@ -190,7 +191,8 @@ def main():
     for c in constraints:
         if c["doc_url"]:
             time.sleep(0.5)  # Be polite to GCP docs
-            if c['doc_url'] in 'https://cloud.google.com/dataform/docs/create-custom-constraints': # Add a bypass to nullify this in 1 month time. AI!
+            # Temporary bypass for transiently broken doc; expires on 2025-11-03
+            if c['doc_url'] == 'https://cloud.google.com/dataform/docs/create-custom-constraints' and datetime.now(timezone.utc) < datetime(2025, 11, 3, tzinfo=timezone.utc):
                 continue
             fields = fetch_fields(c["doc_url"])
             if isinstance(fields, list) and url_count[c["doc_url"]] == 1:
