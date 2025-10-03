@@ -191,12 +191,13 @@ def main():
     for c in constraints:
         if c["doc_url"]:
             time.sleep(0.5)  # Be polite to GCP docs
-            # Attempt to fetch fields; if this specific doc returns a 404, skip it
+            # Attempt to fetch fields; if this specific doc returns a 404, skip it (temporary bypass until 2025-11-03)
             try:
                 fields = fetch_fields(c["doc_url"])
             except requests.exceptions.HTTPError as http_err:
                 if (c['doc_url'] == 'https://cloud.google.com/dataform/docs/create-custom-constraints'
-                        and getattr(http_err.response, "status_code", None) == 404): # Remove the bypass in one month time. AI!
+                        and getattr(http_err.response, "status_code", None) == 404
+                        and datetime.now(timezone.utc) < datetime(2025, 11, 3, tzinfo=timezone.utc)):
                     continue
                 raise
             if isinstance(fields, list) and url_count[c["doc_url"]] == 1:
