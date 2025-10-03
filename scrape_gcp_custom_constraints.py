@@ -191,10 +191,14 @@ def main():
     for c in constraints:
         if c["doc_url"]:
             time.sleep(0.5)  # Be polite to GCP docs
-            # Temporary bypass for transiently broken doc; expires on 2025-11-03
-            if c['doc_url'] == 'https://cloud.google.com/dataform/docs/create-custom-constraints' and datetime.now(timezone.utc) < datetime(2025, 11, 3, tzinfo=timezone.utc): # issue with this URL. To check in one month.
-                continue # instead of proactively bypassing can you, only bypass one we tried to fetch AND it does a requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://cloud.google.com/dataform/docs/create-custom-constraints AI!
-            fields = fetch_fields(c["doc_url"])
+            # Attempt to fetch fields; if this specific doc returns a 404, skip it
+            try:
+                fields = fetch_fields(c["doc_url"])
+            except requests.exceptions.HTTPError as http_err:
+                if (c['doc_url'] == 'https://cloud.google.com/dataform/docs/create-custom-constraints'
+                        and getattr(http_err.response, "status_code", None) == 404):
+                    continue
+                raise
             if isinstance(fields, list) and url_count[c["doc_url"]] == 1:
                 c["fields"] = fields
             elif isinstance(fields, dict):
