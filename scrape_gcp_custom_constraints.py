@@ -196,7 +196,7 @@ def main():
                 fields = fetch_fields(c["doc_url"])
             except requests.exceptions.HTTPError as http_err:
                 if (c['doc_url'] == 'https://cloud.google.com/dataform/docs/create-custom-constraints'
-                        and getattr(http_err.response, "status_code", None) == 404):
+                        and getattr(http_err.response, "status_code", None) == 404): # Remove the bypass in one month time. AI!
                     continue
                 raise
             if isinstance(fields, list) and url_count[c["doc_url"]] == 1:
