@@ -1070,7 +1070,7 @@
       "service": "Compute Engine",
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/PreviewFeature",
-      "launch_status": "Preview",
+      "launch_status": "GA",
       "doc_url": "https://cloud.google.com/compute/docs/access/custom-constraints",
       "fields": []
     },
@@ -1180,6 +1180,13 @@
         "resource.transformNameMapping",
         "resource.type"
       ]
+    },
+    {
+      "service": "Dataform",
+      "namespace": "dataform",
+      "resource_type": "dataform.googleapis.com/Repository",
+      "launch_status": "GA",
+      "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints"
     },
     {
       "service": "Dataplex Universal Catalog",
@@ -2651,6 +2658,48 @@
       ]
     },
     {
+      "service": "Infrastructure Manager",
+      "namespace": "config",
+      "resource_type": "config.googleapis.com/Deployment",
+      "launch_status": "GA",
+      "doc_url": "https://cloud.google.com/infrastructure-manager/docs/custom-constraints",
+      "fields": [
+        "resource.artifactsGcsBucket",
+        "resource.importExistingResources",
+        "resource.name",
+        "resource.quotaValidation",
+        "resource.serviceAccount",
+        "resource.terraformBlueprint.gcsSource",
+        "resource.terraformBlueprint.gitSource.directory",
+        "resource.terraformBlueprint.gitSource.ref",
+        "resource.terraformBlueprint.gitSource.repo",
+        "resource.terraformBlueprint.inputValues[*].inputValue",
+        "resource.tfVersionConstraint",
+        "resource.workerPool"
+      ]
+    },
+    {
+      "service": "Infrastructure Manager",
+      "namespace": "config",
+      "resource_type": "config.googleapis.com/Preview",
+      "launch_status": "GA",
+      "doc_url": "https://cloud.google.com/infrastructure-manager/docs/custom-constraints",
+      "fields": [
+        "resource.artifactsGcsBucket",
+        "resource.deployment",
+        "resource.name",
+        "resource.previewMode",
+        "resource.serviceAccount",
+        "resource.terraformBlueprint.gcsSource",
+        "resource.terraformBlueprint.gitSource.directory",
+        "resource.terraformBlueprint.gitSource.ref",
+        "resource.terraformBlueprint.gitSource.repo",
+        "resource.terraformBlueprint.inputValues[*].inputValue",
+        "resource.tfVersionConstraint",
+        "resource.workerPool"
+      ]
+    },
+    {
       "service": "Cloud Interconnect",
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/Interconnect",
@@ -3505,7 +3554,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/NetworkAttachment",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/compute/docs/access/custom-constraints",
+      "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
       "fields": []
     },
     {
@@ -3513,7 +3562,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/ServiceAttachment",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/compute/docs/access/custom-constraints",
+      "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
       "fields": []
     },
     {
