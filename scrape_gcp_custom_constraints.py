@@ -190,6 +190,8 @@ def main():
     for c in constraints:
         if c["doc_url"]:
             time.sleep(0.5)  # Be polite to GCP docs
+            if c['doc_url'] in 'https://cloud.google.com/dataform/docs/create-custom-constraints': # Add a bypass to nullify this in 1 month time. AI!
+                continue
             fields = fetch_fields(c["doc_url"])
             if isinstance(fields, list) and url_count[c["doc_url"]] == 1:
                 c["fields"] = fields
