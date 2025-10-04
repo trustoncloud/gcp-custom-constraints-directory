@@ -2646,6 +2646,52 @@
       "fields": []
     },
     {
+      "service": "Identity and Access Management",
+      "namespace": "iam",
+      "resource_type": "iam.googleapis.com/WorkloadIdentityPool",
+      "launch_status": "GA",
+      "doc_url": "https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints",
+      "fields": [
+        "resource.description",
+        "resource.disabled",
+        "resource.displayName",
+        "resource.mode"
+      ]
+    },
+    {
+      "service": "Identity and Access Management",
+      "namespace": "iam",
+      "resource_type": "iam.googleapis.com/WorkloadIdentityPoolProvider",
+      "launch_status": "GA",
+      "doc_url": "https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints",
+      "fields": [
+        "resource.attributeCondition",
+        "resource.attributeMapping",
+        "resource.aws.accountId",
+        "resource.aws.stsUri",
+        "resource.description",
+        "resource.disabled",
+        "resource.displayName",
+        "resource.oidc.allowedAudiences",
+        "resource.oidc.issuerUri",
+        "resource.oidc.jwksJson",
+        "resource.saml.idpMetadataXml",
+        "resource.x509.trustStore.intermediateCas.pemCertificate",
+        "resource.x509.trustStore.trustAnchors.pemCertificate"
+      ]
+    },
+    {
+      "service": "Identity and Access Management",
+      "namespace": "iam",
+      "resource_type": "iam.googleapis.com/WorkloadIdentityPoolProviderKey",
+      "launch_status": "GA",
+      "doc_url": "https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints",
+      "fields": [
+        "resource.keyData.keySpec",
+        "resource.use"
+      ]
+    },
+    {
       "service": "Identity-Aware Proxy",
       "namespace": "iap",
       "resource_type": "iap.googleapis.com/TunnelDestGroup",
