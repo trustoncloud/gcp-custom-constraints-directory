@@ -1186,7 +1186,23 @@
       "namespace": "dataform",
       "resource_type": "dataform.googleapis.com/Repository",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints"
+      "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
+      "fields": [
+        "resource.displayName",
+        "resource.gitRemoteSettings.authenticationTokenSecretVersion",
+        "resource.gitRemoteSettings.defaultBranch",
+        "resource.gitRemoteSettings.sshAuthenticationConfig.hostPublicKey",
+        "resource.gitRemoteSettings.sshAuthenticationConfig.userPrivateKeySecretVersion",
+        "resource.gitRemoteSettings.url",
+        "resource.kmsKeyName",
+        "resource.name",
+        "resource.npmrcEnvironmentVariablesSecretVersion",
+        "resource.serviceAccount",
+        "resource.setAuthenticatedUserAdmin",
+        "resource.workspaceCompilationOverrides.defaultDatabase",
+        "resource.workspaceCompilationOverrides.schemaSuffix",
+        "resource.workspaceCompilationOverrides.tablePrefix"
+      ]
     },
     {
       "service": "Dataplex Universal Catalog",
