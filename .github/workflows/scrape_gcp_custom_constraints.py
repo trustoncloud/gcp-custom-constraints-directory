@@ -4,6 +4,7 @@ import json
 import re
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 
 BASE_URL = "https://cloud.google.com"
 MAIN_URL = "https://cloud.google.com/resource-manager/docs/organization-policy/custom-constraint-supported-services"
@@ -209,9 +210,22 @@ def main():
         else:
             c["fields"] = []
     out = {"constraints": constraints}
-    with open("../../custom_constraints.json", "w", encoding="utf-8") as f: # Make this more resilient. AI!
-        json.dump(out, f, indent=2, ensure_ascii=False)
-    print("Wrote custom_constraints.json")
+    # Write output path robustly relative to the repository root, with a fallback to the current working directory
+    try:
+        repo_root = Path(__file__).resolve().parents[2]
+        out_path = repo_root / "custom_constraints.json"
+    except Exception:
+        out_path = Path.cwd() / "custom_constraints.json"
+    try:
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        with out_path.open("w", encoding="utf-8") as f:
+            json.dump(out, f, indent=2, ensure_ascii=False)
+        print(f"Wrote {out_path}")
+    except OSError:
+        fallback_path = Path.cwd() / "custom_constraints.json"
+        with fallback_path.open("w", encoding="utf-8") as f:
+            json.dump(out, f, indent=2, ensure_ascii=False)
+        print(f"Wrote {fallback_path}")
 
 if __name__ == "__main__":
     main()
