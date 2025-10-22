@@ -34,11 +34,11 @@ def _build_summary_md(constraints: list[dict[str, Any]]) -> str:
 
     lines: list[str] = ["## Summary", ""]
     for service in sorted(grouped.keys(), key=lambda s: s.lower()):
-        lines.append(service)
+        lines.append('**' + service + '**')
         lines.append("")
         for resource_type, count in sorted(grouped[service], key=lambda t: t[0].lower()):
             plural = "field" if count == 1 else "fields"
-            lines.append(f"    {resource_type} ({count} {plural})")
+            lines.append(f"- {resource_type} ({count} {plural})") # Add the link doc_url on the resource_type. AI!
         lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"
