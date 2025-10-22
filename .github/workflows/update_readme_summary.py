@@ -23,22 +23,25 @@ def _load_constraints(path: Path) -> list[dict[str, Any]]:
 
 
 def _build_summary_md(constraints: list[dict[str, Any]]) -> str:
-    grouped: dict[str, list[tuple[str, int]]] = defaultdict(list)
+    grouped: dict[str, list[tuple[str, int, str | None]]] = defaultdict(list)
     for c in constraints:
         service = str(c.get("service") or "").strip()
         resource_type = str(c.get("resource_type") or "").strip()
         fields = c.get("fields") or []
         count = len(fields) if isinstance(fields, list) else 0
+        doc_url_val = c.get("doc_url")
+        doc_url = str(doc_url_val).strip() if isinstance(doc_url_val, str) else None
         if service and resource_type:
-            grouped[service].append((resource_type, count))
+            grouped[service].append((resource_type, count, doc_url))
 
     lines: list[str] = ["## Summary", ""]
     for service in sorted(grouped.keys(), key=lambda s: s.lower()):
         lines.append('**' + service + '**')
         lines.append("")
-        for resource_type, count in sorted(grouped[service], key=lambda t: t[0].lower()):
+        for resource_type, count, doc_url in sorted(grouped[service], key=lambda t: t[0].lower()):
             plural = "field" if count == 1 else "fields"
-            lines.append(f"- {resource_type} ({count} {plural})") # Add the link doc_url on the resource_type. AI!
+            item_text = f"[{resource_type}]({doc_url})" if doc_url else resource_type
+            lines.append(f"- {item_text} ({count} {plural})")
         lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"
