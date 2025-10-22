@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Scrape GCP custom constraints
-        run: python scrape_gcp_custom_constraints.py
+        run: python .github/workflows/scrape_gcp_custom_constraints.py
       - name: Commit changes
         run: |
           git config user.email "github-actions@github.com"
