@@ -210,7 +210,6 @@ def main():
         else:
             c["fields"] = []
     out = {"constraints": constraints}
-    # Write output path robustly relative to the repository root, with a fallback to the current working directory
     try:
         repo_root = Path(__file__).resolve().parents[2]
         out_path = repo_root / "custom_constraints.json"
