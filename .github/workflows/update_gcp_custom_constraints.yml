@@ -20,11 +20,13 @@ jobs:
         run: pip install -r requirements.txt
       - name: Scrape GCP custom constraints
         run: python .github/workflows/scrape_gcp_custom_constraints.py
+      - name: Update README summary
+        run: python .github/workflows/update_readme_summary.py
       - name: Commit changes
         run: |
           git config user.email "github-actions@github.com"
           git config user.name "github-actions"
-          git add custom_constraints.json
+          git add custom_constraints.json README.md
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
