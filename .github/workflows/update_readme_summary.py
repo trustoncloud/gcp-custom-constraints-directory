@@ -41,7 +41,8 @@ def _build_summary_md(constraints: list[dict[str, Any]]) -> str:
         for resource_type, count, doc_url in sorted(grouped[service], key=lambda t: t[0].lower()):
             plural = "field" if count == 1 else "fields"
             item_text = f"[{resource_type}]({doc_url})" if doc_url else resource_type
-            lines.append(f"- {item_text} ({count} {plural})") # hide ({count} {plural}) if count = 0. AI!
+            suffix = f" ({count} {plural})" if count > 0 else ""
+            lines.append(f"- {item_text}{suffix}")
         lines.append("")
 
     return "\n".join(lines).rstrip() + "\n"
