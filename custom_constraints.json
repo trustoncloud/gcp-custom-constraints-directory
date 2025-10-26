@@ -2919,6 +2919,12 @@
         "resource.description",
         "resource.disabled",
         "resource.displayName",
+        "resource.inlineCertificateIssuanceConfig.caPools",
+        "resource.inlineCertificateIssuanceConfig.keyAlgorithm",
+        "resource.inlineCertificateIssuanceConfig.lifetime",
+        "resource.inlineCertificateIssuanceConfig.rotationWindowPercentage",
+        "resource.inlineTrustConfig.additionalTrustBundles[*].intermediateCas.pemCertificate",
+        "resource.inlineTrustConfig.additionalTrustBundles[*].trustAnchors.pemCertificate",
         "resource.mode"
       ]
     },
