@@ -83,9 +83,17 @@ from functools import lru_cache
 
 OVERWRITE_URL = {
     'https://cloud.google.com/service-mesh/docs/custom-constraints': 'https://cloud.google.com/service-mesh/docs/service-routing/custom-constraints',
-    'https://cloud.google.com/vertex-ai/docs/prediction/custom-constraints': 'https://cloud.google.com/vertex-ai/docs/predictions/custom-constraints'
+    'https://cloud.google.com/vertex-ai/docs/prediction/custom-constraints': 'https://cloud.google.com/vertex-ai/docs/predictions/custom-constraints',
+    'https://cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints': 'https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints'
 }
+URLS_WITH_TEMPORARY_ISSUES = {}
 
+'''
+Usage of URLS_WITH_TEMPORARY_ISSUES. Add the URL and the date when the error should resurface
+{
+    'https://cloud.google.com/dataform/docs/create-custom-constraints': datetime(2025, 11, 3, tzinfo=timezone.utc)
+}
+'''
 @lru_cache(maxsize=300)
 def fetch_fields(doc_url) -> list | dict[list]:
     if not doc_url:
@@ -196,9 +204,10 @@ def main():
             try:
                 fields = fetch_fields(c["doc_url"])
             except requests.exceptions.HTTPError as http_err:
-                if (c['doc_url'] == 'https://cloud.google.com/dataform/docs/create-custom-constraints'
+                if (c['doc_url'] in URLS_WITH_TEMPORARY_ISSUES
                         and getattr(http_err.response, "status_code", None) == 404
-                        and datetime.now(timezone.utc) < datetime(2025, 11, 3, tzinfo=timezone.utc)):
+                        and datetime.now(timezone.utc) < URLS_WITH_TEMPORARY_ISSUES[c['doc_url']]
+                    ):
                     continue
                 raise
             if isinstance(fields, list) and url_count[c["doc_url"]] == 1:
