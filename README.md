@@ -46,10 +46,21 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [bigquerydatatransfer.googleapis.com/TransferConfig](https://cloud.google.com/bigquery/docs/transfer-custom-constraints) (17 fields)
 
+**BigQuery sharing**
+
+- [analyticshub.googleapis.com/DataExchange](https://cloud.google.com/bigquery/docs/analytics-hub-custom-constraints) (7 fields)
+- [analyticshub.googleapis.com/Listing](https://cloud.google.com/bigquery/docs/analytics-hub-custom-constraints) (25 fields)
+
 **Binary Authorization**
 
 - [binaryauthorization.googleapis.com/Attestor](https://cloud.google.com/binary-authorization/docs/binary-authorization-custom-constraints) (8 fields)
 - [binaryauthorization.googleapis.com/Policy](https://cloud.google.com/binary-authorization/docs/binary-authorization-custom-constraints) (18 fields)
+
+**Certificate Authority Service**
+
+- [privateca.googleapis.com/CaPool](https://cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints) (49 fields)
+- [privateca.googleapis.com/CertificateAuthority](https://cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints) (58 fields)
+- [privateca.googleapis.com/CertificateTemplate](https://cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints) (40 fields)
 
 **Certificate Manager**
 
@@ -92,6 +103,9 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [clouddeploy.googleapis.com/CustomTargetType](https://cloud.google.com/deploy/docs/custom-org-policy) (14 fields)
 - [clouddeploy.googleapis.com/DeliveryPipeline](https://cloud.google.com/deploy/docs/custom-org-policy) (37 fields)
 - [clouddeploy.googleapis.com/DeployPolicy](https://cloud.google.com/deploy/docs/custom-org-policy) (16 fields)
+- [clouddeploy.googleapis.com/Release](https://cloud.google.com/deploy/docs/custom-org-policy) (9 fields)
+- [clouddeploy.googleapis.com/Rollout](https://cloud.google.com/deploy/docs/custom-org-policy) (4 fields)
+- [clouddeploy.googleapis.com/Target](https://cloud.google.com/deploy/docs/custom-org-policy) (29 fields)
 
 **Cloud DNS**
 
@@ -260,9 +274,6 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Datastream**
 
-- [clouddeploy.googleapis.com/Release](https://cloud.google.com/deploy/docs/custom-org-policy) (9 fields)
-- [clouddeploy.googleapis.com/Rollout](https://cloud.google.com/deploy/docs/custom-org-policy) (4 fields)
-- [clouddeploy.googleapis.com/Target](https://cloud.google.com/deploy/docs/custom-org-policy) (29 fields)
 - [datastream.googleapis.com/ConnectionProfile](https://cloud.google.com/datastream/docs/custom-constraints) (38 fields)
 - [datastream.googleapis.com/PrivateConnection](https://cloud.google.com/datastream/docs/custom-constraints) (4 fields)
 - [datastream.googleapis.com/Stream](https://cloud.google.com/datastream/docs/custom-constraints) (179 fields)
@@ -362,6 +373,8 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [iam.googleapis.com/ServiceAccount](https://cloud.google.com/iam/docs/service-accounts-custom-constraints)
 - [iam.googleapis.com/ServiceAccountKey](https://cloud.google.com/iam/docs/service-accounts-custom-constraints)
 - [iam.googleapis.com/WorkloadIdentityPool](https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (10 fields)
+- iam.googleapis.com/WorkloadIdentityPoolManagedIdentity
+- iam.googleapis.com/WorkloadIdentityPoolNamespace
 - [iam.googleapis.com/WorkloadIdentityPoolProvider](https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (13 fields)
 - [iam.googleapis.com/WorkloadIdentityPoolProviderKey](https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (2 fields)
 
