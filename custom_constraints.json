@@ -4111,7 +4111,14 @@
       "resource_type": "compute.googleapis.com/NetworkAttachment",
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.connectionPreference",
+        "resource.description",
+        "resource.name",
+        "resource.producerAcceptLists",
+        "resource.producerRejectLists",
+        "resource.subnetworks"
+      ]
     },
     {
       "service": "Private Service Connect",
@@ -4119,7 +4126,23 @@
       "resource_type": "compute.googleapis.com/ServiceAttachment",
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.connectionPreference",
+        "resource.consumerAcceptLists.connectionLimit",
+        "resource.consumerAcceptLists.networkUrl",
+        "resource.consumerAcceptLists.projectIdOrNum",
+        "resource.consumerRejectLists",
+        "resource.description",
+        "resource.domainNames",
+        "resource.enableProxyProtocol",
+        "resource.name",
+        "resource.natSubnets",
+        "resource.product.id",
+        "resource.product.variantId",
+        "resource.propagatedConnectionLimit",
+        "resource.reconcileConnections",
+        "resource.targetService"
+      ]
     },
     {
       "service": "Pub/Sub",
@@ -5331,7 +5354,29 @@
       "resource_type": "compute.googleapis.com/Network",
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.autoCreateSubnetworks",
+        "resource.description",
+        "resource.enableUlaInternalIpv6",
+        "resource.internalIpv6Range",
+        "resource.mtu",
+        "resource.name",
+        "resource.networkFirewallPolicyEnforcementOrder",
+        "resource.peerings.autoCreateRoutes",
+        "resource.peerings.exchangeSubnetRoutes",
+        "resource.peerings.exportCustomRoutes",
+        "resource.peerings.exportSubnetRoutesWithPublicIp",
+        "resource.peerings.importCustomRoutes",
+        "resource.peerings.importSubnetRoutesWithPublicIp",
+        "resource.peerings.name",
+        "resource.peerings.network",
+        "resource.peerings.peerMtu",
+        "resource.peerings.stackType",
+        "resource.routingConfig.bgpAlwaysCompareMed",
+        "resource.routingConfig.bgpBestPathSelectionMode",
+        "resource.routingConfig.bgpInterRegionCost",
+        "resource.routingConfig.routingMode"
+      ]
     },
     {
       "service": "Virtual Private Cloud",
@@ -5339,7 +5384,20 @@
       "resource_type": "compute.googleapis.com/PacketMirroring",
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.collectorIlb.url",
+        "resource.description",
+        "resource.enable",
+        "resource.filter.IPProtocols",
+        "resource.filter.cidrRanges",
+        "resource.filter.direction",
+        "resource.mirroredResources.instances.url",
+        "resource.mirroredResources.subnetworks.url",
+        "resource.mirroredResources.tags",
+        "resource.name",
+        "resource.network.url",
+        "resource.priority"
+      ]
     },
     {
       "service": "Virtual Private Cloud",
@@ -5347,7 +5405,19 @@
       "resource_type": "compute.googleapis.com/Route",
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.description",
+        "resource.destRange",
+        "resource.name",
+        "resource.network",
+        "resource.nextHopGateway",
+        "resource.nextHopIlb",
+        "resource.nextHopInstance",
+        "resource.nextHopIp",
+        "resource.nextHopVpnTunnel",
+        "resource.priority",
+        "resource.tags"
+      ]
     },
     {
       "service": "Virtual Private Cloud",
@@ -5355,7 +5425,26 @@
       "resource_type": "compute.googleapis.com/Subnetwork",
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.description",
+        "resource.externalIpv6Prefix",
+        "resource.internalIpv6Prefix",
+        "resource.ipCidrRange",
+        "resource.ipv6AccessType",
+        "resource.logConfig.aggregationInterval",
+        "resource.logConfig.enable",
+        "resource.logConfig.filterExpr",
+        "resource.logConfig.flowSampling",
+        "resource.logConfig.metadata",
+        "resource.name",
+        "resource.network",
+        "resource.privateIpGoogleAccess",
+        "resource.purpose",
+        "resource.role",
+        "resource.secondaryIpRanges.ipCidrRange",
+        "resource.secondaryIpRanges.rangeName",
+        "resource.stackType"
+      ]
     },
     {
       "service": "Cloud VPN",

@@ -421,8 +421,8 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Private Service Connect**
 
-- [compute.googleapis.com/NetworkAttachment](https://cloud.google.com/vpc/docs/custom-constraints)
-- [compute.googleapis.com/ServiceAttachment](https://cloud.google.com/vpc/docs/custom-constraints)
+- [compute.googleapis.com/NetworkAttachment](https://cloud.google.com/vpc/docs/custom-constraints) (6 fields)
+- [compute.googleapis.com/ServiceAttachment](https://cloud.google.com/vpc/docs/custom-constraints) (15 fields)
 
 **Pub/Sub**
 
@@ -516,10 +516,10 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Virtual Private Cloud**
 
-- [compute.googleapis.com/Network](https://cloud.google.com/vpc/docs/custom-constraints)
-- [compute.googleapis.com/PacketMirroring](https://cloud.google.com/vpc/docs/custom-constraints)
-- [compute.googleapis.com/Route](https://cloud.google.com/vpc/docs/custom-constraints)
-- [compute.googleapis.com/Subnetwork](https://cloud.google.com/vpc/docs/custom-constraints)
+- [compute.googleapis.com/Network](https://cloud.google.com/vpc/docs/custom-constraints) (21 fields)
+- [compute.googleapis.com/PacketMirroring](https://cloud.google.com/vpc/docs/custom-constraints) (12 fields)
+- [compute.googleapis.com/Route](https://cloud.google.com/vpc/docs/custom-constraints) (11 fields)
+- [compute.googleapis.com/Subnetwork](https://cloud.google.com/vpc/docs/custom-constraints) (18 fields)
 
 **Web Security Scanner**
 
