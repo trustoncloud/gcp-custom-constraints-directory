@@ -27,6 +27,13 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [apikeys.googleapis.com/Key](https://cloud.google.com/api-keys/docs/custom-constraints) (9 fields)
 
+**Application Integration**
+
+- [integrations.googleapis.com/AuthConfig](https://cloud.google.com/application-integration/docs/custom-constraints) (7 fields)
+- [integrations.googleapis.com/IntegrationVersion](https://cloud.google.com/application-integration/docs/custom-constraints) (95 fields)
+- [integrations.googleapis.com/SfdcChannel](https://cloud.google.com/application-integration/docs/custom-constraints) (3 fields)
+- [integrations.googleapis.com/SfdcInstance](https://cloud.google.com/application-integration/docs/custom-constraints) (3 fields)
+
 **Artifact Registry**
 
 - [artifactregistry.googleapis.com/Repository](https://cloud.google.com/artifact-registry/docs/custom-constraints)
@@ -45,6 +52,10 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **BigQuery Data Transfer Service**
 
 - [bigquerydatatransfer.googleapis.com/TransferConfig](https://cloud.google.com/bigquery/docs/transfer-custom-constraints) (17 fields)
+
+**BigQuery Migration Service**
+
+- [bigquerymigration.googleapis.com/MigrationWorkflow](https://cloud.google.com/bigquery/docs/migration-custom-org-policies) (37 fields)
 
 **BigQuery sharing**
 
@@ -252,7 +263,12 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Dataform**
 
+- [dataform.googleapis.com/CompilationResult](https://cloud.google.com/dataform/docs/create-custom-constraints)
+- [dataform.googleapis.com/ReleaseConfig](https://cloud.google.com/dataform/docs/create-custom-constraints)
 - [dataform.googleapis.com/Repository](https://cloud.google.com/dataform/docs/create-custom-constraints) (14 fields)
+- [dataform.googleapis.com/WorkflowConfig](https://cloud.google.com/dataform/docs/create-custom-constraints)
+- [dataform.googleapis.com/WorkflowInvocation](https://cloud.google.com/dataform/docs/create-custom-constraints)
+- [dataform.googleapis.com/Workspace](https://cloud.google.com/dataform/docs/create-custom-constraints)
 
 **Dataplex Universal Catalog**
 
@@ -373,8 +389,8 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [iam.googleapis.com/ServiceAccount](https://cloud.google.com/iam/docs/service-accounts-custom-constraints)
 - [iam.googleapis.com/ServiceAccountKey](https://cloud.google.com/iam/docs/service-accounts-custom-constraints)
 - [iam.googleapis.com/WorkloadIdentityPool](https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (10 fields)
-- iam.googleapis.com/WorkloadIdentityPoolManagedIdentity
-- iam.googleapis.com/WorkloadIdentityPoolNamespace
+- [iam.googleapis.com/WorkloadIdentityPoolManagedIdentity](https://cloud.google.com/iam/docs/managed-workload-identity-custom-constraints) (2 fields)
+- [iam.googleapis.com/WorkloadIdentityPoolNamespace](https://cloud.google.com/iam/docs/managed-workload-identity-custom-constraints) (2 fields)
 - [iam.googleapis.com/WorkloadIdentityPoolProvider](https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (13 fields)
 - [iam.googleapis.com/WorkloadIdentityPoolProviderKey](https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (2 fields)
 
