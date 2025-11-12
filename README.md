@@ -92,12 +92,12 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Cloud Build**
 
-- [cloudbuild.googleapis.com/BitbucketServerConfig](https://cloud.google.com/build/docs/custom-constraints)
-- [cloudbuild.googleapis.com/BuildTrigger](https://cloud.google.com/build/docs/custom-constraints)
-- [cloudbuild.googleapis.com/Connection](https://cloud.google.com/build/docs/custom-constraints)
-- [cloudbuild.googleapis.com/GithubEnterpriseConfig](https://cloud.google.com/build/docs/custom-constraints)
-- [cloudbuild.googleapis.com/Repository](https://cloud.google.com/build/docs/custom-constraints)
-- [cloudbuild.googleapis.com/WorkerPool](https://cloud.google.com/build/docs/custom-constraints)
+- [cloudbuild.googleapis.com/BitbucketServerConfig](https://cloud.google.com/build/docs/custom-constraints) (10 fields)
+- [cloudbuild.googleapis.com/BuildTrigger](https://cloud.google.com/build/docs/custom-constraints) (152 fields)
+- [cloudbuild.googleapis.com/Connection](https://cloud.google.com/build/docs/custom-constraints) (33 fields)
+- [cloudbuild.googleapis.com/GithubEnterpriseConfig](https://cloud.google.com/build/docs/custom-constraints) (11 fields)
+- [cloudbuild.googleapis.com/Repository](https://cloud.google.com/build/docs/custom-constraints) (3 fields)
+- [cloudbuild.googleapis.com/WorkerPool](https://cloud.google.com/build/docs/custom-constraints) (10 fields)
 
 **Cloud Composer**
 
@@ -122,6 +122,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [dns.googleapis.com/ManagedZone](https://cloud.google.com/dns/docs/create-custom-constraints) (17 fields)
 - [dns.googleapis.com/Policy](https://cloud.google.com/dns/docs/create-custom-constraints) (9 fields)
+- [dns.googleapis.com/ResourceRecordSet](https://cloud.google.com/dns/docs/create-custom-constraints) (46 fields)
 - [dns.googleapis.com/ResponsePolicy](https://cloud.google.com/dns/docs/create-custom-constraints) (4 fields)
 - [dns.googleapis.com/ResponsePolicyRule](https://cloud.google.com/dns/docs/create-custom-constraints) (49 fields)
 
@@ -280,7 +281,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Dataproc**
 
-- [dataproc.googleapis.com/Cluster](https://cloud.google.com/dataproc/docs/concepts/dataproc-custom-constraints) (36 fields)
+- [dataproc.googleapis.com/Cluster](https://cloud.google.com/dataproc/docs/concepts/dataproc-custom-constraints) (39 fields)
 
 **Dataproc Metastore**
 
