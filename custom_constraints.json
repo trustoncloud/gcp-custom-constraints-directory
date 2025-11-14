@@ -1826,7 +1826,22 @@
       "resource_type": "dataform.googleapis.com/CompilationResult",
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.codeCompilationConfig.assertionSchema",
+        "resource.codeCompilationConfig.builtinAssertionNamePrefix",
+        "resource.codeCompilationConfig.databaseSuffix",
+        "resource.codeCompilationConfig.defaultDatabase",
+        "resource.codeCompilationConfig.defaultLocation",
+        "resource.codeCompilationConfig.defaultNotebookRuntimeOptions.aiPlatformNotebookRuntimeTemplate",
+        "resource.codeCompilationConfig.defaultNotebookRuntimeOptions.gcsOutputBucket",
+        "resource.codeCompilationConfig.defaultSchema",
+        "resource.codeCompilationConfig.schemaSuffix",
+        "resource.codeCompilationConfig.tablePrefix",
+        "resource.codeCompilationConfig.vars",
+        "resource.gitCommitish",
+        "resource.releaseConfig",
+        "resource.workspace"
+      ]
     },
     {
       "service": "Dataform",
@@ -1834,7 +1849,25 @@
       "resource_type": "dataform.googleapis.com/ReleaseConfig",
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.codeCompilationConfig.assertionSchema",
+        "resource.codeCompilationConfig.builtinAssertionNamePrefix",
+        "resource.codeCompilationConfig.databaseSuffix",
+        "resource.codeCompilationConfig.defaultDatabase",
+        "resource.codeCompilationConfig.defaultLocation",
+        "resource.codeCompilationConfig.defaultNotebookRuntimeOptions.aiPlatformNotebookRuntimeTemplate",
+        "resource.codeCompilationConfig.defaultNotebookRuntimeOptions.gcsOutputBucket",
+        "resource.codeCompilationConfig.defaultSchema",
+        "resource.codeCompilationConfig.schemaSuffix",
+        "resource.codeCompilationConfig.tablePrefix",
+        "resource.codeCompilationConfig.vars",
+        "resource.cronSchedule",
+        "resource.disabled",
+        "resource.gitCommitish",
+        "resource.name",
+        "resource.releaseCompilationResult",
+        "resource.timeZone"
+      ]
     },
     {
       "service": "Dataform",
@@ -1865,7 +1898,22 @@
       "resource_type": "dataform.googleapis.com/WorkflowConfig",
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.cronSchedule",
+        "resource.disabled",
+        "resource.invocationConfig.fullyRefreshIncrementalTablesEnabled",
+        "resource.invocationConfig.includedTags",
+        "resource.invocationConfig.includedTargets.database",
+        "resource.invocationConfig.includedTargets.name",
+        "resource.invocationConfig.includedTargets.schema",
+        "resource.invocationConfig.queryPriority",
+        "resource.invocationConfig.serviceAccount",
+        "resource.invocationConfig.transitiveDependenciesIncluded",
+        "resource.invocationConfig.transitiveDependentsIncluded",
+        "resource.name",
+        "resource.releaseConfig",
+        "resource.timeZone"
+      ]
     },
     {
       "service": "Dataform",
@@ -1873,7 +1921,19 @@
       "resource_type": "dataform.googleapis.com/WorkflowInvocation",
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.compilationResult",
+        "resource.invocationConfig.fullyRefreshIncrementalTablesEnabled",
+        "resource.invocationConfig.includedTags",
+        "resource.invocationConfig.includedTargets.database",
+        "resource.invocationConfig.includedTargets.name",
+        "resource.invocationConfig.includedTargets.schema",
+        "resource.invocationConfig.queryPriority",
+        "resource.invocationConfig.serviceAccount",
+        "resource.invocationConfig.transitiveDependenciesIncluded",
+        "resource.invocationConfig.transitiveDependentsIncluded",
+        "resource.workflowConfig"
+      ]
     },
     {
       "service": "Dataform",
@@ -1881,7 +1941,9 @@
       "resource_type": "dataform.googleapis.com/Workspace",
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.name"
+      ]
     },
     {
       "service": "Dataplex Universal Catalog",
