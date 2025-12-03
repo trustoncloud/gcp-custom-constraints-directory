@@ -3689,7 +3689,8 @@
       "launch_status": "GA",
       "doc_url": "https://cloud.google.com/iam/docs/org-policy-custom-constraints",
       "fields": [
-        "resource.bindings"
+        "resource.bindings",
+        "resource.management.autoUpgrade"
       ]
     },
     {
