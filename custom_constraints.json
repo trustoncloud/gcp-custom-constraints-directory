@@ -5,7 +5,7 @@
       "namespace": "accesscontextmanager",
       "resource_type": "accesscontextmanager.googleapis.com/AccessLevel",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/access-context-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/access-context-manager/docs/custom-constraints",
       "fields": [
         "resource.basic.combiningFunction",
         "resource.basic.conditions.devicePolicy.allowedDeviceManagementLevels",
@@ -31,7 +31,7 @@
       "namespace": "accesscontextmanager",
       "resource_type": "accesscontextmanager.googleapis.com/AccessPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/access-context-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/access-context-manager/docs/custom-constraints",
       "fields": [
         "resource.parent",
         "resource.scopes",
@@ -43,7 +43,7 @@
       "namespace": "accesscontextmanager",
       "resource_type": "accesscontextmanager.googleapis.com/AuthorizedOrgsDesc",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/access-context-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/access-context-manager/docs/custom-constraints",
       "fields": [
         "resource.assetType",
         "resource.authorizationDirection",
@@ -56,7 +56,7 @@
       "namespace": "accesscontextmanager",
       "resource_type": "accesscontextmanager.googleapis.com/ServicePerimeter",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/access-context-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/access-context-manager/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.perimeterType",
@@ -111,7 +111,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/CustomJob",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vertex-ai/docs/training/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints",
       "fields": [
         "resource.displayName",
         "resource.encryptionSpec.kmsKeyName",
@@ -160,7 +160,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/HyperparameterTuningJob",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vertex-ai/docs/training/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints",
       "fields": [
         "resource.displayName",
         "resource.encryptionSpec.kmsKeyName",
@@ -251,7 +251,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/NasJob",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vertex-ai/docs/training/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints",
       "fields": [
         "resource.displayName",
         "resource.encryptionSpec.kmsKeyName",
@@ -348,7 +348,7 @@
       "namespace": "alloydb",
       "resource_type": "alloydb.googleapis.com/Backup",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/alloydb/docs/alloydb-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/alloydb/docs/alloydb-custom-constraints",
       "fields": []
     },
     {
@@ -356,7 +356,7 @@
       "namespace": "alloydb",
       "resource_type": "alloydb.googleapis.com/Cluster",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/alloydb/docs/alloydb-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/alloydb/docs/alloydb-custom-constraints",
       "fields": []
     },
     {
@@ -364,7 +364,7 @@
       "namespace": "alloydb",
       "resource_type": "alloydb.googleapis.com/Instance",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/alloydb/docs/alloydb-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/alloydb/docs/alloydb-custom-constraints",
       "fields": []
     },
     {
@@ -372,7 +372,7 @@
       "namespace": "analyticshub",
       "resource_type": "analyticshub.googleapis.com/DataExchange",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/bigquery/docs/analytics-hub-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/analytics-hub-custom-constraints",
       "fields": [
         "resource.description",
         "resource.discoveryType",
@@ -388,7 +388,7 @@
       "namespace": "analyticshub",
       "resource_type": "analyticshub.googleapis.com/Listing",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/bigquery/docs/analytics-hub-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/analytics-hub-custom-constraints",
       "fields": [
         "resource.allowOnlyMetadataSharing",
         "resource.bigqueryDataset.dataset",
@@ -422,7 +422,7 @@
       "namespace": "apikeys",
       "resource_type": "apikeys.googleapis.com/Key",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/api-keys/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/api-keys/docs/custom-constraints",
       "fields": [
         "resource.displayName",
         "resource.restrictions.androidKeyRestrictions.allowedApplications.packageName",
@@ -440,7 +440,7 @@
       "namespace": "integrations",
       "resource_type": "integrations.googleapis.com/AuthConfig",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/application-integration/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/application-integration/docs/custom-constraints",
       "fields": [
         "resource.credentialType",
         "resource.description",
@@ -456,7 +456,7 @@
       "namespace": "integrations",
       "resource_type": "integrations.googleapis.com/IntegrationVersion",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/application-integration/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/application-integration/docs/custom-constraints",
       "fields": [
         "resource.cloudLoggingDetails.cloudLoggingSeverity",
         "resource.cloudLoggingDetails.enableCloudLogging",
@@ -560,7 +560,7 @@
       "namespace": "integrations",
       "resource_type": "integrations.googleapis.com/SfdcChannel",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/application-integration/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/application-integration/docs/custom-constraints",
       "fields": [
         "resource.channelTopic",
         "resource.description",
@@ -572,7 +572,7 @@
       "namespace": "integrations",
       "resource_type": "integrations.googleapis.com/SfdcInstance",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/application-integration/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/application-integration/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.displayName",
@@ -584,7 +584,7 @@
       "namespace": "artifactregistry",
       "resource_type": "artifactregistry.googleapis.com/Repository",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/artifact-registry/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/artifact-registry/docs/custom-constraints",
       "fields": []
     },
     {
@@ -592,7 +592,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/NetworkEdgeSecurityService",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/armor/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/armor/docs/custom-constraints",
       "fields": []
     },
     {
@@ -600,7 +600,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/SecurityPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/armor/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/armor/docs/custom-constraints",
       "fields": []
     },
     {
@@ -608,7 +608,7 @@
       "namespace": "gkebackup",
       "resource_type": "gkebackup.googleapis.com/Backup",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/how-to/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/how-to/create-custom-constraints",
       "fields": [
         "resource.deleteLockDays",
         "resource.description",
@@ -620,7 +620,7 @@
       "namespace": "gkebackup",
       "resource_type": "gkebackup.googleapis.com/BackupPlan",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/how-to/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/how-to/create-custom-constraints",
       "fields": [
         "resource.backupConfig.allNamespaces",
         "resource.backupConfig.encryptionKey.gcpKmsEncryptionKey",
@@ -649,7 +649,7 @@
       "namespace": "gkebackup",
       "resource_type": "gkebackup.googleapis.com/Restore",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/how-to/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/how-to/create-custom-constraints",
       "fields": [
         "resource.backup",
         "resource.description",
@@ -671,7 +671,7 @@
       "namespace": "gkebackup",
       "resource_type": "gkebackup.googleapis.com/RestorePlan",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/how-to/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/how-to/create-custom-constraints",
       "fields": [
         "resource.backupPlan",
         "resource.cluster",
@@ -715,7 +715,7 @@
       "namespace": "bigquery",
       "resource_type": "bigquery.googleapis.com/Dataset",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/bigquery/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/custom-constraints",
       "fields": [
         "resource.datasetReference.datasetId",
         "resource.defaultCollation",
@@ -741,7 +741,7 @@
       "namespace": "bigtableadmin",
       "resource_type": "bigtableadmin.googleapis.com/AppProfile",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/bigtable/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/bigtable/docs/custom-constraints",
       "fields": [
         "resource.dataBoostIsolationReadOnly.computeBillingOwner",
         "resource.description",
@@ -757,7 +757,7 @@
       "namespace": "bigtableadmin",
       "resource_type": "bigtableadmin.googleapis.com/Backup",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/bigtable/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/bigtable/docs/custom-constraints",
       "fields": [
         "resource.backupType",
         "resource.expireTime",
@@ -771,7 +771,7 @@
       "namespace": "bigtableadmin",
       "resource_type": "bigtableadmin.googleapis.com/Cluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/bigtable/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/bigtable/docs/custom-constraints",
       "fields": [
         "resource.clusterConfig.clusterAutoscalingConfig.autoscalingLimits.maxServeNodes",
         "resource.clusterConfig.clusterAutoscalingConfig.autoscalingLimits.minServeNodes",
@@ -790,7 +790,7 @@
       "namespace": "bigtableadmin",
       "resource_type": "bigtableadmin.googleapis.com/Instance",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/bigtable/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/bigtable/docs/custom-constraints",
       "fields": [
         "resource.displayName",
         "resource.name"
@@ -801,7 +801,7 @@
       "namespace": "bigtableadmin",
       "resource_type": "bigtableadmin.googleapis.com/Table",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/bigtable/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/bigtable/docs/custom-constraints",
       "fields": [
         "resource.automatedBackupPolicy.frequency",
         "resource.automatedBackupPolicy.retentionPeriod",
@@ -822,7 +822,7 @@
       "namespace": "binaryauthorization",
       "resource_type": "binaryauthorization.googleapis.com/Attestor",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/binary-authorization/docs/binary-authorization-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/binary-authorization/docs/binary-authorization-custom-constraints",
       "fields": [
         "resource.description",
         "resource.name",
@@ -839,7 +839,7 @@
       "namespace": "binaryauthorization",
       "resource_type": "binaryauthorization.googleapis.com/Policy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/binary-authorization/docs/binary-authorization-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/binary-authorization/docs/binary-authorization-custom-constraints",
       "fields": [
         "resource.admissionWhitelistPatterns.namePattern",
         "resource.clusterAdmissionRules[*].enforcementMode",
@@ -866,7 +866,7 @@
       "namespace": "bigquerymigration",
       "resource_type": "bigquerymigration.googleapis.com/MigrationWorkflow",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/bigquery/docs/migration-custom-org-policies",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/migration-custom-org-policies",
       "fields": [
         "resource.displayName",
         "resource.tasks[*].assessmentTaskDetails.dataSource",
@@ -912,7 +912,7 @@
       "namespace": "bigquerydatatransfer",
       "resource_type": "bigquerydatatransfer.googleapis.com/TransferConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/bigquery/docs/transfer-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/transfer-custom-constraints",
       "fields": [
         "resource.dataRefreshWindowDays",
         "resource.dataSourceId",
@@ -938,7 +938,7 @@
       "namespace": "cloudbuild",
       "resource_type": "cloudbuild.googleapis.com/BitbucketServerConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/build/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/build/docs/custom-constraints",
       "fields": [
         "resource.apiKey",
         "resource.hostUri",
@@ -957,7 +957,7 @@
       "namespace": "cloudbuild",
       "resource_type": "cloudbuild.googleapis.com/BuildTrigger",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/build/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/build/docs/custom-constraints",
       "fields": [
         "resource.approvalConfig.approvalRequired",
         "resource.autodetect",
@@ -1118,7 +1118,7 @@
       "namespace": "cloudbuild",
       "resource_type": "cloudbuild.googleapis.com/Connection",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/build/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/build/docs/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.bitbucketCloudConfig.authorizerCredential.userTokenSecretVersion",
@@ -1160,7 +1160,7 @@
       "namespace": "cloudbuild",
       "resource_type": "cloudbuild.googleapis.com/GithubEnterpriseConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/build/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/build/docs/custom-constraints",
       "fields": [
         "resource.appId",
         "resource.displayName",
@@ -1180,7 +1180,7 @@
       "namespace": "cloudbuild",
       "resource_type": "cloudbuild.googleapis.com/Repository",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/build/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/build/docs/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.name",
@@ -1192,7 +1192,7 @@
       "namespace": "cloudbuild",
       "resource_type": "cloudbuild.googleapis.com/WorkerPool",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/build/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/build/docs/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.displayName",
@@ -1211,7 +1211,7 @@
       "namespace": "privateca",
       "resource_type": "privateca.googleapis.com/CaPool",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints",
       "fields": [
         "resource.issuancePolicy.allowedIssuanceModes.allowConfigBasedIssuance",
         "resource.issuancePolicy.allowedIssuanceModes.allowCsrBasedIssuance",
@@ -1269,7 +1269,7 @@
       "namespace": "privateca",
       "resource_type": "privateca.googleapis.com/CertificateAuthority",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints",
       "fields": [
         "resource.config.subjectConfig.subject.commonName",
         "resource.config.subjectConfig.subject.countryCode",
@@ -1336,7 +1336,7 @@
       "namespace": "privateca",
       "resource_type": "privateca.googleapis.com/CertificateTemplate",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.identityConstraints.allowSubjectAltNamesPassthrough",
@@ -1385,7 +1385,7 @@
       "namespace": "contactcenteraiplatform",
       "resource_type": "contactcenteraiplatform.googleapis.com/ContactCenter",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/contact-center/ccai-platform/docs/ccaip-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/contact-center/ccai-platform/docs/ccaip-custom-constraints",
       "fields": [
         "resource.name"
       ]
@@ -1395,7 +1395,7 @@
       "namespace": "certificatemanager",
       "resource_type": "certificatemanager.googleapis.com/Certificate",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/certificate-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/certificate-manager/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.managed.dnsAuthorizations",
@@ -1411,7 +1411,7 @@
       "namespace": "certificatemanager",
       "resource_type": "certificatemanager.googleapis.com/CertificateIssuanceConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/certificate-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/certificate-manager/docs/custom-constraints",
       "fields": [
         "resource.certificateAuthorityConfig.certificateAuthorityServiceConfig.caPool",
         "resource.description",
@@ -1426,7 +1426,7 @@
       "namespace": "certificatemanager",
       "resource_type": "certificatemanager.googleapis.com/CertificateMap",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/certificate-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/certificate-manager/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.name"
@@ -1437,7 +1437,7 @@
       "namespace": "certificatemanager",
       "resource_type": "certificatemanager.googleapis.com/CertificateMapEntry",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/certificate-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/certificate-manager/docs/custom-constraints",
       "fields": [
         "resource.certificates",
         "resource.description",
@@ -1451,7 +1451,7 @@
       "namespace": "certificatemanager",
       "resource_type": "certificatemanager.googleapis.com/DnsAuthorization",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/certificate-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/certificate-manager/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.domain",
@@ -1464,7 +1464,7 @@
       "namespace": "certificatemanager",
       "resource_type": "certificatemanager.googleapis.com/TrustConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/certificate-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/certificate-manager/docs/custom-constraints",
       "fields": [
         "resource.allowlistedCertificates.pemCertificate",
         "resource.description",
@@ -1478,7 +1478,7 @@
       "namespace": "identitytoolkit",
       "resource_type": "identitytoolkit.googleapis.com/Config",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/identity-platform/docs/admin/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/identity-platform/docs/admin/org-policy-custom-constraints",
       "fields": []
     },
     {
@@ -1486,7 +1486,7 @@
       "namespace": "identitytoolkit",
       "resource_type": "identitytoolkit.googleapis.com/DefaultSupportedIdpConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/identity-platform/docs/admin/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/identity-platform/docs/admin/org-policy-custom-constraints",
       "fields": []
     },
     {
@@ -1494,7 +1494,7 @@
       "namespace": "identitytoolkit",
       "resource_type": "identitytoolkit.googleapis.com/InboundSamlConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/identity-platform/docs/admin/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/identity-platform/docs/admin/org-policy-custom-constraints",
       "fields": []
     },
     {
@@ -1502,7 +1502,7 @@
       "namespace": "identitytoolkit",
       "resource_type": "identitytoolkit.googleapis.com/OauthIdpConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/identity-platform/docs/admin/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/identity-platform/docs/admin/org-policy-custom-constraints",
       "fields": []
     },
     {
@@ -1510,7 +1510,7 @@
       "namespace": "identitytoolkit",
       "resource_type": "identitytoolkit.googleapis.com/Tenant",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/identity-platform/docs/admin/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/identity-platform/docs/admin/org-policy-custom-constraints",
       "fields": []
     },
     {
@@ -1518,7 +1518,7 @@
       "namespace": "cloudquotas",
       "resource_type": "cloudquotas.googleapis.com/QuotaPreference",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/docs/quotas/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/docs/quotas/custom-constraints",
       "fields": [
         "resource.dimensions",
         "resource.name",
@@ -1532,7 +1532,7 @@
       "namespace": "cloudfunctions",
       "resource_type": "cloudfunctions.googleapis.com/Function",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/functions/docs/securing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/functions/docs/securing/custom-constraints",
       "fields": []
     },
     {
@@ -1540,7 +1540,7 @@
       "namespace": "run",
       "resource_type": "run.googleapis.com/Job",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/run/docs/securing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/run/docs/securing/custom-constraints",
       "fields": []
     },
     {
@@ -1548,7 +1548,7 @@
       "namespace": "run",
       "resource_type": "run.googleapis.com/Service",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/run/docs/securing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/run/docs/securing/custom-constraints",
       "fields": []
     },
     {
@@ -1556,7 +1556,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/NotebookExecutionJob",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/colab/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/colab/docs/custom-constraints",
       "fields": [
         "resource.customEnvironmentSpec.machineSpec.acceleratorCount",
         "resource.customEnvironmentSpec.machineSpec.acceleratorType",
@@ -1590,7 +1590,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/NotebookRuntime",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/colab/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/colab/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.displayName",
@@ -1602,7 +1602,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/NotebookRuntimeTemplate",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/colab/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/colab/docs/custom-constraints",
       "fields": [
         "resource.dataPersistentDiskSpec.diskSizeGb",
         "resource.dataPersistentDiskSpec.diskType",
@@ -1636,7 +1636,7 @@
       "namespace": "composer",
       "resource_type": "composer.googleapis.com/Environment",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/composer/docs/latest/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/composer/docs/latest/create-custom-constraints",
       "fields": [
         "resource.config.environmentSize",
         "resource.config.maintenanceWindow.recurrence",
@@ -1686,7 +1686,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/Disk",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/compute/docs/access/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
       "fields": []
     },
     {
@@ -1694,7 +1694,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/Image",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/compute/docs/access/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
       "fields": []
     },
     {
@@ -1702,7 +1702,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/Instance",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/compute/docs/access/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
       "fields": []
     },
     {
@@ -1710,7 +1710,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/PreviewFeature",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/compute/docs/access/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
       "fields": []
     },
     {
@@ -1718,7 +1718,7 @@
       "namespace": "cloudresourcemanager",
       "resource_type": "cloudresourcemanager.googleapis.com/Folder",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/resource-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/resource-manager/docs/custom-constraints",
       "fields": [
         "resource.displayName",
         "resource.parent"
@@ -1729,7 +1729,7 @@
       "namespace": "cloudresourcemanager",
       "resource_type": "cloudresourcemanager.googleapis.com/Project",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/resource-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/resource-manager/docs/custom-constraints",
       "fields": [
         "resource.parent",
         "resource.projectId"
@@ -1740,7 +1740,7 @@
       "namespace": "datafusion",
       "resource_type": "datafusion.googleapis.com/DnsPeering",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/data-fusion/docs/how-to/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/data-fusion/docs/how-to/create-custom-constraints",
       "fields": [
         "resource.description",
         "resource.domain",
@@ -1754,7 +1754,7 @@
       "namespace": "datafusion",
       "resource_type": "datafusion.googleapis.com/Instance",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/data-fusion/docs/how-to/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/data-fusion/docs/how-to/create-custom-constraints",
       "fields": [
         "resource.cryptoKeyConfig.keyReference",
         "resource.dataplexDataLineageIntegrationEnabled",
@@ -1790,7 +1790,7 @@
       "namespace": "datalineage",
       "resource_type": "datalineage.googleapis.com/Process",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataplex/docs/lineage-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataplex/docs/lineage-custom-constraints",
       "fields": [
         "resource.displayName",
         "resource.name",
@@ -1803,7 +1803,7 @@
       "namespace": "dataflow",
       "resource_type": "dataflow.googleapis.com/Job",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataflow/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataflow/docs/custom-constraints",
       "fields": [
         "resource.environment",
         "resource.environment.debugOptions",
@@ -1825,7 +1825,7 @@
       "namespace": "dataform",
       "resource_type": "dataform.googleapis.com/CompilationResult",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataform/docs/create-custom-constraints",
       "fields": [
         "resource.codeCompilationConfig.assertionSchema",
         "resource.codeCompilationConfig.builtinAssertionNamePrefix",
@@ -1848,7 +1848,7 @@
       "namespace": "dataform",
       "resource_type": "dataform.googleapis.com/ReleaseConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataform/docs/create-custom-constraints",
       "fields": [
         "resource.codeCompilationConfig.assertionSchema",
         "resource.codeCompilationConfig.builtinAssertionNamePrefix",
@@ -1874,7 +1874,7 @@
       "namespace": "dataform",
       "resource_type": "dataform.googleapis.com/Repository",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataform/docs/create-custom-constraints",
       "fields": [
         "resource.displayName",
         "resource.gitRemoteSettings.authenticationTokenSecretVersion",
@@ -1897,7 +1897,7 @@
       "namespace": "dataform",
       "resource_type": "dataform.googleapis.com/WorkflowConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataform/docs/create-custom-constraints",
       "fields": [
         "resource.cronSchedule",
         "resource.disabled",
@@ -1920,7 +1920,7 @@
       "namespace": "dataform",
       "resource_type": "dataform.googleapis.com/WorkflowInvocation",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataform/docs/create-custom-constraints",
       "fields": [
         "resource.compilationResult",
         "resource.invocationConfig.fullyRefreshIncrementalTablesEnabled",
@@ -1940,7 +1940,7 @@
       "namespace": "dataform",
       "resource_type": "dataform.googleapis.com/Workspace",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataform/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataform/docs/create-custom-constraints",
       "fields": [
         "resource.name"
       ]
@@ -1950,7 +1950,7 @@
       "namespace": "dataplex",
       "resource_type": "dataplex.googleapis.com/AspectType",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataplex/docs/dataplex-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints",
       "fields": [
         "resource.authorization.alternateUsePermission",
         "resource.description",
@@ -1977,7 +1977,7 @@
       "namespace": "dataplex",
       "resource_type": "dataplex.googleapis.com/DataScan",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataplex/docs/dataplex-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints",
       "fields": [
         "resource.data.entity",
         "resource.data.resource",
@@ -2032,7 +2032,7 @@
       "namespace": "dataplex",
       "resource_type": "dataplex.googleapis.com/EntryGroup",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataplex/docs/dataplex-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints",
       "fields": [
         "resource.description",
         "resource.displayName"
@@ -2043,7 +2043,7 @@
       "namespace": "dataplex",
       "resource_type": "dataplex.googleapis.com/EntryType",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataplex/docs/dataplex-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints",
       "fields": [
         "resource.authorization.alternateUsePermission",
         "resource.description",
@@ -2059,7 +2059,7 @@
       "namespace": "dataplex",
       "resource_type": "dataplex.googleapis.com/MetadataJob",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataplex/docs/dataplex-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints",
       "fields": [
         "resource.exportSpec.outputPath",
         "resource.exportSpec.scope.aspectTypes",
@@ -2083,7 +2083,7 @@
       "namespace": "metastore",
       "resource_type": "metastore.googleapis.com/Backup",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataproc-metastore/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataproc-metastore/docs/org-policy-custom-constraints",
       "fields": [
         "resource.description",
         "resource.name"
@@ -2094,7 +2094,7 @@
       "namespace": "metastore",
       "resource_type": "metastore.googleapis.com/MetadataImport",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataproc-metastore/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataproc-metastore/docs/org-policy-custom-constraints",
       "fields": [
         "resource.databaseDump.gcsUri",
         "resource.databaseDump.sourceDatabase",
@@ -2108,7 +2108,7 @@
       "namespace": "metastore",
       "resource_type": "metastore.googleapis.com/Service",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataproc-metastore/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataproc-metastore/docs/org-policy-custom-constraints",
       "fields": [
         "resource.databaseType",
         "resource.deletionProtection",
@@ -2147,7 +2147,7 @@
       "namespace": "dataproc",
       "resource_type": "dataproc.googleapis.com/Cluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataproc/docs/concepts/dataproc-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataproc/docs/concepts/dataproc-custom-constraints",
       "fields": [
         "resource.config.autoscalingConfig.policyUri",
         "resource.config.encryptionConfig.gcePdKmsKeyName",
@@ -2187,7 +2187,8 @@
         "resource.config.workerConfig.imageUri",
         "resource.config.workerConfig.machineTypeUri",
         "resource.config.workerConfig.numInstances",
-        "resource.labels"
+        "resource.labels",
+        "resource.management.autoUpgrade"
       ]
     },
     {
@@ -2195,7 +2196,7 @@
       "namespace": "dataproc",
       "resource_type": "dataproc.googleapis.com/Batch",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints",
       "fields": []
     },
     {
@@ -2203,7 +2204,7 @@
       "namespace": "dataproc",
       "resource_type": "dataproc.googleapis.com/Session",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints",
       "fields": []
     },
     {
@@ -2211,7 +2212,7 @@
       "namespace": "dataproc",
       "resource_type": "dataproc.googleapis.com/SessionTemplate",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints",
       "fields": []
     },
     {
@@ -2219,7 +2220,7 @@
       "namespace": "datastream",
       "resource_type": "datastream.googleapis.com/ConnectionProfile",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/datastream/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/datastream/docs/custom-constraints",
       "fields": [
         "resource.displayName",
         "resource.forwardSshConnectivity.hostname",
@@ -2266,7 +2267,7 @@
       "namespace": "datastream",
       "resource_type": "datastream.googleapis.com/PrivateConnection",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/datastream/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/datastream/docs/custom-constraints",
       "fields": [
         "resource.displayName",
         "resource.pscInterfaceConfig.networkAttachment",
@@ -2279,7 +2280,7 @@
       "namespace": "datastream",
       "resource_type": "datastream.googleapis.com/Stream",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/datastream/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/datastream/docs/custom-constraints",
       "fields": [
         "resource.backfillAll.mongodbExcludedObjects.databases.collections.collection",
         "resource.backfillAll.mongodbExcludedObjects.databases.database",
@@ -2467,7 +2468,7 @@
       "namespace": "clouddeploy",
       "resource_type": "clouddeploy.googleapis.com/Automation",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/deploy/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/deploy/docs/custom-org-policy",
       "fields": [
         "resource.annotations",
         "resource.description",
@@ -2501,7 +2502,7 @@
       "namespace": "clouddeploy",
       "resource_type": "clouddeploy.googleapis.com/CustomTargetType",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/deploy/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/deploy/docs/custom-org-policy",
       "fields": [
         "resource.annotations",
         "resource.customActions.deployAction",
@@ -2524,7 +2525,7 @@
       "namespace": "clouddeploy",
       "resource_type": "clouddeploy.googleapis.com/DeliveryPipeline",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/deploy/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/deploy/docs/custom-org-policy",
       "fields": [
         "resource.annotations",
         "resource.description",
@@ -2570,7 +2571,7 @@
       "namespace": "clouddeploy",
       "resource_type": "clouddeploy.googleapis.com/DeployPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/deploy/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/deploy/docs/custom-org-policy",
       "fields": [
         "resource.annotations",
         "resource.description",
@@ -2595,7 +2596,7 @@
       "namespace": "clouddeploy",
       "resource_type": "clouddeploy.googleapis.com/Release",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/deploy/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/deploy/docs/custom-org-policy",
       "fields": [
         "resource.annotations",
         "resource.buildArtifacts.image",
@@ -2613,7 +2614,7 @@
       "namespace": "clouddeploy",
       "resource_type": "clouddeploy.googleapis.com/Rollout",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/deploy/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/deploy/docs/custom-org-policy",
       "fields": [
         "resource.annotations",
         "resource.description",
@@ -2626,7 +2627,7 @@
       "namespace": "clouddeploy",
       "resource_type": "clouddeploy.googleapis.com/Target",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/deploy/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/deploy/docs/custom-org-policy",
       "fields": [
         "resource.annotations",
         "resource.anthosCluster.membership",
@@ -2664,7 +2665,7 @@
       "namespace": "developerconnect",
       "resource_type": "developerconnect.googleapis.com/Connection",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/developer-connect/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/developer-connect/docs/custom-constraints",
       "fields": []
     },
     {
@@ -2672,7 +2673,7 @@
       "namespace": "developerconnect",
       "resource_type": "developerconnect.googleapis.com/GitRepositoryLink",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/developer-connect/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/developer-connect/docs/custom-constraints",
       "fields": []
     },
     {
@@ -2680,7 +2681,7 @@
       "namespace": "dns",
       "resource_type": "dns.googleapis.com/ManagedZone",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dns/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dns/docs/create-custom-constraints",
       "fields": [
         "resource.cloudLoggingConfig.enableLogging",
         "resource.description",
@@ -2706,7 +2707,7 @@
       "namespace": "dns",
       "resource_type": "dns.googleapis.com/Policy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dns/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dns/docs/create-custom-constraints",
       "fields": [
         "resource.alternativeNameServerConfig.targetNameServers.forwardingPath",
         "resource.alternativeNameServerConfig.targetNameServers.ipv4Address",
@@ -2724,7 +2725,7 @@
       "namespace": "dns",
       "resource_type": "dns.googleapis.com/ResourceRecordSet",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dns/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dns/docs/create-custom-constraints",
       "fields": [
         "resource.name",
         "resource.routingPolicy.geo.enableFencing",
@@ -2779,7 +2780,7 @@
       "namespace": "dns",
       "resource_type": "dns.googleapis.com/ResponsePolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dns/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dns/docs/create-custom-constraints",
       "fields": [
         "resource.description",
         "resource.gkeClusters.gkeClusterName",
@@ -2792,7 +2793,7 @@
       "namespace": "dns",
       "resource_type": "dns.googleapis.com/ResponsePolicyRule",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/dns/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/dns/docs/create-custom-constraints",
       "fields": [
         "resource.behavior",
         "resource.dnsName",
@@ -2850,7 +2851,7 @@
       "namespace": "essentialcontacts",
       "resource_type": "essentialcontacts.googleapis.com/Contact",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/resource-manager/docs/essentialcontacts-custom-org-policies",
+      "doc_url": "https://docs.cloud.google.com/resource-manager/docs/essentialcontacts-custom-org-policies",
       "fields": [
         "resource.email",
         "resource.languageTag",
@@ -2862,7 +2863,7 @@
       "namespace": "eventarc",
       "resource_type": "eventarc.googleapis.com/Channel",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/eventarc/standard/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/eventarc/standard/docs/custom-constraints",
       "fields": [
         "resource.cryptoKeyName",
         "resource.name",
@@ -2874,7 +2875,7 @@
       "namespace": "eventarc",
       "resource_type": "eventarc.googleapis.com/ChannelConnection",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/eventarc/standard/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/eventarc/standard/docs/custom-constraints",
       "fields": [
         "resource.activationToken",
         "resource.channel",
@@ -2886,7 +2887,7 @@
       "namespace": "eventarc",
       "resource_type": "eventarc.googleapis.com/Enrollment",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/eventarc/advanced/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/eventarc/advanced/docs/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.celMatch",
@@ -2901,7 +2902,7 @@
       "namespace": "eventarc",
       "resource_type": "eventarc.googleapis.com/GoogleApiSource",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/eventarc/advanced/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/eventarc/advanced/docs/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.cryptoKeyName",
@@ -2916,7 +2917,7 @@
       "namespace": "eventarc",
       "resource_type": "eventarc.googleapis.com/GoogleChannelConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/eventarc/standard/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/eventarc/standard/docs/custom-constraints",
       "fields": [
         "resource.cryptoKeyName",
         "resource.name"
@@ -2927,7 +2928,7 @@
       "namespace": "eventarc",
       "resource_type": "eventarc.googleapis.com/MessageBus",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/eventarc/advanced/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/eventarc/advanced/docs/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.cryptoKeyName",
@@ -2941,7 +2942,7 @@
       "namespace": "eventarc",
       "resource_type": "eventarc.googleapis.com/Pipeline",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/eventarc/advanced/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/eventarc/advanced/docs/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.cryptoKeyName",
@@ -2973,7 +2974,7 @@
       "namespace": "eventarc",
       "resource_type": "eventarc.googleapis.com/Trigger",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/eventarc/standard/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/eventarc/standard/docs/custom-constraints",
       "fields": [
         "resource.channel",
         "resource.destination.cloudFunction",
@@ -3002,7 +3003,7 @@
       "namespace": "file",
       "resource_type": "file.googleapis.com/Backup",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/filestore/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/filestore/docs/create-custom-constraints",
       "fields": [
         "resource.description",
         "resource.kmsKey",
@@ -3015,7 +3016,7 @@
       "namespace": "file",
       "resource_type": "file.googleapis.com/Instance",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/filestore/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/filestore/docs/create-custom-constraints",
       "fields": [
         "resource.deletionProtectionEnabled",
         "resource.deletionProtectionReason",
@@ -3046,7 +3047,7 @@
       "namespace": "file",
       "resource_type": "file.googleapis.com/Snapshot",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/filestore/docs/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/filestore/docs/create-custom-constraints",
       "fields": [
         "resource.description"
       ]
@@ -3056,7 +3057,7 @@
       "namespace": "firestore",
       "resource_type": "firestore.googleapis.com/Database",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/firestore/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/firestore/docs/custom-constraints",
       "fields": [
         "resource.appEngineIntegrationMode",
         "resource.cmekConfig.kmsKeyName",
@@ -3073,7 +3074,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/Firewall",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/firewall/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/firewall/docs/custom-constraints",
       "fields": [
         "resource.allowed[]",
         "resource.allowed[].IPProtocol",
@@ -3098,7 +3099,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/FirewallPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/firewall/docs/custom-constraints-fw-policy",
+      "doc_url": "https://docs.cloud.google.com/firewall/docs/custom-constraints-fw-policy",
       "fields": [
         "resource.rules[].action",
         "resource.rules[].description",
@@ -3134,7 +3135,7 @@
       "namespace": "gkemulticloud",
       "resource_type": "gkemulticloud.googleapis.com/AttachedCluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/multi-cloud/docs/attached/eks/how-to/setup-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/multi-cloud/docs/attached/eks/how-to/setup-custom-constraints",
       "fields": []
     },
     {
@@ -3142,7 +3143,7 @@
       "namespace": "gkemulticloud",
       "resource_type": "gkemulticloud.googleapis.com/AwsCluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/how-to/setup-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/how-to/setup-custom-constraints",
       "fields": []
     },
     {
@@ -3150,7 +3151,7 @@
       "namespace": "gkemulticloud",
       "resource_type": "gkemulticloud.googleapis.com/AwsNodePool",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/how-to/setup-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/how-to/setup-custom-constraints",
       "fields": []
     },
     {
@@ -3158,7 +3159,7 @@
       "namespace": "gkemulticloud",
       "resource_type": "gkemulticloud.googleapis.com/AzureClient",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/how-to/setup-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/how-to/setup-custom-constraints",
       "fields": []
     },
     {
@@ -3166,7 +3167,7 @@
       "namespace": "gkemulticloud",
       "resource_type": "gkemulticloud.googleapis.com/AzureCluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/how-to/setup-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/how-to/setup-custom-constraints",
       "fields": []
     },
     {
@@ -3174,7 +3175,7 @@
       "namespace": "gkemulticloud",
       "resource_type": "gkemulticloud.googleapis.com/AzureNodePool",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/how-to/setup-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/multi-cloud/docs/azure/how-to/setup-custom-constraints",
       "fields": []
     },
     {
@@ -3182,23 +3183,433 @@
       "namespace": "container",
       "resource_type": "container.googleapis.com/Cluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/docs/how-to/custom-org-policies",
-      "fields": []
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/custom-org-policies",
+      "fields": [
+        "resource.addonsConfig.cloudRunConfig.disabled",
+        "resource.addonsConfig.cloudRunConfig.loadBalancerType",
+        "resource.addonsConfig.configConnectorConfig.enabled",
+        "resource.addonsConfig.dnsCacheConfig.enabled",
+        "resource.addonsConfig.gcePersistentDiskCsiDriverConfig.enabled",
+        "resource.addonsConfig.gcpFilestoreCsiDriverConfig.enabled",
+        "resource.addonsConfig.gcsFuseCsiDriverConfig.enabled",
+        "resource.addonsConfig.gkeBackupAgentConfig.enabled",
+        "resource.addonsConfig.highScaleCheckpointingConfig.enabled",
+        "resource.addonsConfig.horizontalPodAutoscaling.disabled",
+        "resource.addonsConfig.httpLoadBalancing.disabled",
+        "resource.addonsConfig.kubernetesDashboard.disabled",
+        "resource.addonsConfig.networkPolicyConfig.disabled",
+        "resource.addonsConfig.parallelstoreCsiDriverConfig.enabled",
+        "resource.addonsConfig.rayOperatorConfig.enabled",
+        "resource.addonsConfig.rayOperatorConfig.rayClusterLoggingConfig.enabled",
+        "resource.addonsConfig.rayOperatorConfig.rayClusterMonitoringConfig.enabled",
+        "resource.addonsConfig.statefulHAConfig.enabled",
+        "resource.alphaClusterFeatureGates",
+        "resource.anonymousAuthenticationConfig.mode",
+        "resource.authenticatorGroupsConfig.enabled",
+        "resource.authenticatorGroupsConfig.securityGroup",
+        "resource.autopilot.enabled",
+        "resource.autopilot.privilegedAdmissionConfig.allowlistPaths",
+        "resource.autopilot.workloadPolicyConfig.allowNetAdmin",
+        "resource.autopilot.workloadPolicyConfig.autopilotCompatibilityAuditingEnabled",
+        "resource.autoscaling.autoprovisioningLocations",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.bootDiskKmsKey",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.diskSizeGb",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.diskType",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.imageType",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.insecureKubeletReadonlyPortEnabled",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.management.autoRepair",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.management.autoUpgrade",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.minCpuPlatform",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.oauthScopes",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.serviceAccount",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.shieldedInstanceConfig.enableIntegrityMonitoring",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.shieldedInstanceConfig.enableSecureBoot",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.upgradeSettings.blueGreenSettings.nodePoolSoakDuration",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.upgradeSettings.blueGreenSettings.standardRolloutPolicy.batchNodeCount",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.upgradeSettings.blueGreenSettings.standardRolloutPolicy.batchPercentage",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.upgradeSettings.blueGreenSettings.standardRolloutPolicy.batchSoakDuration",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.upgradeSettings.maxSurge",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.upgradeSettings.maxUnavailable",
+        "resource.autoscaling.autoprovisioningNodePoolDefaults.upgradeSettings.strategy",
+        "resource.autoscaling.autoscalingProfile",
+        "resource.autoscaling.enableNodeAutoprovisioning",
+        "resource.autoscaling.resourceLimits.maximum",
+        "resource.autoscaling.resourceLimits.minimum",
+        "resource.autoscaling.resourceLimits.resourceType",
+        "resource.binaryAuthorization.enabled",
+        "resource.binaryAuthorization.evaluationMode",
+        "resource.binaryAuthorization.policyBindings.name",
+        "resource.clusterIpv4Cidr",
+        "resource.compliancePostureConfig.complianceStandards.standard",
+        "resource.compliancePostureConfig.mode",
+        "resource.conditions.code",
+        "resource.conditions.message",
+        "resource.confidentialNodes.confidentialInstanceType",
+        "resource.confidentialNodes.enabled",
+        "resource.controlPlaneEndpointsConfig.dnsEndpointConfig.allowExternalTraffic",
+        "resource.controlPlaneEndpointsConfig.dnsEndpointConfig.endpoint",
+        "resource.controlPlaneEndpointsConfig.ipEndpointsConfig.authorizedNetworksConfig.cidrBlocks.cidrBlock",
+        "resource.controlPlaneEndpointsConfig.ipEndpointsConfig.authorizedNetworksConfig.cidrBlocks.displayName",
+        "resource.controlPlaneEndpointsConfig.ipEndpointsConfig.authorizedNetworksConfig.enabled",
+        "resource.controlPlaneEndpointsConfig.ipEndpointsConfig.authorizedNetworksConfig.gcpPublicCidrsAccessEnabled",
+        "resource.controlPlaneEndpointsConfig.ipEndpointsConfig.authorizedNetworksConfig.privateEndpointEnforcementEnabled",
+        "resource.controlPlaneEndpointsConfig.ipEndpointsConfig.enablePublicEndpoint",
+        "resource.controlPlaneEndpointsConfig.ipEndpointsConfig.enabled",
+        "resource.controlPlaneEndpointsConfig.ipEndpointsConfig.globalAccess",
+        "resource.controlPlaneEndpointsConfig.ipEndpointsConfig.privateEndpoint",
+        "resource.controlPlaneEndpointsConfig.ipEndpointsConfig.privateEndpointSubnetwork",
+        "resource.controlPlaneEndpointsConfig.ipEndpointsConfig.publicEndpoint",
+        "resource.costManagementConfig.enabled",
+        "resource.currentNodeCount",
+        "resource.databaseEncryption.keyName",
+        "resource.databaseEncryption.state",
+        "resource.defaultMaxPodsConstraint.maxPodsPerNode",
+        "resource.description",
+        "resource.enableK8sBetaApis.enabledApis",
+        "resource.enableKubernetesAlpha",
+        "resource.enterpriseConfig.clusterTier",
+        "resource.fleet.membership",
+        "resource.fleet.preRegistered",
+        "resource.fleet.project",
+        "resource.identityServiceConfig.enabled",
+        "resource.initialClusterVersion",
+        "resource.initialNodeCount",
+        "resource.ipAllocationPolicy.clusterIpv4Cidr",
+        "resource.ipAllocationPolicy.clusterIpv4CidrBlock",
+        "resource.ipAllocationPolicy.clusterSecondaryRangeName",
+        "resource.ipAllocationPolicy.createSubnetwork",
+        "resource.ipAllocationPolicy.ipv6AccessType",
+        "resource.ipAllocationPolicy.nodeIpv4Cidr",
+        "resource.ipAllocationPolicy.nodeIpv4CidrBlock",
+        "resource.ipAllocationPolicy.podCidrOverprovisionConfig.disable",
+        "resource.ipAllocationPolicy.servicesIpv4Cidr",
+        "resource.ipAllocationPolicy.servicesIpv4CidrBlock",
+        "resource.ipAllocationPolicy.servicesSecondaryRangeName",
+        "resource.ipAllocationPolicy.stackType",
+        "resource.ipAllocationPolicy.subnetworkName",
+        "resource.ipAllocationPolicy.tpuIpv4CidrBlock",
+        "resource.ipAllocationPolicy.useIpAliases",
+        "resource.ipAllocationPolicy.useRoutes",
+        "resource.labelFingerprint",
+        "resource.legacyAbac.enabled",
+        "resource.location",
+        "resource.locations",
+        "resource.loggingConfig.componentConfig.enableComponents",
+        "resource.loggingService",
+        "resource.maintenancePolicy.resourceVersion",
+        "resource.maintenancePolicy.window.dailyMaintenanceWindow.startTime",
+        "resource.maintenancePolicy.window.maintenanceExclusions[*].endTime",
+        "resource.maintenancePolicy.window.maintenanceExclusions[*].maintenanceExclusionOptions.scope",
+        "resource.maintenancePolicy.window.maintenanceExclusions[*].startTime",
+        "resource.maintenancePolicy.window.recurringWindow.recurrence",
+        "resource.maintenancePolicy.window.recurringWindow.window.endTime",
+        "resource.maintenancePolicy.window.recurringWindow.window.maintenanceExclusionOptions.scope",
+        "resource.maintenancePolicy.window.recurringWindow.window.startTime",
+        "resource.masterAuth.clientCertificateConfig.issueClientCertificate",
+        "resource.masterAuth.username",
+        "resource.masterAuthorizedNetworksConfig.cidrBlocks.cidrBlock",
+        "resource.masterAuthorizedNetworksConfig.cidrBlocks.displayName",
+        "resource.masterAuthorizedNetworksConfig.enabled",
+        "resource.masterAuthorizedNetworksConfig.gcpPublicCidrsAccessEnabled",
+        "resource.masterAuthorizedNetworksConfig.privateEndpointEnforcementEnabled",
+        "resource.meshCertificates.enableCertificates",
+        "resource.monitoringConfig.advancedDatapathObservabilityConfig.enableMetrics",
+        "resource.monitoringConfig.advancedDatapathObservabilityConfig.enableRelay",
+        "resource.monitoringConfig.advancedDatapathObservabilityConfig.relayMode",
+        "resource.monitoringConfig.componentConfig.enableComponents",
+        "resource.monitoringConfig.managedPrometheusConfig.autoMonitoringConfig.scope",
+        "resource.monitoringConfig.managedPrometheusConfig.enabled",
+        "resource.monitoringService",
+        "resource.name",
+        "resource.network",
+        "resource.networkConfig.datapathProvider",
+        "resource.networkConfig.defaultEnablePrivateNodes",
+        "resource.networkConfig.defaultSnatStatus.disabled",
+        "resource.networkConfig.disableL4LbFirewallReconciliation",
+        "resource.networkConfig.dnsConfig.additiveVpcScopeDnsDomain",
+        "resource.networkConfig.dnsConfig.clusterDns",
+        "resource.networkConfig.dnsConfig.clusterDnsDomain",
+        "resource.networkConfig.dnsConfig.clusterDnsScope",
+        "resource.networkConfig.enableCiliumClusterwideNetworkPolicy",
+        "resource.networkConfig.enableFqdnNetworkPolicy",
+        "resource.networkConfig.enableIntraNodeVisibility",
+        "resource.networkConfig.enableL4ilbSubsetting",
+        "resource.networkConfig.enableMultiNetworking",
+        "resource.networkConfig.gatewayApiConfig.channel",
+        "resource.networkConfig.inTransitEncryptionConfig",
+        "resource.networkConfig.networkPerformanceConfig.totalEgressBandwidthTier",
+        "resource.networkConfig.privateIpv6GoogleAccess",
+        "resource.networkConfig.serviceExternalIpsConfig.enabled",
+        "resource.networkPolicy.enabled",
+        "resource.networkPolicy.provider",
+        "resource.nodeConfig.accelerators.acceleratorCount",
+        "resource.nodeConfig.accelerators.acceleratorType",
+        "resource.nodeConfig.accelerators.gpuDriverInstallationConfig.gpuDriverVersion",
+        "resource.nodeConfig.accelerators.gpuPartitionSize",
+        "resource.nodeConfig.accelerators.gpuSharingConfig.gpuSharingStrategy",
+        "resource.nodeConfig.accelerators.gpuSharingConfig.maxSharedClientsPerGpu",
+        "resource.nodeConfig.advancedMachineFeatures.enableNestedVirtualization",
+        "resource.nodeConfig.advancedMachineFeatures.performanceMonitoringUnit",
+        "resource.nodeConfig.advancedMachineFeatures.threadsPerCore",
+        "resource.nodeConfig.bootDiskKmsKey",
+        "resource.nodeConfig.confidentialNodes.confidentialInstanceType",
+        "resource.nodeConfig.confidentialNodes.enabled",
+        "resource.nodeConfig.diskSizeGb",
+        "resource.nodeConfig.diskType",
+        "resource.nodeConfig.ephemeralStorageLocalSsdConfig.dataCacheCount",
+        "resource.nodeConfig.ephemeralStorageLocalSsdConfig.localSsdCount",
+        "resource.nodeConfig.fastSocket.enabled",
+        "resource.nodeConfig.flexStart",
+        "resource.nodeConfig.gcfsConfig.enabled",
+        "resource.nodeConfig.gvnic.enabled",
+        "resource.nodeConfig.imageType",
+        "resource.nodeConfig.kubeletConfig.allowedUnsafeSysctls",
+        "resource.nodeConfig.kubeletConfig.containerLogMaxFiles",
+        "resource.nodeConfig.kubeletConfig.containerLogMaxSize",
+        "resource.nodeConfig.kubeletConfig.cpuCfsQuota",
+        "resource.nodeConfig.kubeletConfig.cpuCfsQuotaPeriod",
+        "resource.nodeConfig.kubeletConfig.cpuManagerPolicy",
+        "resource.nodeConfig.kubeletConfig.imageGcHighThresholdPercent",
+        "resource.nodeConfig.kubeletConfig.imageGcLowThresholdPercent",
+        "resource.nodeConfig.kubeletConfig.imageMaximumGcAge",
+        "resource.nodeConfig.kubeletConfig.imageMinimumGcAge",
+        "resource.nodeConfig.kubeletConfig.insecureKubeletReadonlyPortEnabled",
+        "resource.nodeConfig.kubeletConfig.memoryManager.policy",
+        "resource.nodeConfig.kubeletConfig.podPidsLimit",
+        "resource.nodeConfig.kubeletConfig.topologyManager.policy",
+        "resource.nodeConfig.kubeletConfig.topologyManager.scope",
+        "resource.nodeConfig.labels",
+        "resource.nodeConfig.linuxNodeConfig.cgroupMode",
+        "resource.nodeConfig.linuxNodeConfig.hugepages.hugepageSize1g",
+        "resource.nodeConfig.linuxNodeConfig.hugepages.hugepageSize2m",
+        "resource.nodeConfig.linuxNodeConfig.sysctls",
+        "resource.nodeConfig.localNvmeSsdBlockConfig.localSsdCount",
+        "resource.nodeConfig.localSsdCount",
+        "resource.nodeConfig.localSsdEncryptionMode",
+        "resource.nodeConfig.loggingConfig.variantConfig.variant",
+        "resource.nodeConfig.machineType",
+        "resource.nodeConfig.maxRunDuration",
+        "resource.nodeConfig.metadata",
+        "resource.nodeConfig.minCpuPlatform",
+        "resource.nodeConfig.nodeGroup",
+        "resource.nodeConfig.oauthScopes",
+        "resource.nodeConfig.preemptible",
+        "resource.nodeConfig.reservationAffinity.consumeReservationType",
+        "resource.nodeConfig.reservationAffinity.key",
+        "resource.nodeConfig.reservationAffinity.values",
+        "resource.nodeConfig.resourceLabels",
+        "resource.nodeConfig.resourceManagerTags.tags",
+        "resource.nodeConfig.sandboxConfig.type",
+        "resource.nodeConfig.secondaryBootDisks.diskImage",
+        "resource.nodeConfig.secondaryBootDisks.mode",
+        "resource.nodeConfig.serviceAccount",
+        "resource.nodeConfig.shieldedInstanceConfig.enableIntegrityMonitoring",
+        "resource.nodeConfig.shieldedInstanceConfig.enableSecureBoot",
+        "resource.nodeConfig.soleTenantConfig.nodeAffinities.key",
+        "resource.nodeConfig.soleTenantConfig.nodeAffinities.operator",
+        "resource.nodeConfig.soleTenantConfig.nodeAffinities.values",
+        "resource.nodeConfig.spot",
+        "resource.nodeConfig.storagePools",
+        "resource.nodeConfig.tags",
+        "resource.nodeConfig.taints.effect",
+        "resource.nodeConfig.taints.key",
+        "resource.nodeConfig.taints.value",
+        "resource.nodeConfig.windowsNodeConfig.osVersion",
+        "resource.nodeConfig.workloadMetadataConfig.mode",
+        "resource.nodePoolAutoConfig.networkTags.tags",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.allowedUnsafeSysctls",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.containerLogMaxFiles",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.containerLogMaxSize",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.cpuCfsQuota",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.cpuCfsQuotaPeriod",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.cpuManagerPolicy",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.imageGcHighThresholdPercent",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.imageGcLowThresholdPercent",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.imageMaximumGcAge",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.imageMinimumGcAge",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.insecureKubeletReadonlyPortEnabled",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.memoryManager.policy",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.podPidsLimit",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.topologyManager.policy",
+        "resource.nodePoolAutoConfig.nodeKubeletConfig.topologyManager.scope",
+        "resource.nodePoolDefaults.nodeConfigDefaults.gcfsConfig.enabled",
+        "resource.nodePoolDefaults.nodeConfigDefaults.loggingConfig.variantConfig.variant",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.allowedUnsafeSysctls",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.containerLogMaxFiles",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.containerLogMaxSize",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.cpuCfsQuota",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.cpuCfsQuotaPeriod",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.cpuManagerPolicy",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.imageGcHighThresholdPercent",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.imageGcLowThresholdPercent",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.imageMaximumGcAge",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.imageMinimumGcAge",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.insecureKubeletReadonlyPortEnabled",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.memoryManager.policy",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.podPidsLimit",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.topologyManager.policy",
+        "resource.nodePoolDefaults.nodeConfigDefaults.nodeKubeletConfig.topologyManager.scope",
+        "resource.notificationConfig.pubsub.enabled",
+        "resource.notificationConfig.pubsub.filter.eventType",
+        "resource.notificationConfig.pubsub.topic",
+        "resource.podAutoscaling.hpaProfile",
+        "resource.privateClusterConfig.enablePrivateEndpoint",
+        "resource.privateClusterConfig.enablePrivateNodes",
+        "resource.privateClusterConfig.masterGlobalAccessConfig.enabled",
+        "resource.privateClusterConfig.masterIpv4CidrBlock",
+        "resource.privateClusterConfig.privateEndpointSubnetwork",
+        "resource.rbacBindingConfig.enableInsecureBindingSystemAuthenticated",
+        "resource.rbacBindingConfig.enableInsecureBindingSystemUnauthenticated",
+        "resource.releaseChannel.channel",
+        "resource.resourceLabels",
+        "resource.resourceUsageExportConfig.bigqueryDestination.datasetId",
+        "resource.resourceUsageExportConfig.consumptionMeteringConfig.enabled",
+        "resource.resourceUsageExportConfig.enableNetworkEgressMetering",
+        "resource.secretManagerConfig.enabled",
+        "resource.securityPostureConfig.mode",
+        "resource.securityPostureConfig.vulnerabilityMode",
+        "resource.shieldedNodes.enabled",
+        "resource.subnetwork",
+        "resource.userManagedKeysConfig.aggregationCa",
+        "resource.userManagedKeysConfig.clusterCa",
+        "resource.userManagedKeysConfig.controlPlaneDiskEncryptionKey",
+        "resource.userManagedKeysConfig.etcdApiCa",
+        "resource.userManagedKeysConfig.etcdPeerCa",
+        "resource.userManagedKeysConfig.gkeopsEtcdBackupEncryptionKey",
+        "resource.userManagedKeysConfig.serviceAccountSigningKeys",
+        "resource.userManagedKeysConfig.serviceAccountVerificationKeys",
+        "resource.verticalPodAutoscaling.enabled",
+        "resource.workloadIdentityConfig.workloadPool",
+        "resource.zone"
+      ]
     },
     {
       "service": "GKE",
       "namespace": "container",
       "resource_type": "container.googleapis.com/NodePool",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/docs/how-to/custom-org-policies",
-      "fields": []
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/custom-org-policies",
+      "fields": [
+        "resource.autopilotConfig.enabled",
+        "resource.autoscaling.autoprovisioned",
+        "resource.autoscaling.enabled",
+        "resource.autoscaling.locationPolicy",
+        "resource.autoscaling.maxNodeCount",
+        "resource.autoscaling.minNodeCount",
+        "resource.autoscaling.totalMaxNodeCount",
+        "resource.autoscaling.totalMinNodeCount",
+        "resource.bestEffortProvisioning.enabled",
+        "resource.bestEffortProvisioning.minProvisionNodes",
+        "resource.conditions.code",
+        "resource.conditions.message",
+        "resource.config.accelerators.acceleratorCount",
+        "resource.config.accelerators.acceleratorType",
+        "resource.config.accelerators.gpuDriverInstallationConfig.gpuDriverVersion",
+        "resource.config.accelerators.gpuPartitionSize",
+        "resource.config.accelerators.gpuSharingConfig.gpuSharingStrategy",
+        "resource.config.accelerators.gpuSharingConfig.maxSharedClientsPerGpu",
+        "resource.config.advancedMachineFeatures.enableNestedVirtualization",
+        "resource.config.advancedMachineFeatures.performanceMonitoringUnit",
+        "resource.config.advancedMachineFeatures.threadsPerCore",
+        "resource.config.bootDiskKmsKey",
+        "resource.config.confidentialNodes.confidentialInstanceType",
+        "resource.config.confidentialNodes.enabled",
+        "resource.config.diskSizeGb",
+        "resource.config.diskType",
+        "resource.config.ephemeralStorageLocalSsdConfig.dataCacheCount",
+        "resource.config.ephemeralStorageLocalSsdConfig.localSsdCount",
+        "resource.config.fastSocket.enabled",
+        "resource.config.flexStart",
+        "resource.config.gcfsConfig.enabled",
+        "resource.config.gvnic.enabled",
+        "resource.config.imageType",
+        "resource.config.kubeletConfig.allowedUnsafeSysctls",
+        "resource.config.kubeletConfig.containerLogMaxFiles",
+        "resource.config.kubeletConfig.containerLogMaxSize",
+        "resource.config.kubeletConfig.cpuCfsQuota",
+        "resource.config.kubeletConfig.cpuCfsQuotaPeriod",
+        "resource.config.kubeletConfig.cpuManagerPolicy",
+        "resource.config.kubeletConfig.imageGcHighThresholdPercent",
+        "resource.config.kubeletConfig.imageGcLowThresholdPercent",
+        "resource.config.kubeletConfig.imageMaximumGcAge",
+        "resource.config.kubeletConfig.imageMinimumGcAge",
+        "resource.config.kubeletConfig.insecureKubeletReadonlyPortEnabled",
+        "resource.config.kubeletConfig.memoryManager.policy",
+        "resource.config.kubeletConfig.podPidsLimit",
+        "resource.config.kubeletConfig.topologyManager.policy",
+        "resource.config.kubeletConfig.topologyManager.scope",
+        "resource.config.labels",
+        "resource.config.linuxNodeConfig.cgroupMode",
+        "resource.config.linuxNodeConfig.hugepages.hugepageSize1g",
+        "resource.config.linuxNodeConfig.hugepages.hugepageSize2m",
+        "resource.config.linuxNodeConfig.sysctls",
+        "resource.config.localNvmeSsdBlockConfig.localSsdCount",
+        "resource.config.localSsdCount",
+        "resource.config.localSsdEncryptionMode",
+        "resource.config.loggingConfig.variantConfig.variant",
+        "resource.config.machineType",
+        "resource.config.maxRunDuration",
+        "resource.config.metadata",
+        "resource.config.minCpuPlatform",
+        "resource.config.nodeGroup",
+        "resource.config.oauthScopes",
+        "resource.config.preemptible",
+        "resource.config.reservationAffinity.consumeReservationType",
+        "resource.config.reservationAffinity.key",
+        "resource.config.reservationAffinity.values",
+        "resource.config.resourceLabels",
+        "resource.config.resourceManagerTags.tags",
+        "resource.config.sandboxConfig.type",
+        "resource.config.secondaryBootDisks.diskImage",
+        "resource.config.secondaryBootDisks.mode",
+        "resource.config.serviceAccount",
+        "resource.config.shieldedInstanceConfig.enableIntegrityMonitoring",
+        "resource.config.shieldedInstanceConfig.enableSecureBoot",
+        "resource.config.soleTenantConfig.nodeAffinities.key",
+        "resource.config.soleTenantConfig.nodeAffinities.operator",
+        "resource.config.soleTenantConfig.nodeAffinities.values",
+        "resource.config.spot",
+        "resource.config.storagePools",
+        "resource.config.tags",
+        "resource.config.taints.effect",
+        "resource.config.taints.key",
+        "resource.config.taints.value",
+        "resource.config.windowsNodeConfig.osVersion",
+        "resource.config.workloadMetadataConfig.mode",
+        "resource.initialNodeCount",
+        "resource.locations",
+        "resource.management.autoRepair",
+        "resource.management.autoUpgrade",
+        "resource.maxPodsConstraint.maxPodsPerNode",
+        "resource.name",
+        "resource.networkConfig.additionalNodeNetworkConfigs.network",
+        "resource.networkConfig.additionalNodeNetworkConfigs.subnetwork",
+        "resource.networkConfig.additionalPodNetworkConfigs.networkAttachment",
+        "resource.networkConfig.createPodRange",
+        "resource.networkConfig.enablePrivateNodes",
+        "resource.networkConfig.networkPerformanceConfig.totalEgressBandwidthTier",
+        "resource.networkConfig.podIpv4CidrBlock",
+        "resource.networkConfig.podRange",
+        "resource.placementPolicy.policyName",
+        "resource.placementPolicy.tpuTopology",
+        "resource.placementPolicy.type",
+        "resource.queuedProvisioning.enabled",
+        "resource.upgradeSettings.blueGreenSettings.nodePoolSoakDuration",
+        "resource.upgradeSettings.blueGreenSettings.standardRolloutPolicy.batchNodeCount",
+        "resource.upgradeSettings.blueGreenSettings.standardRolloutPolicy.batchPercentage",
+        "resource.upgradeSettings.blueGreenSettings.standardRolloutPolicy.batchSoakDuration",
+        "resource.upgradeSettings.maxSurge",
+        "resource.upgradeSettings.maxUnavailable",
+        "resource.upgradeSettings.strategy",
+        "resource.version"
+      ]
     },
     {
       "service": "GKE On-Prem API",
       "namespace": "gkeonprem",
       "resource_type": "gkeonprem.googleapis.com/BareMetalAdminCluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.bareMetalVersion",
@@ -3240,7 +3651,7 @@
       "namespace": "gkeonprem",
       "resource_type": "gkeonprem.googleapis.com/BareMetalCluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
       "fields": [
         "resource.adminClusterMembership",
         "resource.annotations",
@@ -3317,7 +3728,7 @@
       "namespace": "gkeonprem",
       "resource_type": "gkeonprem.googleapis.com/BareMetalNodePool",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.displayName",
@@ -3339,7 +3750,7 @@
       "namespace": "gkeonprem",
       "resource_type": "gkeonprem.googleapis.com/VmwareAdminCluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
       "fields": [
         "resource.addonNode.autoResizeConfig.enabled",
         "resource.annotations",
@@ -3398,7 +3809,7 @@
       "namespace": "gkeonprem",
       "resource_type": "gkeonprem.googleapis.com/VmwareCluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
       "fields": [
         "resource.adminClusterMembership",
         "resource.annotations",
@@ -3467,7 +3878,7 @@
       "namespace": "gkeonprem",
       "resource_type": "gkeonprem.googleapis.com/VmwareNodePool",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/reference/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.config.bootDiskSizeGb",
@@ -3496,7 +3907,7 @@
       "namespace": "healthcare",
       "resource_type": "healthcare.googleapis.com/ConsentStore",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/healthcare-api/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/healthcare-api/docs/custom-org-policy",
       "fields": [
         "resource.defaultConsentTtl",
         "resource.enableConsentCreateOnUpdate",
@@ -3508,7 +3919,7 @@
       "namespace": "healthcare",
       "resource_type": "healthcare.googleapis.com/Dataset",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/healthcare-api/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/healthcare-api/docs/custom-org-policy",
       "fields": [
         "resource.encryptionSpec.kmsKeyName",
         "resource.name",
@@ -3520,7 +3931,7 @@
       "namespace": "healthcare",
       "resource_type": "healthcare.googleapis.com/DicomStore",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/healthcare-api/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/healthcare-api/docs/custom-org-policy",
       "fields": [
         "resource.name",
         "resource.notificationConfig.pubsubTopic",
@@ -3536,7 +3947,7 @@
       "namespace": "healthcare",
       "resource_type": "healthcare.googleapis.com/FhirStore",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/healthcare-api/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/healthcare-api/docs/custom-org-policy",
       "fields": [
         "resource.bulkExportGcsDestination.uriPrefix",
         "resource.complexDataTypeReferenceParsing",
@@ -3600,7 +4011,7 @@
       "namespace": "healthcare",
       "resource_type": "healthcare.googleapis.com/Hl7V2Store",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/healthcare-api/docs/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/healthcare-api/docs/custom-org-policy",
       "fields": [
         "resource.name",
         "resource.notificationConfigs.filter",
@@ -3687,7 +4098,7 @@
       "namespace": "iam",
       "resource_type": "iam.googleapis.com/AllowPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/iam/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/iam/docs/org-policy-custom-constraints",
       "fields": [
         "resource.bindings",
         "resource.management.autoUpgrade"
@@ -3698,7 +4109,7 @@
       "namespace": "iam",
       "resource_type": "iam.googleapis.com/ServiceAccount",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/iam/docs/service-accounts-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/iam/docs/service-accounts-custom-constraints",
       "fields": []
     },
     {
@@ -3706,7 +4117,7 @@
       "namespace": "iam",
       "resource_type": "iam.googleapis.com/ServiceAccountKey",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/iam/docs/service-accounts-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/iam/docs/service-accounts-custom-constraints",
       "fields": []
     },
     {
@@ -3714,7 +4125,7 @@
       "namespace": "iam",
       "resource_type": "iam.googleapis.com/WorkloadIdentityPool",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-custom-constraints",
       "fields": [
         "resource.description",
         "resource.disabled",
@@ -3733,7 +4144,7 @@
       "namespace": "iam",
       "resource_type": "iam.googleapis.com/WorkloadIdentityPoolManagedIdentity",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/iam/docs/managed-workload-identity-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/iam/docs/managed-workload-identity-custom-constraints",
       "fields": [
         "resource.description",
         "resource.disabled"
@@ -3744,7 +4155,7 @@
       "namespace": "iam",
       "resource_type": "iam.googleapis.com/WorkloadIdentityPoolNamespace",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/iam/docs/managed-workload-identity-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/iam/docs/managed-workload-identity-custom-constraints",
       "fields": [
         "resource.description",
         "resource.disabled"
@@ -3755,7 +4166,7 @@
       "namespace": "iam",
       "resource_type": "iam.googleapis.com/WorkloadIdentityPoolProvider",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-custom-constraints",
       "fields": [
         "resource.attributeCondition",
         "resource.attributeMapping",
@@ -3777,7 +4188,7 @@
       "namespace": "iam",
       "resource_type": "iam.googleapis.com/WorkloadIdentityPoolProviderKey",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/iam/docs/workload-identity-federation-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-custom-constraints",
       "fields": [
         "resource.keyData.keySpec",
         "resource.use"
@@ -3788,7 +4199,7 @@
       "namespace": "iap",
       "resource_type": "iap.googleapis.com/TunnelDestGroup",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/iap/docs/custom-org-policies",
+      "doc_url": "https://docs.cloud.google.com/iap/docs/custom-org-policies",
       "fields": [
         "resource.cidrs",
         "resource.fqdns",
@@ -3800,7 +4211,7 @@
       "namespace": "config",
       "resource_type": "config.googleapis.com/Deployment",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/infrastructure-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/infrastructure-manager/docs/custom-constraints",
       "fields": [
         "resource.artifactsGcsBucket",
         "resource.importExistingResources",
@@ -3821,7 +4232,7 @@
       "namespace": "config",
       "resource_type": "config.googleapis.com/Preview",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/infrastructure-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/infrastructure-manager/docs/custom-constraints",
       "fields": [
         "resource.artifactsGcsBucket",
         "resource.deployment",
@@ -3842,7 +4253,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/Interconnect",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/network-connectivity/docs/interconnect/how-to/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/custom-constraints",
       "fields": [
         "resource.adminEnabled",
         "resource.customerName",
@@ -3866,7 +4277,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/InterconnectAttachment",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/network-connectivity/docs/interconnect/how-to/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/custom-constraints",
       "fields": [
         "resource.adminEnabled",
         "resource.bandwidth",
@@ -3889,7 +4300,7 @@
       "namespace": "cloudkms",
       "resource_type": "cloudkms.googleapis.com/AutokeyConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kms/docs/custom-org-policies",
+      "doc_url": "https://docs.cloud.google.com/kms/docs/custom-org-policies",
       "fields": [
         "resource.keyProject",
         "resource.name"
@@ -3900,7 +4311,7 @@
       "namespace": "cloudkms",
       "resource_type": "cloudkms.googleapis.com/CryptoKey",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kms/docs/custom-org-policies",
+      "doc_url": "https://docs.cloud.google.com/kms/docs/custom-org-policies",
       "fields": [
         "resource.cryptoKeyBackend",
         "resource.destroyScheduledDuration",
@@ -3918,7 +4329,7 @@
       "namespace": "cloudkms",
       "resource_type": "cloudkms.googleapis.com/CryptoKeyVersion",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kms/docs/custom-org-policies",
+      "doc_url": "https://docs.cloud.google.com/kms/docs/custom-org-policies",
       "fields": [
         "resource.externalProtectionLevelOptions.ekmConnectionKeyPath",
         "resource.externalProtectionLevelOptions.externalKeyUri",
@@ -3930,7 +4341,7 @@
       "namespace": "cloudkms",
       "resource_type": "cloudkms.googleapis.com/EkmConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kms/docs/custom-org-policies",
+      "doc_url": "https://docs.cloud.google.com/kms/docs/custom-org-policies",
       "fields": [
         "resource.defaultEkmConnection"
       ]
@@ -3940,7 +4351,7 @@
       "namespace": "cloudkms",
       "resource_type": "cloudkms.googleapis.com/EkmConnection",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kms/docs/custom-org-policies",
+      "doc_url": "https://docs.cloud.google.com/kms/docs/custom-org-policies",
       "fields": [
         "resource.cryptoSpacePath",
         "resource.keyManagementMode",
@@ -3955,7 +4366,7 @@
       "namespace": "cloudkms",
       "resource_type": "cloudkms.googleapis.com/ImportJob",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kms/docs/custom-org-policies",
+      "doc_url": "https://docs.cloud.google.com/kms/docs/custom-org-policies",
       "fields": [
         "resource.importMethod",
         "resource.protectionLevel"
@@ -3966,7 +4377,7 @@
       "namespace": "cloudkms",
       "resource_type": "cloudkms.googleapis.com/KeyHandle",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/kms/docs/custom-org-policies",
+      "doc_url": "https://docs.cloud.google.com/kms/docs/custom-org-policies",
       "fields": [
         "resource.name",
         "resource.resourceTypeSelector"
@@ -3977,7 +4388,7 @@
       "namespace": "livestream",
       "resource_type": "livestream.googleapis.com/Asset",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/livestream/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/livestream/docs/custom-constraints",
       "fields": [
         "resource.crc32c",
         "resource.image.uri",
@@ -3990,7 +4401,7 @@
       "namespace": "livestream",
       "resource_type": "livestream.googleapis.com/Channel",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/livestream/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/livestream/docs/custom-constraints",
       "fields": [
         "resource.elementaryStreams.audioStream.bitrateBps",
         "resource.elementaryStreams.audioStream.channelCount",
@@ -4064,7 +4475,7 @@
       "namespace": "livestream",
       "resource_type": "livestream.googleapis.com/Input",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/livestream/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/livestream/docs/custom-constraints",
       "fields": [
         "resource.name",
         "resource.preprocessingConfig.audio.lufs",
@@ -4085,7 +4496,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/BackendBucket",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4093,7 +4504,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/BackendService",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4101,7 +4512,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/ForwardingRule",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4109,7 +4520,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/HealthCheck",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4117,7 +4528,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/InstanceGroup",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/compute/docs/access/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
       "fields": []
     },
     {
@@ -4125,7 +4536,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/NetworkEndpointGroup",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4133,7 +4544,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/SslPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/compute/docs/access/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
       "fields": []
     },
     {
@@ -4141,7 +4552,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/TargetGrpcProxy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4149,7 +4560,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/TargetHttpProxy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4157,7 +4568,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/TargetHttpsProxy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4165,7 +4576,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/TargetInstance",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4173,7 +4584,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/TargetPool",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4181,7 +4592,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/TargetSslProxy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4189,7 +4600,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/TargetTcpProxy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4197,7 +4608,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/UrlMap",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4205,7 +4616,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/ServiceLbPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/load-balancing/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/load-balancing/docs/custom-constraints",
       "fields": []
     },
     {
@@ -4213,7 +4624,7 @@
       "namespace": "logging",
       "resource_type": "logging.googleapis.com/Link",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/logging/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/logging/docs/custom-constraints",
       "fields": [
         "resource.description"
       ]
@@ -4223,7 +4634,7 @@
       "namespace": "logging",
       "resource_type": "logging.googleapis.com/LogBucket",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/logging/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/logging/docs/custom-constraints",
       "fields": [
         "resource.analyticsEnabled",
         "resource.cmekSettings.kmsKeyName",
@@ -4238,7 +4649,7 @@
       "namespace": "logging",
       "resource_type": "logging.googleapis.com/LogMetric",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/logging/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/logging/docs/custom-constraints",
       "fields": [
         "resource.bucketName",
         "resource.description",
@@ -4266,7 +4677,7 @@
       "namespace": "logging",
       "resource_type": "logging.googleapis.com/LogSink",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/logging/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/logging/docs/custom-constraints",
       "fields": [
         "resource.bigqueryOptions.usePartitionedTables",
         "resource.description",
@@ -4285,7 +4696,7 @@
       "namespace": "logging",
       "resource_type": "logging.googleapis.com/LogView",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/logging/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/logging/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.filter"
@@ -4296,7 +4707,7 @@
       "namespace": "logging",
       "resource_type": "logging.googleapis.com/SavedQuery",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/logging/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/logging/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.displayName",
@@ -4310,7 +4721,7 @@
       "namespace": "managedkafka",
       "resource_type": "managedkafka.googleapis.com/ConnectCluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints",
       "fields": [
         "resource.capacityConfig.memoryBytes",
         "resource.capacityConfig.vcpuCount",
@@ -4328,7 +4739,7 @@
       "namespace": "managedkafka",
       "resource_type": "managedkafka.googleapis.com/Cluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints",
       "fields": [
         "resource.capacityConfig.memoryBytes",
         "resource.capacityConfig.vcpuCount",
@@ -4346,7 +4757,7 @@
       "namespace": "servicemanagement",
       "resource_type": "servicemanagement.googleapis.com/Service",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/service-infrastructure/docs/service-management/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-infrastructure/docs/service-management/custom-constraints",
       "fields": [
         "resource.authentication.providers.audiences",
         "resource.authentication.providers.authorizationUrl",
@@ -4488,7 +4899,7 @@
       "namespace": "redis",
       "resource_type": "redis.googleapis.com/Instance",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/memorystore/docs/redis/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/memorystore/docs/redis/custom-constraints",
       "fields": [
         "resource.alternativeLocationId",
         "resource.authEnabled",
@@ -4522,7 +4933,7 @@
       "namespace": "redis",
       "resource_type": "redis.googleapis.com/Cluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/memorystore/docs/cluster/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/memorystore/docs/cluster/custom-constraints",
       "fields": [
         "resource.authorizationMode",
         "resource.deletionProtectionEnabled",
@@ -4544,7 +4955,7 @@
       "namespace": "monitoring",
       "resource_type": "monitoring.googleapis.com/AlertPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/monitoring/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/monitoring/docs/custom-constraints",
       "fields": [
         "resource.alertStrategy.autoClose",
         "resource.alertStrategy.notificationChannelStrategy.notificationChannelNames",
@@ -4613,7 +5024,7 @@
       "namespace": "monitoring",
       "resource_type": "monitoring.googleapis.com/NotificationChannel",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/monitoring/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/monitoring/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.displayName",
@@ -4626,7 +5037,7 @@
       "namespace": "monitoring",
       "resource_type": "monitoring.googleapis.com/Snooze",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/monitoring/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/monitoring/docs/custom-constraints",
       "fields": [
         "resource.criteria.policies",
         "resource.displayName",
@@ -4639,7 +5050,7 @@
       "namespace": "networkconnectivity",
       "resource_type": "networkconnectivity.googleapis.com/Group",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints",
       "fields": [
         "resource.autoAccept.autoAcceptProjects",
         "resource.description"
@@ -4650,7 +5061,7 @@
       "namespace": "networkconnectivity",
       "resource_type": "networkconnectivity.googleapis.com/Hub",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints",
       "fields": [
         "resource.description",
         "resource.exportPsc",
@@ -4663,7 +5074,7 @@
       "namespace": "networkconnectivity",
       "resource_type": "networkconnectivity.googleapis.com/Spoke",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints",
       "fields": [
         "resource.description",
         "resource.group",
@@ -4692,7 +5103,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/NetworkAttachment",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
       "fields": [
         "resource.connectionPreference",
         "resource.description",
@@ -4707,7 +5118,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/ServiceAttachment",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
       "fields": [
         "resource.connectionPreference",
         "resource.consumerAcceptLists.connectionLimit",
@@ -4731,7 +5142,7 @@
       "namespace": "pubsub",
       "resource_type": "pubsub.googleapis.com/Schema",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/pubsub/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/pubsub/docs/custom-constraints",
       "fields": [
         "resource.definition",
         "resource.name",
@@ -4743,7 +5154,7 @@
       "namespace": "pubsub",
       "resource_type": "pubsub.googleapis.com/Snapshot",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/pubsub/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/pubsub/docs/custom-constraints",
       "fields": [
         "resource.expireTime",
         "resource.name",
@@ -4755,7 +5166,7 @@
       "namespace": "pubsub",
       "resource_type": "pubsub.googleapis.com/Subscription",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/pubsub/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/pubsub/docs/custom-constraints",
       "fields": [
         "resource.ackDeadlineSeconds",
         "resource.bigqueryConfig.serviceAccountEmail",
@@ -4801,7 +5212,7 @@
       "namespace": "pubsub",
       "resource_type": "pubsub.googleapis.com/Topic",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/pubsub/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/pubsub/docs/custom-constraints",
       "fields": [
         "resource.ingestionDataSourceSettings.awsKinesis.awsRoleArn",
         "resource.ingestionDataSourceSettings.awsKinesis.consumerArn",
@@ -4832,7 +5243,7 @@
       "namespace": "recaptchaenterprise",
       "resource_type": "recaptchaenterprise.googleapis.com/FirewallPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/recaptcha/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/recaptcha/docs/custom-constraints",
       "fields": [
         "resource.actions.setHeader.key",
         "resource.actions.setHeader.value",
@@ -4848,7 +5259,7 @@
       "namespace": "recaptchaenterprise",
       "resource_type": "recaptchaenterprise.googleapis.com/Key",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/recaptcha/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/recaptcha/docs/custom-constraints",
       "fields": [
         "resource.androidSettings.allowAllPackageNames",
         "resource.androidSettings.allowedPackageNames",
@@ -4876,7 +5287,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/Router",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/network-connectivity/docs/router/how-to/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/router/how-to/custom-constraints",
       "fields": [
         "resource.bgp.advertiseMode",
         "resource.bgp.advertisedGroups",
@@ -4940,7 +5351,7 @@
       "namespace": "websecurityscanner",
       "resource_type": "websecurityscanner.googleapis.com/ScanConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.authentication.customAccount.loginUrl",
         "resource.authentication.customAccount.password",
@@ -4969,7 +5380,7 @@
       "namespace": "securitycenter",
       "resource_type": "securitycenter.googleapis.com/BigQueryExport",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.dataset",
         "resource.description",
@@ -4981,7 +5392,7 @@
       "namespace": "securitycenter",
       "resource_type": "securitycenter.googleapis.com/ContainerThreatDetectionSettings",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.modules[*].moduleEnablementState",
         "resource.name",
@@ -4993,7 +5404,7 @@
       "namespace": "securitycenter",
       "resource_type": "securitycenter.googleapis.com/EventThreatDetectionSettings",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.modules[*].moduleEnablementState",
         "resource.name",
@@ -5005,7 +5416,7 @@
       "namespace": "securitycenter",
       "resource_type": "securitycenter.googleapis.com/MuteConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.description",
         "resource.expiryTime",
@@ -5018,7 +5429,7 @@
       "namespace": "securitycenter",
       "resource_type": "securitycenter.googleapis.com/NotificationConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.description",
         "resource.name",
@@ -5030,7 +5441,7 @@
       "namespace": "securitycenter",
       "resource_type": "securitycenter.googleapis.com/ResourceValueConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.cloudProvider",
         "resource.description",
@@ -5047,7 +5458,7 @@
       "namespace": "securitycenter",
       "resource_type": "securitycenter.googleapis.com/SecurityHealthAnalyticsSettings",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.modules[*].moduleEnablementState",
         "resource.name",
@@ -5059,7 +5470,7 @@
       "namespace": "securitycenter",
       "resource_type": "securitycenter.googleapis.com/VirtualMachineThreatDetectionSettings",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.modules[*].moduleEnablementState",
         "resource.name",
@@ -5071,7 +5482,7 @@
       "namespace": "securitycenter",
       "resource_type": "securitycenter.googleapis.com/WebSecurityScannerSettings",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.modules[*].moduleEnablementState",
         "resource.name",
@@ -5083,7 +5494,7 @@
       "namespace": "securitycentermanagement",
       "resource_type": "securitycentermanagement.googleapis.com/EventThreatDetectionCustomModule",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.description",
         "resource.displayName",
@@ -5097,7 +5508,7 @@
       "namespace": "securitycentermanagement",
       "resource_type": "securitycentermanagement.googleapis.com/SecurityCenterService",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.intendedEnablementState",
         "resource.modules[*].intendedEnablementState",
@@ -5109,7 +5520,7 @@
       "namespace": "securitycentermanagement",
       "resource_type": "securitycentermanagement.googleapis.com/SecurityHealthAnalyticsCustomModule",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/org-policy-custom-constraints",
       "fields": [
         "resource.customConfig.customOutput.properties.name",
         "resource.customConfig.description",
@@ -5126,7 +5537,7 @@
       "namespace": "secretmanager",
       "resource_type": "secretmanager.googleapis.com/Secret",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/secret-manager/docs/secret-manager-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/secret-manager/docs/secret-manager-custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.expireTime",
@@ -5142,7 +5553,7 @@
       "namespace": "securityposture",
       "resource_type": "securityposture.googleapis.com/Posture",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/security-posture-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/security-posture-custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.description",
@@ -5192,7 +5603,7 @@
       "namespace": "securityposture",
       "resource_type": "securityposture.googleapis.com/PostureDeployment",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/security-command-center/docs/security-posture-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/security-command-center/docs/security-posture-custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.description",
@@ -5207,7 +5618,7 @@
       "namespace": "vpcaccess",
       "resource_type": "vpcaccess.googleapis.com/Connector",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vpc/docs/configure-serverless-vpc-access#custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/configure-serverless-vpc-access#custom-constraints",
       "fields": [
         "resource.network"
       ]
@@ -5217,7 +5628,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/LbRouteExtension",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-extensions/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-extensions/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.extensionChains.extensions.authority",
@@ -5238,7 +5649,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/LbTrafficExtension",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-extensions/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-extensions/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.extensionChains.extensions.authority",
@@ -5259,7 +5670,7 @@
       "namespace": "networksecurity",
       "resource_type": "networksecurity.googleapis.com/AuthorizationPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.action",
         "resource.description",
@@ -5278,7 +5689,7 @@
       "namespace": "networksecurity",
       "resource_type": "networksecurity.googleapis.com/ClientTlsPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.clientCertificate.certificateProviderInstance.pluginInstance",
         "resource.clientCertificate.grpcEndpoint.targetUri",
@@ -5294,7 +5705,7 @@
       "namespace": "networksecurity",
       "resource_type": "networksecurity.googleapis.com/ServerTlsPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.allowOpen",
         "resource.description",
@@ -5312,7 +5723,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/EndpointPolicy",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.authorizationPolicy",
         "resource.clientTlsPolicy",
@@ -5331,7 +5742,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/Gateway",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.addresses",
         "resource.certificateUrls",
@@ -5354,7 +5765,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/GrpcRoute",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.gateways",
@@ -5386,7 +5797,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/HttpRoute",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.gateways",
@@ -5468,7 +5879,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/Mesh",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.envoyHeaders",
@@ -5481,7 +5892,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/ServiceBinding",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.name"
@@ -5492,7 +5903,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/TcpRoute",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.gateways",
@@ -5511,7 +5922,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/TlsRoute",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.gateways",
@@ -5529,7 +5940,7 @@
       "namespace": "spanner",
       "resource_type": "spanner.googleapis.com/Backup",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/spanner/docs/spanner-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/spanner/docs/spanner-custom-constraints",
       "fields": [
         "resource.database",
         "resource.expireTime",
@@ -5542,7 +5953,7 @@
       "namespace": "spanner",
       "resource_type": "spanner.googleapis.com/Database",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/spanner/docs/spanner-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/spanner/docs/spanner-custom-constraints",
       "fields": [
         "resource.enableDropProtection",
         "resource.name"
@@ -5553,7 +5964,7 @@
       "namespace": "spanner",
       "resource_type": "spanner.googleapis.com/Instance",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/spanner/docs/spanner-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/spanner/docs/spanner-custom-constraints",
       "fields": [
         "resource.autoscalingConfig.autoscalingLimits.maxNodes",
         "resource.autoscalingConfig.autoscalingLimits.maxProcessingUnits",
@@ -5575,7 +5986,7 @@
       "namespace": "spanner",
       "resource_type": "spanner.googleapis.com/InstanceConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/spanner/docs/spanner-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/spanner/docs/spanner-custom-constraints",
       "fields": [
         "resource.baseConfig",
         "resource.displayName",
@@ -5591,7 +6002,7 @@
       "namespace": "sqladmin",
       "resource_type": "sqladmin.googleapis.com/BackupRun",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/sql/docs/mysql/org-policy/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/sql/docs/mysql/org-policy/custom-org-policy",
       "fields": [
         "resource.description",
         "resource.location"
@@ -5602,7 +6013,7 @@
       "namespace": "sqladmin",
       "resource_type": "sqladmin.googleapis.com/Instance",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/sql/docs/mysql/org-policy/custom-org-policy",
+      "doc_url": "https://docs.cloud.google.com/sql/docs/mysql/org-policy/custom-org-policy",
       "fields": [
         "resource.databaseVersion",
         "resource.diskEncryptionConfiguration.kmsKeyName",
@@ -5690,7 +6101,7 @@
       "namespace": "securesourcemanager",
       "resource_type": "securesourcemanager.googleapis.com/Instance",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/secure-source-manager/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/secure-source-manager/docs/custom-constraints",
       "fields": [
         "resource.kmsKey",
         "resource.name",
@@ -5705,7 +6116,7 @@
       "namespace": "storage",
       "resource_type": "storage.googleapis.com/Bucket",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/storage/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/storage/docs/custom-constraints",
       "fields": [
         "resource.billing.requesterPays",
         "resource.cors.maxAgeSeconds",
@@ -5756,7 +6167,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/Index",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vertex-ai/docs/vector-search/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vertex-ai/docs/vector-search/custom-constraints",
       "fields": [
         "resource.description",
         "resource.displayName",
@@ -5771,7 +6182,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/IndexEndpoint",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vertex-ai/docs/vector-search/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vertex-ai/docs/vector-search/custom-constraints",
       "fields": [
         "resource.description",
         "resource.displayName",
@@ -5787,7 +6198,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/DeploymentResourcePool",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/vertex-ai/docs/prediction/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vertex-ai/docs/prediction/custom-constraints",
       "fields": [
         "resource.dedicatedResources.machineSpec.acceleratorCount",
         "resource.dedicatedResources.machineSpec.acceleratorType",
@@ -5808,7 +6219,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/Endpoint",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/vertex-ai/docs/predictions/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints",
       "fields": [
         "resource.clientConnectionConfig.inferenceTimeout",
         "resource.dedicatedEndpointEnabled",
@@ -5846,7 +6257,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/MetadataStore",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vertex-ai/docs/ml-metadata/use-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vertex-ai/docs/ml-metadata/use-custom-constraints",
       "fields": [
         "resource.dataplexConfig.enabledPipelinesLineage",
         "resource.description",
@@ -5858,7 +6269,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/PipelineJob",
       "launch_status": "Preview",
-      "doc_url": "https://cloud.google.com/vertex-ai/docs/pipelines/use-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vertex-ai/docs/pipelines/use-custom-constraints",
       "fields": [
         "resource.displayName",
         "resource.encryptionSpec.kmsKeyName",
@@ -5885,7 +6296,7 @@
       "namespace": "videostitcher",
       "resource_type": "videostitcher.googleapis.com/CdnKey",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/video-stitcher/docs/how-to/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/video-stitcher/docs/how-to/create-custom-constraints",
       "fields": [
         "resource.googleCdnKey.keyName",
         "resource.hostname",
@@ -5898,7 +6309,7 @@
       "namespace": "videostitcher",
       "resource_type": "videostitcher.googleapis.com/LiveConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/video-stitcher/docs/how-to/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/video-stitcher/docs/how-to/create-custom-constraints",
       "fields": [
         "resource.adTagUri",
         "resource.gamLiveConfig.networkCode",
@@ -5911,7 +6322,7 @@
       "namespace": "videostitcher",
       "resource_type": "videostitcher.googleapis.com/Slate",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/video-stitcher/docs/how-to/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/video-stitcher/docs/how-to/create-custom-constraints",
       "fields": [
         "resource.gamSlate.networkCode",
         "resource.uri"
@@ -5922,7 +6333,7 @@
       "namespace": "videostitcher",
       "resource_type": "videostitcher.googleapis.com/VodConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/video-stitcher/docs/how-to/create-custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/video-stitcher/docs/how-to/create-custom-constraints",
       "fields": [
         "resource.adTagUri",
         "resource.gamVodConfig.networkCode",
@@ -5935,7 +6346,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/Network",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
       "fields": [
         "resource.autoCreateSubnetworks",
         "resource.description",
@@ -5965,7 +6376,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/PacketMirroring",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
       "fields": [
         "resource.collectorIlb.url",
         "resource.description",
@@ -5986,7 +6397,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/Route",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.destRange",
@@ -6006,7 +6417,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/Subnetwork",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/vpc/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.externalIpv6Prefix",
@@ -6033,7 +6444,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/ExternalVpnGateway",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/network-connectivity/docs/vpn/how-to/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/vpn/how-to/custom-constraints",
       "fields": [
         "resource.description",
         "resource.interfaces.ipAddress",
@@ -6047,7 +6458,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/TargetVpnGateway",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/network-connectivity/docs/vpn/how-to/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/vpn/how-to/custom-constraints",
       "fields": [
         "resource.description",
         "resource.name",
@@ -6059,7 +6470,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/VpnGateway",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/network-connectivity/docs/vpn/how-to/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/vpn/how-to/custom-constraints",
       "fields": [
         "resource.description",
         "resource.gatewayIpVersion",
@@ -6074,7 +6485,7 @@
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/VpnTunnel",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/network-connectivity/docs/vpn/how-to/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/vpn/how-to/custom-constraints",
       "fields": [
         "resource.description",
         "resource.ikeVersion",
@@ -6096,7 +6507,7 @@
       "namespace": "workflows",
       "resource_type": "workflows.googleapis.com/Workflow",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/workflows/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/workflows/docs/custom-constraints",
       "fields": [
         "resource.callLogLevel",
         "resource.cryptoKeyName",
@@ -6114,7 +6525,7 @@
       "namespace": "workstations",
       "resource_type": "workstations.googleapis.com/Workstation",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/workstations/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/workstations/docs/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.displayName",
@@ -6128,7 +6539,7 @@
       "namespace": "workstations",
       "resource_type": "workstations.googleapis.com/WorkstationCluster",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/workstations/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/workstations/docs/custom-constraints",
       "fields": [
         "resource.annotations",
         "resource.displayName",
@@ -6146,7 +6557,7 @@
       "namespace": "workstations",
       "resource_type": "workstations.googleapis.com/WorkstationConfig",
       "launch_status": "GA",
-      "doc_url": "https://cloud.google.com/workstations/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/workstations/docs/custom-constraints",
       "fields": [
         "resource.allowedPorts.first",
         "resource.allowedPorts.last",

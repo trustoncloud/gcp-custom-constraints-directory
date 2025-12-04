@@ -6,8 +6,21 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-BASE_URL = "https://cloud.google.com"
-MAIN_URL = "https://cloud.google.com/resource-manager/docs/organization-policy/custom-constraint-supported-services"
+BASE_URL = "https://docs.cloud.google.com"
+MAIN_URL = "https://docs.cloud.google.com/resource-manager/docs/organization-policy/custom-constraint-supported-services"
+
+OVERWRITE_URL = {
+    'https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints': 'https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints',
+    'https://docs.cloud.google.com/vertex-ai/docs/prediction/custom-constraints': 'https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints',
+}
+URLS_WITH_TEMPORARY_ISSUES = {}
+
+'''
+Usage of URLS_WITH_TEMPORARY_ISSUES. Add the URL and the date when the error should resurface
+{
+    'https://docs.cloud.google.com/dataform/docs/create-custom-constraints': datetime(2025, 11, 3, tzinfo=timezone.utc)
+}
+'''
 
 def fetch_main_table():
     resp = requests.get(MAIN_URL)
@@ -81,19 +94,6 @@ def _extract_resource_field(txt):
 
 from functools import lru_cache
 
-OVERWRITE_URL = {
-    'https://cloud.google.com/service-mesh/docs/custom-constraints': 'https://cloud.google.com/service-mesh/docs/service-routing/custom-constraints',
-    'https://cloud.google.com/vertex-ai/docs/prediction/custom-constraints': 'https://cloud.google.com/vertex-ai/docs/predictions/custom-constraints',
-    'https://cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints': 'https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints'
-}
-URLS_WITH_TEMPORARY_ISSUES = {}
-
-'''
-Usage of URLS_WITH_TEMPORARY_ISSUES. Add the URL and the date when the error should resurface
-{
-    'https://cloud.google.com/dataform/docs/create-custom-constraints': datetime(2025, 11, 3, tzinfo=timezone.utc)
-}
-'''
 @lru_cache(maxsize=300)
 def fetch_fields(doc_url) -> list | dict[list]:
     if not doc_url:
