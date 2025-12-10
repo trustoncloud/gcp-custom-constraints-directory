@@ -258,6 +258,13 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [datalineage.googleapis.com/Process](https://docs.cloud.google.com/dataplex/docs/lineage-custom-constraints) (4 fields)
 
+**Database Migration Service**
+
+- [datamigration.googleapis.com/ConnectionProfile](https://docs.cloud.google.com/database-migration/docs/custom-constraints) (89 fields)
+- [datamigration.googleapis.com/ConversionWorkspace](https://docs.cloud.google.com/database-migration/docs/custom-constraints) (9 fields)
+- [datamigration.googleapis.com/MigrationJob](https://docs.cloud.google.com/database-migration/docs/custom-constraints) (50 fields)
+- [datamigration.googleapis.com/PrivateConnection](https://docs.cloud.google.com/database-migration/docs/custom-constraints) (5 fields)
+
 **Dataflow**
 
 - [dataflow.googleapis.com/Job](https://docs.cloud.google.com/dataflow/docs/custom-constraints) (13 fields)
