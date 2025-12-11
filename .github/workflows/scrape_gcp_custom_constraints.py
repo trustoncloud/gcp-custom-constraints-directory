@@ -12,6 +12,7 @@ MAIN_URL = "https://docs.cloud.google.com/resource-manager/docs/organization-pol
 OVERWRITE_URL = {
     'https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints': 'https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints',
     'https://docs.cloud.google.com/vertex-ai/docs/prediction/custom-constraints': 'https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints',
+    'https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints': 'https://docs.cloud.google.com/backup-disaster-recovery/docs/customconstraints'
 }
 URLS_WITH_TEMPORARY_ISSUES = {}
 
