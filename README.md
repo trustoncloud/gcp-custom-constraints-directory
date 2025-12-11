@@ -38,6 +38,13 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [artifactregistry.googleapis.com/Repository](https://docs.cloud.google.com/artifact-registry/docs/custom-constraints)
 
+**Backup and DR Service**
+
+- [backupdr.googleapis.com/Backup](https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints) (9 fields)
+- [backupdr.googleapis.com/BackupPlan](https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints) (15 fields)
+- [backupdr.googleapis.com/BackupPlanAssociation](https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints) (3 fields)
+- [backupdr.googleapis.com/BackupVault](https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints) (4 fields)
+
 **Backup for GKE**
 
 - [gkebackup.googleapis.com/Backup](https://docs.cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/how-to/create-custom-constraints) (3 fields)
@@ -185,7 +192,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Cloud Next Generation Firewall**
 
-- [compute.googleapis.com/Firewall](https://docs.cloud.google.com/firewall/docs/custom-constraints) (16 fields)
+- [compute.googleapis.com/Firewall](https://docs.cloud.google.com/firewall/docs/custom-constraints) (17 fields)
 - [compute.googleapis.com/FirewallPolicy](https://docs.cloud.google.com/firewall/docs/custom-constraints-fw-policy) (27 fields)
 
 **Cloud Quotas**

@@ -711,6 +711,73 @@
       ]
     },
     {
+      "service": "Backup and DR Service",
+      "namespace": "backupdr",
+      "resource_type": "backupdr.googleapis.com/Backup",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints",
+      "fields": [
+        "resource.backupApplianceLocks.backupApplianceLockInfo.backupApplianceId",
+        "resource.backupApplianceLocks.backupApplianceLockInfo.backupApplianceName",
+        "resource.backupApplianceLocks.backupApplianceLockInfo.backupImage",
+        "resource.backupApplianceLocks.backupApplianceLockInfo.jobName",
+        "resource.backupApplianceLocks.backupApplianceLockInfo.lockReason",
+        "resource.backupApplianceLocks.backupApplianceLockInfo.slaId",
+        "resource.backupApplianceLocks.lockUntilTime",
+        "resource.enforcedRetentionEndTime",
+        "resource.expireTime"
+      ]
+    },
+    {
+      "service": "Backup and DR Service",
+      "namespace": "backupdr",
+      "resource_type": "backupdr.googleapis.com/BackupPlan",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints",
+      "fields": [
+        "resource.backupRules.backupRetentionDays",
+        "resource.backupRules.ruleId",
+        "resource.backupRules.standardSchedule.backupWindow.endHourOfDay",
+        "resource.backupRules.standardSchedule.backupWindow.startHourOfDay",
+        "resource.backupRules.standardSchedule.daysOfMonth",
+        "resource.backupRules.standardSchedule.daysOfWeek",
+        "resource.backupRules.standardSchedule.hourlyFrequency",
+        "resource.backupRules.standardSchedule.months",
+        "resource.backupRules.standardSchedule.recurrenceType",
+        "resource.backupRules.standardSchedule.timeZone",
+        "resource.backupRules.standardSchedule.weekDayOfMonth.dayOfWeek",
+        "resource.backupRules.standardSchedule.weekDayOfMonth.weekOfMonth",
+        "resource.backupVault",
+        "resource.description",
+        "resource.resourceType"
+      ]
+    },
+    {
+      "service": "Backup and DR Service",
+      "namespace": "backupdr",
+      "resource_type": "backupdr.googleapis.com/BackupPlanAssociation",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints",
+      "fields": [
+        "resource.backupPlan",
+        "resource.resource",
+        "resource.resourceType"
+      ]
+    },
+    {
+      "service": "Backup and DR Service",
+      "namespace": "backupdr",
+      "resource_type": "backupdr.googleapis.com/BackupVault",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints",
+      "fields": [
+        "resource.accessRestriction",
+        "resource.backupMinimumEnforcedRetentionDuration",
+        "resource.description",
+        "resource.effectiveTime"
+      ]
+    },
+    {
       "service": "BigQuery",
       "namespace": "bigquery",
       "resource_type": "bigquery.googleapis.com/Dataset",
@@ -3275,6 +3342,7 @@
         "resource.destinationRanges[]",
         "resource.direction",
         "resource.disabled",
+        "resource.management.autoUpgrade",
         "resource.name",
         "resource.network",
         "resource.priority",
