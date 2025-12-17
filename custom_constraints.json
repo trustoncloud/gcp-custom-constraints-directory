@@ -6601,6 +6601,26 @@
     {
       "service": "Virtual Private Cloud",
       "namespace": "compute",
+      "resource_type": "compute.googleapis.com/Address",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
+      "fields": [
+        "resource.address",
+        "resource.addressType",
+        "resource.description",
+        "resource.ipVersion",
+        "resource.ipv6EndpointType",
+        "resource.name",
+        "resource.network",
+        "resource.networkTier",
+        "resource.prefixLength",
+        "resource.purpose",
+        "resource.subnetwork"
+      ]
+    },
+    {
+      "service": "Virtual Private Cloud",
+      "namespace": "compute",
       "resource_type": "compute.googleapis.com/Network",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",

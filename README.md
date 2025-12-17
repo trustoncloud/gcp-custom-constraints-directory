@@ -547,6 +547,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Virtual Private Cloud**
 
+- [compute.googleapis.com/Address](https://docs.cloud.google.com/vpc/docs/custom-constraints) (11 fields)
 - [compute.googleapis.com/Network](https://docs.cloud.google.com/vpc/docs/custom-constraints) (21 fields)
 - [compute.googleapis.com/PacketMirroring](https://docs.cloud.google.com/vpc/docs/custom-constraints) (12 fields)
 - [compute.googleapis.com/Route](https://docs.cloud.google.com/vpc/docs/custom-constraints) (11 fields)
