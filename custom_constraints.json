@@ -1860,6 +1860,7 @@
       "doc_url": "https://docs.cloud.google.com/dataplex/docs/lineage-custom-constraints",
       "fields": [
         "resource.displayName",
+        "resource.management.autoUpgrade",
         "resource.name",
         "resource.origin.name",
         "resource.origin.sourceType"

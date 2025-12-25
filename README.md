@@ -263,7 +263,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Data Lineage API**
 
-- [datalineage.googleapis.com/Process](https://docs.cloud.google.com/dataplex/docs/lineage-custom-constraints) (4 fields)
+- [datalineage.googleapis.com/Process](https://docs.cloud.google.com/dataplex/docs/lineage-custom-constraints) (5 fields)
 
 **Database Migration Service**
 
