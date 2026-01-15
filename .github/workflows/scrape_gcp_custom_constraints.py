@@ -3,8 +3,10 @@ from bs4 import BeautifulSoup
 import json
 import re
 import time
+import random
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
 BASE_URL = "https://docs.cloud.google.com"
 MAIN_URL = "https://docs.cloud.google.com/resource-manager/docs/organization-policy/custom-constraint-supported-services"
@@ -16,6 +18,10 @@ OVERWRITE_URL = {
 }
 URLS_WITH_TEMPORARY_ISSUES = {}
 
+MAX_HTTP_RETRIES = 5
+MAX_BACKOFF_SECONDS = 300  # 5 minutes
+REQUEST_TIMEOUT_SECONDS = 30
+
 '''
 Usage of URLS_WITH_TEMPORARY_ISSUES. Add the URL and the date when the error should resurface
 {
@@ -23,9 +29,49 @@ Usage of URLS_WITH_TEMPORARY_ISSUES. Add the URL and the date when the error sho
 }
 '''
 
+
+def _http_get_with_retry(url: str, *, timeout_seconds: int = REQUEST_TIMEOUT_SECONDS) -> requests.Response:
+    start_time = time.monotonic()
+    last_exc: Exception | None = None
+
+    for attempt in range(MAX_HTTP_RETRIES):
+        try:
+            resp = requests.get(url, timeout=timeout_seconds)
+            resp.raise_for_status()
+            return resp
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError) as exc:
+            last_exc = exc
+        except requests.exceptions.HTTPError as exc:
+            last_exc = exc
+            status_code: Any = getattr(getattr(exc, "response", None), "status_code", None)
+            if status_code not in (429, 500, 502, 503, 504):
+                raise
+
+        if attempt == MAX_HTTP_RETRIES - 1:
+            raise
+
+        elapsed = time.monotonic() - start_time
+        if elapsed >= MAX_BACKOFF_SECONDS:
+            raise
+
+        backoff = min(2 ** attempt, MAX_BACKOFF_SECONDS)
+        jitter_factor = random.uniform(0.5, 1.5)
+        sleep_seconds = backoff * jitter_factor
+
+        remaining_window = MAX_BACKOFF_SECONDS - elapsed
+        if remaining_window <= 0:
+            raise
+
+        sleep_seconds = min(sleep_seconds, remaining_window)
+        time.sleep(sleep_seconds)
+
+    if last_exc is not None:
+        raise last_exc
+    raise RuntimeError(f"HTTP GET failed without exception for url={url!r}")
+
+
 def fetch_main_table():
-    resp = requests.get(MAIN_URL)
-    resp.raise_for_status()
+    resp = _http_get_with_retry(MAIN_URL)
     soup = BeautifulSoup(resp.text, "html.parser")
     # Find the table after the "Supported service resources" heading
     heading = soup.find(id="supported_service_resources")
@@ -103,8 +149,7 @@ def fetch_fields(doc_url) -> list | dict[list]:
         if doc_url in OVERWRITE_URL.keys():
             print(f'Overwrite {doc_url} to {OVERWRITE_URL[doc_url]}')
             doc_url = OVERWRITE_URL[doc_url]
-        resp = requests.get(doc_url)
-        resp.raise_for_status()
+        resp = _http_get_with_retry(doc_url)
         soup = BeautifulSoup(resp.text, "html.parser")
 
         # Helper: parse a table and return a dict of resource_type -> set(fields)
