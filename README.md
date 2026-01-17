@@ -100,7 +100,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Cloud Build**
 
 - [cloudbuild.googleapis.com/BitbucketServerConfig](https://docs.cloud.google.com/build/docs/custom-constraints) (10 fields)
-- [cloudbuild.googleapis.com/BuildTrigger](https://docs.cloud.google.com/build/docs/custom-constraints) (152 fields)
+- [cloudbuild.googleapis.com/BuildTrigger](https://docs.cloud.google.com/build/docs/custom-constraints) (159 fields)
 - [cloudbuild.googleapis.com/Connection](https://docs.cloud.google.com/build/docs/custom-constraints) (33 fields)
 - [cloudbuild.googleapis.com/GithubEnterpriseConfig](https://docs.cloud.google.com/build/docs/custom-constraints) (11 fields)
 - [cloudbuild.googleapis.com/Repository](https://docs.cloud.google.com/build/docs/custom-constraints) (3 fields)
