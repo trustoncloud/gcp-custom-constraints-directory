@@ -715,7 +715,7 @@
       "namespace": "backupdr",
       "resource_type": "backupdr.googleapis.com/Backup",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/customconstraints",
       "fields": [
         "resource.backupApplianceLocks.backupApplianceLockInfo.backupApplianceId",
         "resource.backupApplianceLocks.backupApplianceLockInfo.backupApplianceName",
@@ -733,7 +733,7 @@
       "namespace": "backupdr",
       "resource_type": "backupdr.googleapis.com/BackupPlan",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/customconstraints",
       "fields": [
         "resource.backupRules.backupRetentionDays",
         "resource.backupRules.ruleId",
@@ -757,7 +757,7 @@
       "namespace": "backupdr",
       "resource_type": "backupdr.googleapis.com/BackupPlanAssociation",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/customconstraints",
       "fields": [
         "resource.backupPlan",
         "resource.resource",
@@ -769,7 +769,7 @@
       "namespace": "backupdr",
       "resource_type": "backupdr.googleapis.com/BackupVault",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/backup-disaster-recovery/docs/customconstraints",
       "fields": [
         "resource.accessRestriction",
         "resource.backupMinimumEnforcedRetentionDuration",
@@ -5885,6 +5885,7 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/vpc/docs/configure-serverless-vpc-access#custom-constraints",
       "fields": [
+        "resource.management.autoUpgrade",
         "resource.network"
       ]
     },

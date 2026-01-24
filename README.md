@@ -40,10 +40,10 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Backup and DR Service**
 
-- [backupdr.googleapis.com/Backup](https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints) (9 fields)
-- [backupdr.googleapis.com/BackupPlan](https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints) (15 fields)
-- [backupdr.googleapis.com/BackupPlanAssociation](https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints) (3 fields)
-- [backupdr.googleapis.com/BackupVault](https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints) (4 fields)
+- [backupdr.googleapis.com/Backup](https://docs.cloud.google.com/backup-disaster-recovery/docs/customconstraints) (9 fields)
+- [backupdr.googleapis.com/BackupPlan](https://docs.cloud.google.com/backup-disaster-recovery/docs/customconstraints) (15 fields)
+- [backupdr.googleapis.com/BackupPlanAssociation](https://docs.cloud.google.com/backup-disaster-recovery/docs/customconstraints) (3 fields)
+- [backupdr.googleapis.com/BackupVault](https://docs.cloud.google.com/backup-disaster-recovery/docs/customconstraints) (4 fields)
 
 **Backup for GKE**
 
@@ -502,7 +502,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Serverless VPC Access**
 
-- [vpcaccess.googleapis.com/Connector](https://docs.cloud.google.com/vpc/docs/configure-serverless-vpc-access#custom-constraints) (1 field)
+- [vpcaccess.googleapis.com/Connector](https://docs.cloud.google.com/vpc/docs/configure-serverless-vpc-access#custom-constraints) (2 fields)
 
 **Service Extensions**
 
