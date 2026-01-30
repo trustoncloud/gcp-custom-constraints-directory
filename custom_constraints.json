@@ -604,6 +604,20 @@
       "fields": []
     },
     {
+      "service": "Artifact Analysis",
+      "namespace": "containeranalysis",
+      "resource_type": "containeranalysis.googleapis.com/Note",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/artifact-analysis/docs/custom-constraints"
+    },
+    {
+      "service": "Artifact Analysis",
+      "namespace": "containeranalysis",
+      "resource_type": "containeranalysis.googleapis.com/Occurrence",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/artifact-analysis/docs/custom-constraints"
+    },
+    {
       "service": "Backup for GKE",
       "namespace": "gkebackup",
       "resource_type": "gkebackup.googleapis.com/Backup",

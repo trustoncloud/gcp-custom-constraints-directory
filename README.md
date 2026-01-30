@@ -34,6 +34,11 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [integrations.googleapis.com/SfdcChannel](https://docs.cloud.google.com/application-integration/docs/custom-constraints) (3 fields)
 - [integrations.googleapis.com/SfdcInstance](https://docs.cloud.google.com/application-integration/docs/custom-constraints) (3 fields)
 
+**Artifact Analysis**
+
+- [containeranalysis.googleapis.com/Note](https://docs.cloud.google.com/resource-manager/docs/organization-policy/artifact-analysis/docs/custom-constraints)
+- [containeranalysis.googleapis.com/Occurrence](https://docs.cloud.google.com/resource-manager/docs/organization-policy/artifact-analysis/docs/custom-constraints)
+
 **Artifact Registry**
 
 - [artifactregistry.googleapis.com/Repository](https://docs.cloud.google.com/artifact-registry/docs/custom-constraints)
