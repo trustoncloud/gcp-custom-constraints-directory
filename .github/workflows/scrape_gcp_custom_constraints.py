@@ -16,18 +16,20 @@ OVERWRITE_URL = {
     'https://docs.cloud.google.com/vertex-ai/docs/prediction/custom-constraints': 'https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints',
     'https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints': 'https://docs.cloud.google.com/backup-disaster-recovery/docs/customconstraints'
 }
-URLS_WITH_TEMPORARY_ISSUES = {}
-
-MAX_HTTP_RETRIES = 5
-MAX_BACKOFF_SECONDS = 300  # 5 minutes
-REQUEST_TIMEOUT_SECONDS = 30
-
+URLS_WITH_TEMPORARY_ISSUES = {
+    'https://docs.cloud.google.com/resource-manager/docs/organization-policy/artifact-analysis/docs/custom-constraints': datetime(2026, 2, 28, tzinfo=timezone.utc)
+}
 '''
 Usage of URLS_WITH_TEMPORARY_ISSUES. Add the URL and the date when the error should resurface
 {
     'https://docs.cloud.google.com/dataform/docs/create-custom-constraints': datetime(2025, 11, 3, tzinfo=timezone.utc)
 }
 '''
+
+MAX_HTTP_RETRIES = 5
+MAX_BACKOFF_SECONDS = 300  # 5 minutes
+REQUEST_TIMEOUT_SECONDS = 30
+
 
 
 def _http_get_with_retry(url: str, *, timeout_seconds: int = REQUEST_TIMEOUT_SECONDS) -> requests.Response:
