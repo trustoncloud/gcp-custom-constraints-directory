@@ -5351,6 +5351,30 @@
     {
       "service": "Network Connectivity",
       "namespace": "networkconnectivity",
+      "resource_type": "networkconnectivity.googleapis.com/InternalRange",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
+      "fields": [
+        "resource.allocationOptions.allocationStrategy",
+        "resource.allocationOptions.firstAvailableRangesLookupSize",
+        "resource.description",
+        "resource.excludeCidrRanges",
+        "resource.immutable",
+        "resource.ipCidrRange",
+        "resource.migration.source",
+        "resource.migration.target",
+        "resource.name",
+        "resource.network",
+        "resource.overlaps",
+        "resource.peering",
+        "resource.prefixLength",
+        "resource.targetCidrRange",
+        "resource.usage"
+      ]
+    },
+    {
+      "service": "Network Connectivity",
+      "namespace": "networkconnectivity",
       "resource_type": "networkconnectivity.googleapis.com/Spoke",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints",
