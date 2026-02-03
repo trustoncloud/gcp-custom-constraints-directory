@@ -36,8 +36,8 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Artifact Analysis**
 
-- [containeranalysis.googleapis.com/Note](https://docs.cloud.google.com/resource-manager/docs/organization-policy/artifact-analysis/docs/custom-constraints)
-- [containeranalysis.googleapis.com/Occurrence](https://docs.cloud.google.com/resource-manager/docs/organization-policy/artifact-analysis/docs/custom-constraints)
+- [containeranalysis.googleapis.com/Note](https://docs.cloud.google.com/artifact-analysis/docs/custom-constraints) (24 fields)
+- [containeranalysis.googleapis.com/Occurrence](https://docs.cloud.google.com/artifact-analysis/docs/custom-constraints) (4 fields)
 
 **Artifact Registry**
 
@@ -105,6 +105,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Cloud Build**
 
 - [cloudbuild.googleapis.com/BitbucketServerConfig](https://docs.cloud.google.com/build/docs/custom-constraints) (10 fields)
+- [cloudbuild.googleapis.com/Build](https://docs.cloud.google.com/build/docs/custom-constraints) (95 fields)
 - [cloudbuild.googleapis.com/BuildTrigger](https://docs.cloud.google.com/build/docs/custom-constraints) (159 fields)
 - [cloudbuild.googleapis.com/Connection](https://docs.cloud.google.com/build/docs/custom-constraints) (33 fields)
 - [cloudbuild.googleapis.com/GithubEnterpriseConfig](https://docs.cloud.google.com/build/docs/custom-constraints) (11 fields)
@@ -525,6 +526,10 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [spanner.googleapis.com/Database](https://docs.cloud.google.com/spanner/docs/spanner-custom-constraints) (2 fields)
 - [spanner.googleapis.com/Instance](https://docs.cloud.google.com/spanner/docs/spanner-custom-constraints) (13 fields)
 - [spanner.googleapis.com/InstanceConfig](https://docs.cloud.google.com/spanner/docs/spanner-custom-constraints) (7 fields)
+
+**Storage Transfer Service**
+
+- [storagetransfer.googleapis.com/TransferJob](https://docs.cloud.google.com/storage-transfer/docs/custom-constraints) (102 fields)
 
 **Vector Search**
 
