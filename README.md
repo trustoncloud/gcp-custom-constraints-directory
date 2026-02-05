@@ -81,8 +81,8 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Certificate Authority Service**
 
-- [privateca.googleapis.com/CaPool](https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints) (49 fields)
-- [privateca.googleapis.com/CertificateAuthority](https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints) (58 fields)
+- [privateca.googleapis.com/CaPool](https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints) (50 fields)
+- [privateca.googleapis.com/CertificateAuthority](https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints) (63 fields)
 - [privateca.googleapis.com/CertificateTemplate](https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints) (40 fields)
 
 **Certificate Manager**

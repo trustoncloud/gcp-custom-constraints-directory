@@ -1437,6 +1437,7 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints",
       "fields": [
+        "resource.encryptionSpec.cloudKmsKey",
         "resource.issuancePolicy.allowedIssuanceModes.allowConfigBasedIssuance",
         "resource.issuancePolicy.allowedIssuanceModes.allowCsrBasedIssuance",
         "resource.issuancePolicy.allowedKeyTypes.ellipticCurve.signatureAlgorithm",
@@ -1495,6 +1496,8 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints",
       "fields": [
+        "resource.config.publicKey.format",
+        "resource.config.publicKey.key",
         "resource.config.subjectConfig.subject.commonName",
         "resource.config.subjectConfig.subject.countryCode",
         "resource.config.subjectConfig.subject.locality",
@@ -1502,6 +1505,9 @@
         "resource.config.subjectConfig.subject.organizationalUnit",
         "resource.config.subjectConfig.subject.postalCode",
         "resource.config.subjectConfig.subject.province",
+        "resource.config.subjectConfig.subject.rdnSequence.attributes.objectId.objectIdPath",
+        "resource.config.subjectConfig.subject.rdnSequence.attributes.type",
+        "resource.config.subjectConfig.subject.rdnSequence.attributes.value",
         "resource.config.subjectConfig.subject.streetAddress",
         "resource.config.subjectConfig.subjectAltName.customSans.critical",
         "resource.config.subjectConfig.subjectAltName.customSans.objectId.objectIdPath",
