@@ -164,22 +164,22 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Cloud Load Balancing**
 
-- [compute.googleapis.com/BackendBucket](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
-- [compute.googleapis.com/BackendService](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
-- [compute.googleapis.com/ForwardingRule](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
-- [compute.googleapis.com/HealthCheck](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
+- [compute.googleapis.com/BackendBucket](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (20 fields)
+- [compute.googleapis.com/BackendService](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (96 fields)
+- [compute.googleapis.com/ForwardingRule](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (22 fields)
+- [compute.googleapis.com/HealthCheck](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (40 fields)
 - [compute.googleapis.com/InstanceGroup](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
-- [compute.googleapis.com/NetworkEndpointGroup](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
+- [compute.googleapis.com/NetworkEndpointGroup](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (17 fields)
 - [compute.googleapis.com/SslPolicy](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
-- [compute.googleapis.com/TargetGrpcProxy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
-- [compute.googleapis.com/TargetHttpProxy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
-- [compute.googleapis.com/TargetHttpsProxy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
-- [compute.googleapis.com/TargetInstance](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
-- [compute.googleapis.com/TargetPool](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
-- [compute.googleapis.com/TargetSslProxy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
-- [compute.googleapis.com/TargetTcpProxy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
-- [compute.googleapis.com/UrlMap](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
-- [networkservices.googleapis.com/ServiceLbPolicy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints)
+- [compute.googleapis.com/TargetGrpcProxy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (3 fields)
+- [compute.googleapis.com/TargetHttpProxy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (4 fields)
+- [compute.googleapis.com/TargetHttpsProxy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (6 fields)
+- [compute.googleapis.com/TargetInstance](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (3 fields)
+- [compute.googleapis.com/TargetPool](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (4 fields)
+- [compute.googleapis.com/TargetSslProxy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (3 fields)
+- [compute.googleapis.com/TargetTcpProxy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (4 fields)
+- [compute.googleapis.com/UrlMap](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (230 fields)
+- [networkservices.googleapis.com/ServiceLbPolicy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (5 fields)
 
 **Cloud Logging**
 
