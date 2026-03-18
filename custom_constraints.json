@@ -585,7 +585,9 @@
       "resource_type": "artifactregistry.googleapis.com/Repository",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/artifact-registry/docs/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.management.autoUpgrade"
+      ]
     },
     {
       "service": "Google Cloud Armor",
@@ -1617,6 +1619,7 @@
       "launch_status": "Preview",
       "doc_url": "https://docs.cloud.google.com/contact-center/ccai-platform/docs/ccaip-custom-constraints",
       "fields": [
+        "resource.management.autoUpgrade",
         "resource.name"
       ]
     },
@@ -2035,21 +2038,7 @@
       "resource_type": "dataflow.googleapis.com/Job",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/dataflow/docs/custom-constraints",
-      "fields": [
-        "resource.environment",
-        "resource.environment.debugOptions",
-        "resource.environment.debugOptions.enableHotKeyLogging",
-        "resource.environment.serviceAccountEmail",
-        "resource.environment.serviceKmsKeyName",
-        "resource.environment.serviceOptions",
-        "resource.environment.streamingMode",
-        "resource.environment.workerRegion",
-        "resource.environment.workerZone",
-        "resource.location",
-        "resource.name",
-        "resource.transformNameMapping",
-        "resource.type"
-      ]
+      "fields": []
     },
     {
       "service": "Dataform",
@@ -3522,6 +3511,7 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/firewall/docs/custom-constraints-fw-policy",
       "fields": [
+        "resource.management.autoUpgrade",
         "resource.rules[].action",
         "resource.rules[].description",
         "resource.rules[].direction",
@@ -5947,6 +5937,7 @@
         "resource.maintenancePolicy.description",
         "resource.maintenancePolicy.weeklyMaintenanceWindow.day",
         "resource.maintenanceVersion",
+        "resource.management.autoUpgrade",
         "resource.memorySizeGb",
         "resource.name",
         "resource.persistenceConfig.persistenceMode",
@@ -5972,6 +5963,7 @@
       "fields": [
         "resource.authorizationMode",
         "resource.deletionProtectionEnabled",
+        "resource.management.autoUpgrade",
         "resource.name",
         "resource.nodeType",
         "resource.persistenceConfig.aofConfig.appendFsync",

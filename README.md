@@ -41,7 +41,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Artifact Registry**
 
-- [artifactregistry.googleapis.com/Repository](https://docs.cloud.google.com/artifact-registry/docs/custom-constraints)
+- [artifactregistry.googleapis.com/Repository](https://docs.cloud.google.com/artifact-registry/docs/custom-constraints) (1 field)
 
 **Backup and DR Service**
 
@@ -199,7 +199,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Cloud Next Generation Firewall**
 
 - [compute.googleapis.com/Firewall](https://docs.cloud.google.com/firewall/docs/custom-constraints) (17 fields)
-- [compute.googleapis.com/FirewallPolicy](https://docs.cloud.google.com/firewall/docs/custom-constraints-fw-policy) (27 fields)
+- [compute.googleapis.com/FirewallPolicy](https://docs.cloud.google.com/firewall/docs/custom-constraints-fw-policy) (28 fields)
 
 **Cloud Quotas**
 
@@ -280,7 +280,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Dataflow**
 
-- [dataflow.googleapis.com/Job](https://docs.cloud.google.com/dataflow/docs/custom-constraints) (13 fields)
+- [dataflow.googleapis.com/Job](https://docs.cloud.google.com/dataflow/docs/custom-constraints)
 
 **Dataform**
 
@@ -381,7 +381,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Google Cloud Contact Center as a Service**
 
-- [contactcenteraiplatform.googleapis.com/ContactCenter](https://docs.cloud.google.com/contact-center/ccai-platform/docs/ccaip-custom-constraints) (1 field)
+- [contactcenteraiplatform.googleapis.com/ContactCenter](https://docs.cloud.google.com/contact-center/ccai-platform/docs/ccaip-custom-constraints) (2 fields)
 
 **Google Cloud Managed Service for Apache Kafka**
 
@@ -452,11 +452,11 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Memorystore**
 
-- [redis.googleapis.com/Instance](https://docs.cloud.google.com/memorystore/docs/redis/custom-constraints) (25 fields)
+- [redis.googleapis.com/Instance](https://docs.cloud.google.com/memorystore/docs/redis/custom-constraints) (26 fields)
 
 **Memorystore for Redis Cluster**
 
-- [redis.googleapis.com/Cluster](https://docs.cloud.google.com/memorystore/docs/cluster/custom-constraints) (13 fields)
+- [redis.googleapis.com/Cluster](https://docs.cloud.google.com/memorystore/docs/cluster/custom-constraints) (14 fields)
 
 **Network Connectivity**
 
