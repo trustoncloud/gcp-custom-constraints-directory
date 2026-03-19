@@ -1437,7 +1437,7 @@
       "namespace": "privateca",
       "resource_type": "privateca.googleapis.com/CaPool",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints",
       "fields": [
         "resource.encryptionSpec.cloudKmsKey",
         "resource.issuancePolicy.allowedIssuanceModes.allowConfigBasedIssuance",
@@ -1496,7 +1496,7 @@
       "namespace": "privateca",
       "resource_type": "privateca.googleapis.com/CertificateAuthority",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints",
       "fields": [
         "resource.config.publicKey.format",
         "resource.config.publicKey.key",
@@ -1568,7 +1568,7 @@
       "namespace": "privateca",
       "resource_type": "privateca.googleapis.com/CertificateTemplate",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.identityConstraints.allowSubjectAltNamesPassthrough",
@@ -6118,6 +6118,22 @@
         "resource.prefixLength",
         "resource.targetCidrRange",
         "resource.usage"
+      ]
+    },
+    {
+      "service": "Network Connectivity",
+      "namespace": "networkconnectivity",
+      "resource_type": "networkconnectivity.googleapis.com/RegionalEndpoint",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
+      "fields": [
+        "resource.accessType",
+        "resource.address",
+        "resource.description",
+        "resource.name",
+        "resource.network",
+        "resource.subnetwork",
+        "resource.targetGoogleApi"
       ]
     },
     {
