@@ -81,9 +81,9 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Certificate Authority Service**
 
-- [privateca.googleapis.com/CaPool](https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints) (50 fields)
-- [privateca.googleapis.com/CertificateAuthority](https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints) (63 fields)
-- [privateca.googleapis.com/CertificateTemplate](https://docs.cloud.google.com/resource-manager/docs/organization-policy/certificate-authority-service/docs/custom-constraints) (40 fields)
+- [privateca.googleapis.com/CaPool](https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints) (50 fields)
+- [privateca.googleapis.com/CertificateAuthority](https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints) (63 fields)
+- [privateca.googleapis.com/CertificateTemplate](https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints) (40 fields)
 
 **Certificate Manager**
 
@@ -463,6 +463,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [networkconnectivity.googleapis.com/Group](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (2 fields)
 - [networkconnectivity.googleapis.com/Hub](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (4 fields)
 - [networkconnectivity.googleapis.com/InternalRange](https://docs.cloud.google.com/vpc/docs/custom-constraints) (15 fields)
+- [networkconnectivity.googleapis.com/RegionalEndpoint](https://docs.cloud.google.com/vpc/docs/custom-constraints) (7 fields)
 - [networkconnectivity.googleapis.com/Spoke](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (20 fields)
 
 **Private Service Connect**
