@@ -852,6 +852,18 @@
       ]
     },
     {
+      "service": "BigQuery",
+      "namespace": "bigquery",
+      "resource_type": "bigquery.googleapis.com/Routine",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/custom-constraints",
+      "fields": [
+        "resource.routineReference.datasetId",
+        "resource.routineReference.projectId",
+        "resource.routineReference.routineId"
+      ]
+    },
+    {
       "service": "Cloud Bigtable Admin API",
       "namespace": "bigtableadmin",
       "resource_type": "bigtableadmin.googleapis.com/AppProfile",
@@ -1036,6 +1048,7 @@
         "resource.displayName",
         "resource.emailPreferences.enableFailureEmail",
         "resource.encryptionConfiguration.kmsKeyName",
+        "resource.managedTableType",
         "resource.name",
         "resource.notificationPubsubTopic",
         "resource.schedule",
@@ -7427,8 +7440,7 @@
         "resource.privateServiceConnectConfig.enablePrivateServiceConnect",
         "resource.privateServiceConnectConfig.projectAllowlist",
         "resource.privateServiceConnectConfig.pscAutomationConfigs.network",
-        "resource.privateServiceConnectConfig.pscAutomationConfigs.projectId",
-        "resource.trafficSplit"
+        "resource.privateServiceConnectConfig.pscAutomationConfigs.projectId"
       ]
     },
     {

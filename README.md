@@ -60,10 +60,11 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **BigQuery**
 
 - [bigquery.googleapis.com/Dataset](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (17 fields)
+- [bigquery.googleapis.com/Routine](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (3 fields)
 
 **BigQuery Data Transfer Service**
 
-- [bigquerydatatransfer.googleapis.com/TransferConfig](https://docs.cloud.google.com/bigquery/docs/transfer-custom-constraints) (17 fields)
+- [bigquerydatatransfer.googleapis.com/TransferConfig](https://docs.cloud.google.com/bigquery/docs/transfer-custom-constraints) (18 fields)
 
 **BigQuery Migration Service**
 
@@ -548,7 +549,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Vertex AI**
 
 - [aiplatform.googleapis.com/DeploymentResourcePool](https://docs.cloud.google.com/vertex-ai/docs/prediction/custom-constraints) (12 fields)
-- [aiplatform.googleapis.com/Endpoint](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (29 fields)
+- [aiplatform.googleapis.com/Endpoint](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (28 fields)
 
 **Vertex AI Pipelines**
 
