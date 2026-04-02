@@ -321,6 +321,11 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [developerconnect.googleapis.com/Connection](https://docs.cloud.google.com/developer-connect/docs/custom-constraints)
 - [developerconnect.googleapis.com/GitRepositoryLink](https://docs.cloud.google.com/developer-connect/docs/custom-constraints)
 
+**Document AI**
+
+- [documentai.googleapis.com/Processor](https://docs.cloud.google.com/document-ai/docs/custom-org-policies) (3 fields)
+- [documentai.googleapis.com/ProcessorVersion](https://docs.cloud.google.com/document-ai/docs/custom-org-policies) (1 field)
+
 **Essential Contacts**
 
 - [essentialcontacts.googleapis.com/Contact](https://docs.cloud.google.com/resource-manager/docs/essentialcontacts-custom-org-policies) (3 fields)

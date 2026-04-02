@@ -3269,6 +3269,28 @@
       ]
     },
     {
+      "service": "Document AI",
+      "namespace": "documentai",
+      "resource_type": "documentai.googleapis.com/Processor",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/document-ai/docs/custom-org-policies",
+      "fields": [
+        "resource.displayName",
+        "resource.kmsKeyName",
+        "resource.type"
+      ]
+    },
+    {
+      "service": "Document AI",
+      "namespace": "documentai",
+      "resource_type": "documentai.googleapis.com/ProcessorVersion",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/document-ai/docs/custom-org-policies",
+      "fields": [
+        "resource.displayName"
+      ]
+    },
+    {
       "service": "Essential Contacts",
       "namespace": "essentialcontacts",
       "resource_type": "essentialcontacts.googleapis.com/Contact",
