@@ -487,7 +487,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **reCAPTCHA**
 
 - [recaptchaenterprise.googleapis.com/FirewallPolicy](https://docs.cloud.google.com/recaptcha/docs/custom-constraints) (7 fields)
-- [recaptchaenterprise.googleapis.com/Key](https://docs.cloud.google.com/recaptcha/docs/custom-constraints) (19 fields)
+- [recaptchaenterprise.googleapis.com/Key](https://docs.cloud.google.com/recaptcha/docs/custom-constraints) (18 fields)
 
 **Resource Manager**
 

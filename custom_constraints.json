@@ -6370,7 +6370,6 @@
         "resource.iosSettings.allowAllBundleIds",
         "resource.iosSettings.allowedBundleIds",
         "resource.iosSettings.appleDeveloperId.keyId",
-        "resource.iosSettings.appleDeveloperId.privateKey",
         "resource.iosSettings.appleDeveloperId.teamId",
         "resource.name",
         "resource.testingOptions.testingChallenge",
