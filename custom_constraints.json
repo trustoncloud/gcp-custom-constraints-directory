@@ -4580,9 +4580,12 @@
         "resource.inlineCertificateIssuanceConfig.keyAlgorithm",
         "resource.inlineCertificateIssuanceConfig.lifetime",
         "resource.inlineCertificateIssuanceConfig.rotationWindowPercentage",
+        "resource.inlineCertificateIssuanceConfig.useDefaultSharedCa",
         "resource.inlineTrustConfig.additionalTrustBundles[*].intermediateCas.pemCertificate",
         "resource.inlineTrustConfig.additionalTrustBundles[*].trustAnchors.pemCertificate",
-        "resource.mode"
+        "resource.inlineTrustConfig.additionalTrustBundles[*].trustDefaultSharedCa",
+        "resource.mode",
+        "resource.name"
       ]
     },
     {
@@ -4593,7 +4596,8 @@
       "doc_url": "https://docs.cloud.google.com/iam/docs/managed-workload-identity-custom-constraints",
       "fields": [
         "resource.description",
-        "resource.disabled"
+        "resource.disabled",
+        "resource.name"
       ]
     },
     {
@@ -4604,7 +4608,8 @@
       "doc_url": "https://docs.cloud.google.com/iam/docs/managed-workload-identity-custom-constraints",
       "fields": [
         "resource.description",
-        "resource.disabled"
+        "resource.disabled",
+        "resource.name"
       ]
     },
     {
@@ -4621,12 +4626,14 @@
         "resource.description",
         "resource.disabled",
         "resource.displayName",
+        "resource.name",
         "resource.oidc.allowedAudiences",
         "resource.oidc.issuerUri",
         "resource.oidc.jwksJson",
         "resource.saml.idpMetadataXml",
         "resource.x509.trustStore.intermediateCas.pemCertificate",
-        "resource.x509.trustStore.trustAnchors.pemCertificate"
+        "resource.x509.trustStore.trustAnchors.pemCertificate",
+        "resource.x509.trustStore.trustDefaultSharedCa"
       ]
     },
     {
@@ -4637,6 +4644,7 @@
       "doc_url": "https://docs.cloud.google.com/iam/docs/workload-identity-federation-custom-constraints",
       "fields": [
         "resource.keyData.keySpec",
+        "resource.name",
         "resource.use"
       ]
     },

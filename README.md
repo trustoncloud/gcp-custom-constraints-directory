@@ -415,11 +415,11 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [iam.googleapis.com/AllowPolicy](https://docs.cloud.google.com/iam/docs/org-policy-custom-constraints) (2 fields)
 - [iam.googleapis.com/ServiceAccount](https://docs.cloud.google.com/iam/docs/service-accounts-custom-constraints)
 - [iam.googleapis.com/ServiceAccountKey](https://docs.cloud.google.com/iam/docs/service-accounts-custom-constraints)
-- [iam.googleapis.com/WorkloadIdentityPool](https://docs.cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (10 fields)
-- [iam.googleapis.com/WorkloadIdentityPoolManagedIdentity](https://docs.cloud.google.com/iam/docs/managed-workload-identity-custom-constraints) (2 fields)
-- [iam.googleapis.com/WorkloadIdentityPoolNamespace](https://docs.cloud.google.com/iam/docs/managed-workload-identity-custom-constraints) (2 fields)
-- [iam.googleapis.com/WorkloadIdentityPoolProvider](https://docs.cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (13 fields)
-- [iam.googleapis.com/WorkloadIdentityPoolProviderKey](https://docs.cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (2 fields)
+- [iam.googleapis.com/WorkloadIdentityPool](https://docs.cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (13 fields)
+- [iam.googleapis.com/WorkloadIdentityPoolManagedIdentity](https://docs.cloud.google.com/iam/docs/managed-workload-identity-custom-constraints) (3 fields)
+- [iam.googleapis.com/WorkloadIdentityPoolNamespace](https://docs.cloud.google.com/iam/docs/managed-workload-identity-custom-constraints) (3 fields)
+- [iam.googleapis.com/WorkloadIdentityPoolProvider](https://docs.cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (15 fields)
+- [iam.googleapis.com/WorkloadIdentityPoolProviderKey](https://docs.cloud.google.com/iam/docs/workload-identity-federation-custom-constraints) (3 fields)
 
 **Identity Platform**
 
