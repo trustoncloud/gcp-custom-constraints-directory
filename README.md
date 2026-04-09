@@ -61,6 +61,12 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [bigquery.googleapis.com/Dataset](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (17 fields)
 - [bigquery.googleapis.com/Routine](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (3 fields)
+- [bigquery.googleapis.com/RowAccessPolicy](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (4 fields)
+- [bigquery.googleapis.com/Table](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (3 fields)
+
+**BigQuery Data Policy**
+
+- [bigquerydatapolicy.googleapis.com/DataPolicy](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (2 fields)
 
 **BigQuery Data Transfer Service**
 
@@ -82,9 +88,9 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Certificate Authority Service**
 
-- [privateca.googleapis.com/CaPool](https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints) (50 fields)
-- [privateca.googleapis.com/CertificateAuthority](https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints) (63 fields)
-- [privateca.googleapis.com/CertificateTemplate](https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints) (40 fields)
+- [privateca.googleapis.com/CaPool](https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints) (50 fields)
+- [privateca.googleapis.com/CertificateAuthority](https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints) (63 fields)
+- [privateca.googleapis.com/CertificateTemplate](https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints) (40 fields)
 
 **Certificate Manager**
 
@@ -101,6 +107,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [bigtableadmin.googleapis.com/Backup](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (5 fields)
 - [bigtableadmin.googleapis.com/Cluster](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (10 fields)
 - [bigtableadmin.googleapis.com/Instance](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (2 fields)
+- [bigtableadmin.googleapis.com/LogicalView](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (2 fields)
 - [bigtableadmin.googleapis.com/Table](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (12 fields)
 
 **Cloud Build**
@@ -553,7 +560,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Vertex AI**
 
-- [aiplatform.googleapis.com/DeploymentResourcePool](https://docs.cloud.google.com/vertex-ai/docs/prediction/custom-constraints) (12 fields)
+- [aiplatform.googleapis.com/DeploymentResourcePool](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (12 fields)
 - [aiplatform.googleapis.com/Endpoint](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (28 fields)
 
 **Vertex AI Pipelines**

@@ -864,6 +864,31 @@
       ]
     },
     {
+      "service": "BigQuery",
+      "namespace": "bigquery",
+      "resource_type": "bigquery.googleapis.com/RowAccessPolicy",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/custom-constraints",
+      "fields": [
+        "resource.rowAccessPolicyReference.datasetId",
+        "resource.rowAccessPolicyReference.policyId",
+        "resource.rowAccessPolicyReference.projectId",
+        "resource.rowAccessPolicyReference.tableId"
+      ]
+    },
+    {
+      "service": "BigQuery",
+      "namespace": "bigquery",
+      "resource_type": "bigquery.googleapis.com/Table",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/custom-constraints",
+      "fields": [
+        "resource.tableReference.datasetId",
+        "resource.tableReference.projectId",
+        "resource.tableReference.tableId"
+      ]
+    },
+    {
       "service": "Cloud Bigtable Admin API",
       "namespace": "bigtableadmin",
       "resource_type": "bigtableadmin.googleapis.com/AppProfile",
@@ -920,6 +945,17 @@
       "doc_url": "https://docs.cloud.google.com/bigtable/docs/custom-constraints",
       "fields": [
         "resource.displayName",
+        "resource.name"
+      ]
+    },
+    {
+      "service": "Cloud Bigtable Admin API",
+      "namespace": "bigtableadmin",
+      "resource_type": "bigtableadmin.googleapis.com/LogicalView",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/bigtable/docs/custom-constraints",
+      "fields": [
+        "resource.deletionProtection",
         "resource.name"
       ]
     },
@@ -986,6 +1022,17 @@
         "resource.kubernetesServiceAccountAdmissionRules[*].enforcementMode",
         "resource.kubernetesServiceAccountAdmissionRules[*].evaluationMode",
         "resource.kubernetesServiceAccountAdmissionRules[*].requireAttestationsBy"
+      ]
+    },
+    {
+      "service": "BigQuery Data Policy",
+      "namespace": "bigquerydatapolicy",
+      "resource_type": "bigquerydatapolicy.googleapis.com/DataPolicy",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/custom-constraints",
+      "fields": [
+        "resource.dataMaskingPolicy.predefinedExpression",
+        "resource.dataPolicyType"
       ]
     },
     {
@@ -1450,7 +1497,7 @@
       "namespace": "privateca",
       "resource_type": "privateca.googleapis.com/CaPool",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints",
       "fields": [
         "resource.encryptionSpec.cloudKmsKey",
         "resource.issuancePolicy.allowedIssuanceModes.allowConfigBasedIssuance",
@@ -1509,7 +1556,7 @@
       "namespace": "privateca",
       "resource_type": "privateca.googleapis.com/CertificateAuthority",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints",
       "fields": [
         "resource.config.publicKey.format",
         "resource.config.publicKey.key",
@@ -1581,7 +1628,7 @@
       "namespace": "privateca",
       "resource_type": "privateca.googleapis.com/CertificateTemplate",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/organization-policy/reference/certificate-authority-service/docs/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints",
       "fields": [
         "resource.description",
         "resource.identityConstraints.allowSubjectAltNamesPassthrough",
@@ -7419,7 +7466,7 @@
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/DeploymentResourcePool",
       "launch_status": "Preview",
-      "doc_url": "https://docs.cloud.google.com/vertex-ai/docs/prediction/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints",
       "fields": [
         "resource.dedicatedResources.machineSpec.acceleratorCount",
         "resource.dedicatedResources.machineSpec.acceleratorType",
