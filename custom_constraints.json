@@ -2423,7 +2423,7 @@
       ]
     },
     {
-      "service": "Dataproc",
+      "service": "Managed Service for Apache Spark",
       "namespace": "dataproc",
       "resource_type": "dataproc.googleapis.com/Cluster",
       "launch_status": "GA",
@@ -2472,7 +2472,7 @@
       ]
     },
     {
-      "service": "Google Cloud Serverless for Apache Spark",
+      "service": "Managed Service for Apache Spark",
       "namespace": "dataproc",
       "resource_type": "dataproc.googleapis.com/Batch",
       "launch_status": "GA",
@@ -2480,7 +2480,7 @@
       "fields": []
     },
     {
-      "service": "Google Cloud Serverless for Apache Spark",
+      "service": "Managed Service for Apache Spark",
       "namespace": "dataproc",
       "resource_type": "dataproc.googleapis.com/Session",
       "launch_status": "GA",
@@ -2488,7 +2488,7 @@
       "fields": []
     },
     {
-      "service": "Google Cloud Serverless for Apache Spark",
+      "service": "Managed Service for Apache Spark",
       "namespace": "dataproc",
       "resource_type": "dataproc.googleapis.com/SessionTemplate",
       "launch_status": "Preview",
@@ -6214,13 +6214,12 @@
       "service": "Network Connectivity",
       "namespace": "networkconnectivity",
       "resource_type": "networkconnectivity.googleapis.com/RegionalEndpoint",
-      "launch_status": "Preview",
+      "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
       "fields": [
         "resource.accessType",
         "resource.address",
         "resource.description",
-        "resource.name",
         "resource.network",
         "resource.subnetwork",
         "resource.targetGoogleApi"

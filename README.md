@@ -307,10 +307,6 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [dataplex.googleapis.com/EntryType](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (7 fields)
 - [dataplex.googleapis.com/MetadataJob](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (15 fields)
 
-**Dataproc**
-
-- [dataproc.googleapis.com/Cluster](https://docs.cloud.google.com/dataproc/docs/concepts/dataproc-custom-constraints) (40 fields)
-
 **Dataproc Metastore**
 
 - [metastore.googleapis.com/Backup](https://docs.cloud.google.com/dataproc-metastore/docs/org-policy-custom-constraints) (2 fields)
@@ -400,12 +396,6 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [managedkafka.googleapis.com/Cluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints) (9 fields)
 
-**Google Cloud Serverless for Apache Spark**
-
-- [dataproc.googleapis.com/Batch](https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints)
-- [dataproc.googleapis.com/Session](https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints)
-- [dataproc.googleapis.com/SessionTemplate](https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints)
-
 **Hub**
 
 - gkehub.googleapis.com/Feature
@@ -463,6 +453,13 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [managedkafka.googleapis.com/ConnectCluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints) (9 fields)
 
+**Managed Service for Apache Spark**
+
+- [dataproc.googleapis.com/Batch](https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints)
+- [dataproc.googleapis.com/Cluster](https://docs.cloud.google.com/dataproc/docs/concepts/dataproc-custom-constraints) (40 fields)
+- [dataproc.googleapis.com/Session](https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints)
+- [dataproc.googleapis.com/SessionTemplate](https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints)
+
 **Memorystore**
 
 - [redis.googleapis.com/Instance](https://docs.cloud.google.com/memorystore/docs/redis/custom-constraints) (26 fields)
@@ -476,7 +473,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [networkconnectivity.googleapis.com/Group](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (2 fields)
 - [networkconnectivity.googleapis.com/Hub](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (4 fields)
 - [networkconnectivity.googleapis.com/InternalRange](https://docs.cloud.google.com/vpc/docs/custom-constraints) (15 fields)
-- [networkconnectivity.googleapis.com/RegionalEndpoint](https://docs.cloud.google.com/vpc/docs/custom-constraints) (7 fields)
+- [networkconnectivity.googleapis.com/RegionalEndpoint](https://docs.cloud.google.com/vpc/docs/custom-constraints) (6 fields)
 - [networkconnectivity.googleapis.com/Spoke](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (20 fields)
 
 **Private Service Connect**
