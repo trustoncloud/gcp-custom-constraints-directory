@@ -2226,7 +2226,7 @@
       ]
     },
     {
-      "service": "Dataplex Universal Catalog",
+      "service": "Knowledge Catalog",
       "namespace": "dataplex",
       "resource_type": "dataplex.googleapis.com/AspectType",
       "launch_status": "GA",
@@ -2253,7 +2253,7 @@
       ]
     },
     {
-      "service": "Dataplex Universal Catalog",
+      "service": "Knowledge Catalog",
       "namespace": "dataplex",
       "resource_type": "dataplex.googleapis.com/DataScan",
       "launch_status": "GA",
@@ -2308,7 +2308,7 @@
       ]
     },
     {
-      "service": "Dataplex Universal Catalog",
+      "service": "Knowledge Catalog",
       "namespace": "dataplex",
       "resource_type": "dataplex.googleapis.com/EntryGroup",
       "launch_status": "GA",
@@ -2319,7 +2319,7 @@
       ]
     },
     {
-      "service": "Dataplex Universal Catalog",
+      "service": "Knowledge Catalog",
       "namespace": "dataplex",
       "resource_type": "dataplex.googleapis.com/EntryType",
       "launch_status": "GA",
@@ -2335,7 +2335,7 @@
       ]
     },
     {
-      "service": "Dataplex Universal Catalog",
+      "service": "Knowledge Catalog",
       "namespace": "dataplex",
       "resource_type": "dataplex.googleapis.com/MetadataJob",
       "launch_status": "GA",

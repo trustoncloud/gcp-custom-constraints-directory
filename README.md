@@ -299,14 +299,6 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [dataform.googleapis.com/WorkflowInvocation](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (11 fields)
 - [dataform.googleapis.com/Workspace](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (1 field)
 
-**Dataplex Universal Catalog**
-
-- [dataplex.googleapis.com/AspectType](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (18 fields)
-- [dataplex.googleapis.com/DataScan](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (46 fields)
-- [dataplex.googleapis.com/EntryGroup](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (2 fields)
-- [dataplex.googleapis.com/EntryType](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (7 fields)
-- [dataplex.googleapis.com/MetadataJob](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (15 fields)
-
 **Dataproc Metastore**
 
 - [metastore.googleapis.com/Backup](https://docs.cloud.google.com/dataproc-metastore/docs/org-policy-custom-constraints) (2 fields)
@@ -442,6 +434,14 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [connectors.googleapis.com/EventSubscription](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (25 fields)
 - [connectors.googleapis.com/ManagedZone](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (4 fields)
 - [connectors.googleapis.com/RegionalSettings](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (3 fields)
+
+**Knowledge Catalog**
+
+- [dataplex.googleapis.com/AspectType](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (18 fields)
+- [dataplex.googleapis.com/DataScan](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (46 fields)
+- [dataplex.googleapis.com/EntryGroup](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (2 fields)
+- [dataplex.googleapis.com/EntryType](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (7 fields)
+- [dataplex.googleapis.com/MetadataJob](https://docs.cloud.google.com/dataplex/docs/dataplex-custom-constraints) (15 fields)
 
 **Live Stream API**
 
