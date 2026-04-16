@@ -466,7 +466,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Memorystore for Redis Cluster**
 
-- [redis.googleapis.com/Cluster](https://docs.cloud.google.com/memorystore/docs/cluster/custom-constraints) (14 fields)
+- [redis.googleapis.com/Cluster](https://docs.cloud.google.com/memorystore/docs/cluster/custom-constraints) (13 fields)
 
 **Network Connectivity**
 

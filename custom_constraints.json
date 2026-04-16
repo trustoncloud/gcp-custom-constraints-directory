@@ -6053,7 +6053,6 @@
       "fields": [
         "resource.authorizationMode",
         "resource.deletionProtectionEnabled",
-        "resource.management.autoUpgrade",
         "resource.name",
         "resource.nodeType",
         "resource.persistenceConfig.aofConfig.appendFsync",
