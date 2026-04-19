@@ -108,6 +108,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [bigtableadmin.googleapis.com/Cluster](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (10 fields)
 - [bigtableadmin.googleapis.com/Instance](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (2 fields)
 - [bigtableadmin.googleapis.com/LogicalView](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (2 fields)
+- [bigtableadmin.googleapis.com/SchemaBundle](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (2 fields)
 - [bigtableadmin.googleapis.com/Table](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (12 fields)
 
 **Cloud Build**
@@ -119,10 +120,6 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [cloudbuild.googleapis.com/GithubEnterpriseConfig](https://docs.cloud.google.com/build/docs/custom-constraints) (11 fields)
 - [cloudbuild.googleapis.com/Repository](https://docs.cloud.google.com/build/docs/custom-constraints) (3 fields)
 - [cloudbuild.googleapis.com/WorkerPool](https://docs.cloud.google.com/build/docs/custom-constraints) (10 fields)
-
-**Cloud Composer**
-
-- [composer.googleapis.com/Environment](https://docs.cloud.google.com/composer/docs/latest/create-custom-constraints) (41 fields)
 
 **Cloud Data Fusion**
 
@@ -448,6 +445,10 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [livestream.googleapis.com/Asset](https://docs.cloud.google.com/livestream/docs/custom-constraints) (4 fields)
 - [livestream.googleapis.com/Channel](https://docs.cloud.google.com/livestream/docs/custom-constraints) (65 fields)
 - [livestream.googleapis.com/Input](https://docs.cloud.google.com/livestream/docs/custom-constraints) (12 fields)
+
+**Managed Service for Apache Airflow**
+
+- [composer.googleapis.com/Environment](https://docs.cloud.google.com/composer/docs/latest/create-custom-constraints) (41 fields)
 
 **Managed Service for Apache Kafka**
 
