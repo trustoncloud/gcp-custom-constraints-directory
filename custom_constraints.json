@@ -1991,7 +1991,14 @@
       "resource_type": "compute.googleapis.com/Disk",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.enableConfidentialCompute",
+        "resource.licenseCodes",
+        "resource.licenses",
+        "resource.sizeGb",
+        "resource.sourceImage",
+        "resource.type"
+      ]
     },
     {
       "service": "Compute Engine",
@@ -1999,7 +2006,9 @@
       "resource_type": "compute.googleapis.com/Image",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.rawDisk.source"
+      ]
     },
     {
       "service": "Compute Engine",
@@ -2007,7 +2016,43 @@
       "resource_type": "compute.googleapis.com/Instance",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.advancedMachineFeatures.enableNestedVirtualization",
+        "resource.advancedMachineFeatures.performanceMonitoringUnit",
+        "resource.advancedMachineFeatures.threadsPerCore",
+        "resource.canIpForward",
+        "resource.confidentialInstanceConfig.confidentialInstanceType",
+        "resource.confidentialInstanceConfig.enableConfidentialCompute",
+        "resource.deletionProtection",
+        "resource.guestAccelerators.acceleratorCount",
+        "resource.guestAccelerators.acceleratorType",
+        "resource.labels",
+        "resource.machineType",
+        "resource.minCpuPlatform",
+        "resource.name",
+        "resource.networkInterfaces.accessConfigs.name",
+        "resource.networkInterfaces.accessConfigs.natIP",
+        "resource.networkInterfaces.network",
+        "resource.networkInterfaces.networkAttachment",
+        "resource.networkInterfaces.subnetwork",
+        "resource.privateIpv6GoogleAccess",
+        "resource.resourceStatus.effectiveInstanceMetadata.blockProjectSshKeysMetadataValue",
+        "resource.resourceStatus.effectiveInstanceMetadata.enableGuestAttributesMetadataValue",
+        "resource.resourceStatus.effectiveInstanceMetadata.enableOsInventoryMetadataValue",
+        "resource.resourceStatus.effectiveInstanceMetadata.enableOsconfigMetadataValue",
+        "resource.resourceStatus.effectiveInstanceMetadata.enableOsloginMetadataValue",
+        "resource.resourceStatus.effectiveInstanceMetadata.serialPortEnableMetadataValue",
+        "resource.resourceStatus.effectiveInstanceMetadata.serialPortLoggingEnableMetadataValue",
+        "resource.resourceStatus.effectiveInstanceMetadata.vmDnsSettingMetadataValue",
+        "resource.scheduling.nodeAffinities.key",
+        "resource.scheduling.nodeAffinities.operator",
+        "resource.scheduling.nodeAffinities.values",
+        "resource.selfLink",
+        "resource.shieldedInstanceConfig.enableIntegrityMonitoring",
+        "resource.shieldedInstanceConfig.enableSecureBoot",
+        "resource.shieldedInstanceConfig.enableVtpm",
+        "resource.zone"
+      ]
     },
     {
       "service": "Compute Engine",
@@ -5366,7 +5411,12 @@
       "resource_type": "compute.googleapis.com/InstanceGroup",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.description",
+        "resource.name",
+        "resource.namedPorts.name",
+        "resource.namedPorts.port"
+      ]
     },
     {
       "service": "Cloud Load Balancing",

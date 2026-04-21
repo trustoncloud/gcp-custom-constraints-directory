@@ -173,7 +173,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [compute.googleapis.com/BackendService](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (96 fields)
 - [compute.googleapis.com/ForwardingRule](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (22 fields)
 - [compute.googleapis.com/HealthCheck](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (40 fields)
-- [compute.googleapis.com/InstanceGroup](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
+- [compute.googleapis.com/InstanceGroup](https://docs.cloud.google.com/compute/docs/access/custom-constraints) (4 fields)
 - [compute.googleapis.com/NetworkEndpointGroup](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (17 fields)
 - [compute.googleapis.com/SslPolicy](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
 - [compute.googleapis.com/TargetGrpcProxy](https://docs.cloud.google.com/load-balancing/docs/custom-constraints) (3 fields)
@@ -267,9 +267,9 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Compute Engine**
 
-- [compute.googleapis.com/Disk](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
-- [compute.googleapis.com/Image](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
-- [compute.googleapis.com/Instance](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
+- [compute.googleapis.com/Disk](https://docs.cloud.google.com/compute/docs/access/custom-constraints) (6 fields)
+- [compute.googleapis.com/Image](https://docs.cloud.google.com/compute/docs/access/custom-constraints) (1 field)
+- [compute.googleapis.com/Instance](https://docs.cloud.google.com/compute/docs/access/custom-constraints) (35 fields)
 - [compute.googleapis.com/PreviewFeature](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
 
 **Data Lineage API**
