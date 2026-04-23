@@ -7521,7 +7521,7 @@
       ]
     },
     {
-      "service": "Vertex AI",
+      "service": "Agent Platform",
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/DeploymentResourcePool",
       "launch_status": "Preview",
@@ -7542,7 +7542,7 @@
       ]
     },
     {
-      "service": "Vertex AI",
+      "service": "Agent Platform",
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/Endpoint",
       "launch_status": "Preview",
@@ -7591,7 +7591,7 @@
       ]
     },
     {
-      "service": "Vertex AI Pipelines",
+      "service": "Agent Platform Pipelines",
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/PipelineJob",
       "launch_status": "Preview",

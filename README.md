@@ -11,6 +11,15 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [accesscontextmanager.googleapis.com/AuthorizedOrgsDesc](https://docs.cloud.google.com/access-context-manager/docs/custom-constraints) (4 fields)
 - [accesscontextmanager.googleapis.com/ServicePerimeter](https://docs.cloud.google.com/access-context-manager/docs/custom-constraints) (46 fields)
 
+**Agent Platform**
+
+- [aiplatform.googleapis.com/DeploymentResourcePool](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (12 fields)
+- [aiplatform.googleapis.com/Endpoint](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (28 fields)
+
+**Agent Platform Pipelines**
+
+- [aiplatform.googleapis.com/PipelineJob](https://docs.cloud.google.com/vertex-ai/docs/pipelines/use-custom-constraints) (18 fields)
+
 **AI Platform Training**
 
 - [aiplatform.googleapis.com/CustomJob](https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints) (40 fields)
@@ -555,15 +564,6 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [aiplatform.googleapis.com/Index](https://docs.cloud.google.com/vertex-ai/docs/vector-search/custom-constraints) (6 fields)
 - [aiplatform.googleapis.com/IndexEndpoint](https://docs.cloud.google.com/vertex-ai/docs/vector-search/custom-constraints) (7 fields)
-
-**Vertex AI**
-
-- [aiplatform.googleapis.com/DeploymentResourcePool](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (12 fields)
-- [aiplatform.googleapis.com/Endpoint](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (28 fields)
-
-**Vertex AI Pipelines**
-
-- [aiplatform.googleapis.com/PipelineJob](https://docs.cloud.google.com/vertex-ai/docs/pipelines/use-custom-constraints) (18 fields)
 
 **Vertex ML Metadata**
 
