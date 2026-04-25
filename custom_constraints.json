@@ -6961,6 +6961,8 @@
       "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.addresses",
+        "resource.allPorts",
+        "resource.allowGlobalAccess",
         "resource.certificateUrls",
         "resource.description",
         "resource.envoyHeaders",
@@ -7149,6 +7151,17 @@
         "resource.rules.action.idleTimeout",
         "resource.rules.matches.alpn",
         "resource.rules.matches.sniHost"
+      ]
+    },
+    {
+      "service": "Service Networking",
+      "namespace": "servicenetworking",
+      "resource_type": "servicenetworking.googleapis.com/Connection",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/service-infrastructure/docs/service-networking/custom-constraints",
+      "fields": [
+        "resource.network",
+        "resource.reservedPeeringRanges"
       ]
     },
     {
@@ -7521,7 +7534,7 @@
       ]
     },
     {
-      "service": "Agent Platform",
+      "service": "Vertex AI",
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/DeploymentResourcePool",
       "launch_status": "Preview",
@@ -7542,7 +7555,7 @@
       ]
     },
     {
-      "service": "Agent Platform",
+      "service": "Vertex AI",
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/Endpoint",
       "launch_status": "Preview",
@@ -7591,7 +7604,7 @@
       ]
     },
     {
-      "service": "Agent Platform Pipelines",
+      "service": "Vertex AI Pipelines",
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/PipelineJob",
       "launch_status": "Preview",
