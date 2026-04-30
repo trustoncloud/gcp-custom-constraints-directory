@@ -291,7 +291,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [dataform.googleapis.com/CompilationResult](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (14 fields)
 - [dataform.googleapis.com/ReleaseConfig](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (17 fields)
-- [dataform.googleapis.com/Repository](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (14 fields)
+- [dataform.googleapis.com/Repository](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (15 fields)
 - [dataform.googleapis.com/WorkflowConfig](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (14 fields)
 - [dataform.googleapis.com/WorkflowInvocation](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (11 fields)
 - [dataform.googleapis.com/Workspace](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (1 field)
@@ -486,8 +486,8 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [pubsub.googleapis.com/Schema](https://docs.cloud.google.com/pubsub/docs/custom-constraints) (3 fields)
 - [pubsub.googleapis.com/Snapshot](https://docs.cloud.google.com/pubsub/docs/custom-constraints) (3 fields)
-- [pubsub.googleapis.com/Subscription](https://docs.cloud.google.com/pubsub/docs/custom-constraints) (37 fields)
-- [pubsub.googleapis.com/Topic](https://docs.cloud.google.com/pubsub/docs/custom-constraints) (22 fields)
+- [pubsub.googleapis.com/Subscription](https://docs.cloud.google.com/pubsub/docs/custom-constraints) (44 fields)
+- [pubsub.googleapis.com/Topic](https://docs.cloud.google.com/pubsub/docs/custom-constraints) (41 fields)
 
 **reCAPTCHA**
 
