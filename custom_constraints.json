@@ -2182,6 +2182,17 @@
     {
       "service": "Dataform",
       "namespace": "dataform",
+      "resource_type": "dataform.googleapis.com/Folder",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/dataform/docs/create-custom-constraints",
+      "fields": [
+        "resource.containingFolder",
+        "resource.displayName"
+      ]
+    },
+    {
+      "service": "Dataform",
+      "namespace": "dataform",
       "resource_type": "dataform.googleapis.com/ReleaseConfig",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/dataform/docs/create-custom-constraints",
@@ -2227,6 +2238,16 @@
         "resource.workspaceCompilationOverrides.defaultDatabase",
         "resource.workspaceCompilationOverrides.schemaSuffix",
         "resource.workspaceCompilationOverrides.tablePrefix"
+      ]
+    },
+    {
+      "service": "Dataform",
+      "namespace": "dataform",
+      "resource_type": "dataform.googleapis.com/TeamFolder",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/dataform/docs/create-custom-constraints",
+      "fields": [
+        "resource.displayName"
       ]
     },
     {

@@ -290,8 +290,10 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Dataform**
 
 - [dataform.googleapis.com/CompilationResult](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (14 fields)
+- [dataform.googleapis.com/Folder](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (2 fields)
 - [dataform.googleapis.com/ReleaseConfig](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (17 fields)
 - [dataform.googleapis.com/Repository](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (15 fields)
+- [dataform.googleapis.com/TeamFolder](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (1 field)
 - [dataform.googleapis.com/WorkflowConfig](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (14 fields)
 - [dataform.googleapis.com/WorkflowInvocation](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (11 fields)
 - [dataform.googleapis.com/Workspace](https://docs.cloud.google.com/dataform/docs/create-custom-constraints) (1 field)
