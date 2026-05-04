@@ -7206,7 +7206,7 @@
       "namespace": "servicenetworking",
       "resource_type": "servicenetworking.googleapis.com/Connection",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/service-infrastructure/docs/service-networking/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
       "fields": [
         "resource.network",
         "resource.reservedPeeringRanges"

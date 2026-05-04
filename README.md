@@ -544,7 +544,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Service Networking**
 
-- [servicenetworking.googleapis.com/Connection](https://docs.cloud.google.com/service-infrastructure/docs/service-networking/custom-constraints) (2 fields)
+- [servicenetworking.googleapis.com/Connection](https://docs.cloud.google.com/vpc/docs/custom-constraints) (2 fields)
 
 **Spanner**
 
