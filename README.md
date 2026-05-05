@@ -428,7 +428,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Integration Connectors**
 
-- [connectors.googleapis.com/Connection](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (63 fields)
+- [connectors.googleapis.com/Connection](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (206 fields)
 - [connectors.googleapis.com/EndpointAttachment](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (3 fields)
 - [connectors.googleapis.com/EventSubscription](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (25 fields)
 - [connectors.googleapis.com/ManagedZone](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (4 fields)
