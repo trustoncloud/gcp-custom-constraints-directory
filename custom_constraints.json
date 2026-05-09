@@ -4601,7 +4601,7 @@
       ]
     },
     {
-      "service": "Hub",
+      "service": "GKE Fleet",
       "namespace": "gkehub",
       "resource_type": "gkehub.googleapis.com/Feature",
       "launch_status": "GA",
@@ -4609,7 +4609,7 @@
       "fields": []
     },
     {
-      "service": "Hub",
+      "service": "GKE Fleet",
       "namespace": "gkehub",
       "resource_type": "gkehub.googleapis.com/Fleet",
       "launch_status": "GA",
@@ -4617,7 +4617,7 @@
       "fields": []
     },
     {
-      "service": "Hub",
+      "service": "GKE Fleet",
       "namespace": "gkehub",
       "resource_type": "gkehub.googleapis.com/Membership",
       "launch_status": "GA",
@@ -4625,7 +4625,7 @@
       "fields": []
     },
     {
-      "service": "Hub",
+      "service": "GKE Fleet",
       "namespace": "gkehub",
       "resource_type": "gkehub.googleapis.com/MembershipBinding",
       "launch_status": "GA",
@@ -4633,7 +4633,7 @@
       "fields": []
     },
     {
-      "service": "Hub",
+      "service": "GKE Fleet",
       "namespace": "gkehub",
       "resource_type": "gkehub.googleapis.com/MembershipFeature",
       "launch_status": "GA",
@@ -4641,7 +4641,7 @@
       "fields": []
     },
     {
-      "service": "Hub",
+      "service": "GKE Fleet",
       "namespace": "gkehub",
       "resource_type": "gkehub.googleapis.com/Namespace",
       "launch_status": "GA",
@@ -4649,7 +4649,7 @@
       "fields": []
     },
     {
-      "service": "Hub",
+      "service": "GKE Fleet",
       "namespace": "gkehub",
       "resource_type": "gkehub.googleapis.com/RBACRoleBinding",
       "launch_status": "GA",
@@ -4657,7 +4657,7 @@
       "fields": []
     },
     {
-      "service": "Hub",
+      "service": "GKE Fleet",
       "namespace": "gkehub",
       "resource_type": "gkehub.googleapis.com/Scope",
       "launch_status": "GA",

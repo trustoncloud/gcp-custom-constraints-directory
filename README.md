@@ -354,6 +354,17 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [gkemulticloud.googleapis.com/AttachedCluster](https://docs.cloud.google.com/kubernetes-engine/multi-cloud/docs/attached/eks/how-to/setup-custom-constraints)
 
+**GKE Fleet**
+
+- gkehub.googleapis.com/Feature
+- gkehub.googleapis.com/Fleet
+- gkehub.googleapis.com/Membership
+- gkehub.googleapis.com/MembershipBinding
+- gkehub.googleapis.com/MembershipFeature
+- gkehub.googleapis.com/Namespace
+- gkehub.googleapis.com/RBACRoleBinding
+- gkehub.googleapis.com/Scope
+
 **GKE on AWS**
 
 - [gkemulticloud.googleapis.com/AwsCluster](https://docs.cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/how-to/setup-custom-constraints)
@@ -386,17 +397,6 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Google Cloud Managed Service for Apache Kafka**
 
 - [managedkafka.googleapis.com/Cluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints) (9 fields)
-
-**Hub**
-
-- gkehub.googleapis.com/Feature
-- gkehub.googleapis.com/Fleet
-- gkehub.googleapis.com/Membership
-- gkehub.googleapis.com/MembershipBinding
-- gkehub.googleapis.com/MembershipFeature
-- gkehub.googleapis.com/Namespace
-- gkehub.googleapis.com/RBACRoleBinding
-- gkehub.googleapis.com/Scope
 
 **Identity and Access Management**
 
