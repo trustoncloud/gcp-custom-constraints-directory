@@ -144,16 +144,68 @@ def _extract_resource_field(txt):
 
 from functools import lru_cache
 
+_MANAGED_SPARK_HEADING_TO_RESOURCE = {
+    "supported-resources-batch": "dataproc.googleapis.com/Batch",
+    "supported-resources-session": "dataproc.googleapis.com/Session",
+    "supported-resources-session-template": "dataproc.googleapis.com/SessionTemplate",
+}
+
+
+def _scrape_managed_spark_serverless(soup) -> dict[str, list[str]]:
+    """Scrape fields from the managed-spark serverless custom-constraints doc.
+
+    The page lists three resource types (Batch, Session, SessionTemplate)
+    each under its own <h3> section ("Supported batch/session/session template
+    constraints"). Fields are rendered as <code>resource.X</code> inside
+    <ul><li> blocks rather than a Resource/Field table, and the section
+    contains no explicit ``dataproc.googleapis.com/<Kind>`` token — the
+    resource type only appears in the earlier "Create a custom constraint"
+    sections. We therefore map by the stable heading ``id`` attribute.
+
+    Args:
+        soup: Parsed BeautifulSoup tree of the page.
+
+    Returns:
+        Mapping of ``resource_type`` (e.g. ``dataproc.googleapis.com/Batch``)
+        to a sorted list of ``resource.*`` field paths. Empty mapping if the
+        page layout has changed and no expected headings were found.
+    """
+    resource_fields: dict[str, list[str]] = {}
+    for heading_id, resource_type in _MANAGED_SPARK_HEADING_TO_RESOURCE.items():
+        heading = soup.find("h3", id=heading_id)
+        if heading is None:
+            continue
+        fields: set[str] = set()
+        for sib in heading.find_all_next():
+            if sib.name in ("h2", "h3"):
+                break
+            if sib.name != "code":
+                continue
+            field = _extract_resource_field(sib.get_text(strip=True))
+            if field:
+                fields.add(field)
+        if fields:
+            resource_fields[resource_type] = sorted(fields)
+    return resource_fields
+
+
+CUSTOM_SCRAPERS = {
+    "https://docs.cloud.google.com/managed-spark/docs/guides/custom-constraints-serverless":
+        _scrape_managed_spark_serverless,
+}
+
+
 @lru_cache(maxsize=300)
 def fetch_fields(doc_url) -> list | dict[list]:
     if not doc_url:
         return []
     try:
-        if doc_url in OVERWRITE_URL.keys():
-            print(f'Overwrite {doc_url} to {OVERWRITE_URL[doc_url]}')
-            doc_url = OVERWRITE_URL[doc_url]
         resp = _http_get_with_retry(doc_url)
         soup = BeautifulSoup(resp.text, "html.parser")
+
+        custom = CUSTOM_SCRAPERS.get(doc_url)
+        if custom is not None:
+            return custom(soup)
 
         # Helper: parse a table and return a dict of resource_type -> set(fields)
         def parse_resource_field_table(table):
@@ -239,6 +291,12 @@ def main():
     print("Parsing table...")
     constraints = parse_table(table)
     print(f"Found {len(constraints)} resource types. Fetching fields...")
+
+    for c in constraints:
+        original = c["doc_url"]
+        if original in OVERWRITE_URL:
+            print(f"Overwrite {original} to {OVERWRITE_URL[original]}")
+            c["doc_url"] = OVERWRITE_URL[original]
 
     # Count how many times each doc_url appears in constraints
     url_count = {}
