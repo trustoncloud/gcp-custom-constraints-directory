@@ -7341,7 +7341,8 @@
         "resource.rules.action.destinations.weight",
         "resource.rules.action.idleTimeout",
         "resource.rules.matches.alpn",
-        "resource.rules.matches.sniHost"
+        "resource.rules.matches.sniHost",
+        "resource.targetProxies"
       ]
     },
     {
