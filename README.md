@@ -235,7 +235,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [networkservices.googleapis.com/Mesh](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (4 fields)
 - [networkservices.googleapis.com/ServiceBinding](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (2 fields)
 - [networkservices.googleapis.com/TcpRoute](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
-- [networkservices.googleapis.com/TlsRoute](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (9 fields)
+- [networkservices.googleapis.com/TlsRoute](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
 
 **Cloud SQL**
 
