@@ -458,10 +458,10 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Managed Service for Apache Spark**
 
-- [dataproc.googleapis.com/Batch](https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints)
+- [dataproc.googleapis.com/Batch](https://docs.cloud.google.com/managed-spark/docs/guides/custom-constraints-serverless) (37 fields)
 - [dataproc.googleapis.com/Cluster](https://docs.cloud.google.com/dataproc/docs/concepts/dataproc-custom-constraints) (40 fields)
-- [dataproc.googleapis.com/Session](https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints)
-- [dataproc.googleapis.com/SessionTemplate](https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints)
+- [dataproc.googleapis.com/Session](https://docs.cloud.google.com/managed-spark/docs/guides/custom-constraints-serverless) (23 fields)
+- [dataproc.googleapis.com/SessionTemplate](https://docs.cloud.google.com/managed-spark/docs/guides/custom-constraints-serverless) (22 fields)
 
 **Memorystore**
 
