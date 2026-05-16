@@ -2029,7 +2029,6 @@
         "resource.labels",
         "resource.machineType",
         "resource.minCpuPlatform",
-        "resource.name",
         "resource.networkInterfaces.accessConfigs.name",
         "resource.networkInterfaces.accessConfigs.natIP",
         "resource.networkInterfaces.network",

@@ -269,7 +269,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [compute.googleapis.com/Disk](https://docs.cloud.google.com/compute/docs/access/custom-constraints) (6 fields)
 - [compute.googleapis.com/Image](https://docs.cloud.google.com/compute/docs/access/custom-constraints) (1 field)
-- [compute.googleapis.com/Instance](https://docs.cloud.google.com/compute/docs/access/custom-constraints) (35 fields)
+- [compute.googleapis.com/Instance](https://docs.cloud.google.com/compute/docs/access/custom-constraints) (34 fields)
 - [compute.googleapis.com/PreviewFeature](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
 
 **Data Lineage API**
