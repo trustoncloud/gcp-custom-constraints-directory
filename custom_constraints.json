@@ -1120,6 +1120,67 @@
       ]
     },
     {
+      "service": "BigQuery Reservation API",
+      "namespace": "bigqueryreservation",
+      "resource_type": "bigqueryreservation.googleapis.com/BiReservation",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/custom-constraints",
+      "fields": [
+        "resource.name",
+        "resource.preferredTables.datasetId",
+        "resource.preferredTables.projectId",
+        "resource.preferredTables.tableId",
+        "resource.size"
+      ]
+    },
+    {
+      "service": "BigQuery Reservation API",
+      "namespace": "bigqueryreservation",
+      "resource_type": "bigqueryreservation.googleapis.com/CapacityCommitment",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/custom-constraints",
+      "fields": [
+        "resource.edition",
+        "resource.plan",
+        "resource.renewalPlan",
+        "resource.slotCount"
+      ]
+    },
+    {
+      "service": "BigQuery Reservation API",
+      "namespace": "bigqueryreservation",
+      "resource_type": "bigqueryreservation.googleapis.com/Reservation",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/custom-constraints",
+      "fields": [
+        "resource.autoscale.maxSlots",
+        "resource.concurrency",
+        "resource.edition",
+        "resource.ignoreIdleSlots",
+        "resource.maxSlots",
+        "resource.name",
+        "resource.reservationGroup",
+        "resource.scalingMode",
+        "resource.schedulingPolicy.concurrency",
+        "resource.schedulingPolicy.maxSlots",
+        "resource.secondaryLocation",
+        "resource.slotCapacity"
+      ]
+    },
+    {
+      "service": "BigQuery Reservation API",
+      "namespace": "bigqueryreservation",
+      "resource_type": "bigqueryreservation.googleapis.com/ReservationAssignment",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/bigquery/docs/custom-constraints",
+      "fields": [
+        "resource.assignee",
+        "resource.jobType",
+        "resource.schedulingPolicy.concurrency",
+        "resource.schedulingPolicy.maxSlots"
+      ]
+    },
+    {
       "service": "Cloud Build",
       "namespace": "cloudbuild",
       "resource_type": "cloudbuild.googleapis.com/BitbucketServerConfig",

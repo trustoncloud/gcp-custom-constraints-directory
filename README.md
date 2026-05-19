@@ -76,6 +76,13 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [bigquerymigration.googleapis.com/MigrationWorkflow](https://docs.cloud.google.com/bigquery/docs/migration-custom-org-policies) (37 fields)
 
+**BigQuery Reservation API**
+
+- [bigqueryreservation.googleapis.com/BiReservation](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (5 fields)
+- [bigqueryreservation.googleapis.com/CapacityCommitment](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (4 fields)
+- [bigqueryreservation.googleapis.com/Reservation](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (12 fields)
+- [bigqueryreservation.googleapis.com/ReservationAssignment](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (4 fields)
+
 **BigQuery sharing**
 
 - [analyticshub.googleapis.com/DataExchange](https://docs.cloud.google.com/bigquery/docs/analytics-hub-custom-constraints) (7 fields)
