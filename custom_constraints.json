@@ -5313,6 +5313,7 @@
       "doc_url": "https://docs.cloud.google.com/kms/docs/custom-org-policies",
       "fields": [
         "resource.keyProject",
+        "resource.keyProjectResolutionMode",
         "resource.name"
       ]
     },
@@ -5378,6 +5379,7 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/kms/docs/custom-org-policies",
       "fields": [
+        "resource.cryptoKeyBackend",
         "resource.importMethod",
         "resource.protectionLevel"
       ]

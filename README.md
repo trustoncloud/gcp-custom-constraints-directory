@@ -166,12 +166,12 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Cloud Key Management Service**
 
-- [cloudkms.googleapis.com/AutokeyConfig](https://docs.cloud.google.com/kms/docs/custom-org-policies) (2 fields)
+- [cloudkms.googleapis.com/AutokeyConfig](https://docs.cloud.google.com/kms/docs/custom-org-policies) (3 fields)
 - [cloudkms.googleapis.com/CryptoKey](https://docs.cloud.google.com/kms/docs/custom-org-policies) (9 fields)
 - [cloudkms.googleapis.com/CryptoKeyVersion](https://docs.cloud.google.com/kms/docs/custom-org-policies) (3 fields)
 - [cloudkms.googleapis.com/EkmConfig](https://docs.cloud.google.com/kms/docs/custom-org-policies) (1 field)
 - [cloudkms.googleapis.com/EkmConnection](https://docs.cloud.google.com/kms/docs/custom-org-policies) (6 fields)
-- [cloudkms.googleapis.com/ImportJob](https://docs.cloud.google.com/kms/docs/custom-org-policies) (2 fields)
+- [cloudkms.googleapis.com/ImportJob](https://docs.cloud.google.com/kms/docs/custom-org-policies) (3 fields)
 - [cloudkms.googleapis.com/KeyHandle](https://docs.cloud.google.com/kms/docs/custom-org-policies) (2 fields)
 
 **Cloud Load Balancing**
