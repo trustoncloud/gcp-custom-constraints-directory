@@ -1572,6 +1572,7 @@
       "doc_url": "https://docs.cloud.google.com/certificate-authority-service/docs/custom-constraints",
       "fields": [
         "resource.encryptionSpec.cloudKmsKey",
+        "resource.issuancePolicy.allowRequesterSpecifiedNotBeforeTime",
         "resource.issuancePolicy.allowedIssuanceModes.allowConfigBasedIssuance",
         "resource.issuancePolicy.allowedIssuanceModes.allowCsrBasedIssuance",
         "resource.issuancePolicy.allowedKeyTypes.ellipticCurve.signatureAlgorithm",
