@@ -151,6 +151,10 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [dns.googleapis.com/ResponsePolicy](https://docs.cloud.google.com/dns/docs/create-custom-constraints) (4 fields)
 - [dns.googleapis.com/ResponsePolicyRule](https://docs.cloud.google.com/dns/docs/create-custom-constraints) (49 fields)
 
+**Cloud Domains**
+
+- [domains.googleapis.com/Registration](https://docs.cloud.google.com/domains/docs/custom-constraints) (2 fields)
+
 **Cloud Healthcare API**
 
 - [healthcare.googleapis.com/ConsentStore](https://docs.cloud.google.com/healthcare-api/docs/custom-org-policy) (3 fields)

@@ -1880,6 +1880,17 @@
       "fields": []
     },
     {
+      "service": "Cloud Domains",
+      "namespace": "domains",
+      "resource_type": "domains.googleapis.com/Registration",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/domains/docs/custom-constraints",
+      "fields": [
+        "resource.domainName",
+        "resource.managementSettings.preferredRenewalMethod"
+      ]
+    },
+    {
       "service": "Cloud Quotas",
       "namespace": "cloudquotas",
       "resource_type": "cloudquotas.googleapis.com/QuotaPreference",
