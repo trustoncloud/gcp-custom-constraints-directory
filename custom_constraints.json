@@ -962,6 +962,17 @@
     {
       "service": "Cloud Bigtable Admin API",
       "namespace": "bigtableadmin",
+      "resource_type": "bigtableadmin.googleapis.com/MaterializedView",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/bigtable/docs/custom-constraints",
+      "fields": [
+        "resource.deletionProtection",
+        "resource.name"
+      ]
+    },
+    {
+      "service": "Cloud Bigtable Admin API",
+      "namespace": "bigtableadmin",
       "resource_type": "bigtableadmin.googleapis.com/SchemaBundle",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/bigtable/docs/custom-constraints",
