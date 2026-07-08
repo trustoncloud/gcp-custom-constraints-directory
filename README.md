@@ -410,6 +410,17 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [managedkafka.googleapis.com/Cluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints) (9 fields)
 
+**Google Cloud VMware Engine**
+
+- [vmwareengine.googleapis.com/Cluster](https://docs.cloud.google.com/vmware-engine/docs/custom-constraints) (25 fields)
+- [vmwareengine.googleapis.com/ExternalAccessRule](https://docs.cloud.google.com/vmware-engine/docs/custom-constraints) (12 fields)
+- [vmwareengine.googleapis.com/ExternalAddress](https://docs.cloud.google.com/vmware-engine/docs/custom-constraints) (2 fields)
+- [vmwareengine.googleapis.com/NetworkPeering](https://docs.cloud.google.com/vmware-engine/docs/custom-constraints) (10 fields)
+- [vmwareengine.googleapis.com/NetworkPolicy](https://docs.cloud.google.com/vmware-engine/docs/custom-constraints) (5 fields)
+- [vmwareengine.googleapis.com/PrivateCloud](https://docs.cloud.google.com/vmware-engine/docs/custom-constraints) (41 fields)
+- [vmwareengine.googleapis.com/PrivateConnection](https://docs.cloud.google.com/vmware-engine/docs/custom-constraints) (5 fields)
+- [vmwareengine.googleapis.com/VmwareEngineNetwork](https://docs.cloud.google.com/vmware-engine/docs/custom-constraints) (2 fields)
+
 **Identity and Access Management**
 
 - [iam.googleapis.com/AllowPolicy](https://docs.cloud.google.com/iam/docs/org-policy-custom-constraints) (2 fields)
