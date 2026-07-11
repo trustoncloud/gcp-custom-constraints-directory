@@ -350,7 +350,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Filestore**
 
 - [file.googleapis.com/Backup](https://docs.cloud.google.com/filestore/docs/create-custom-constraints) (4 fields)
-- [file.googleapis.com/Instance](https://docs.cloud.google.com/filestore/docs/create-custom-constraints) (22 fields)
+- [file.googleapis.com/Instance](https://docs.cloud.google.com/filestore/docs/create-custom-constraints) (24 fields)
 - [file.googleapis.com/Snapshot](https://docs.cloud.google.com/filestore/docs/create-custom-constraints) (1 field)
 
 **Firestore**
