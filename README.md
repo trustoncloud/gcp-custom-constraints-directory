@@ -350,7 +350,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Filestore**
 
 - [file.googleapis.com/Backup](https://docs.cloud.google.com/filestore/docs/create-custom-constraints) (4 fields)
-- [file.googleapis.com/Instance](https://docs.cloud.google.com/filestore/docs/create-custom-constraints) (24 fields)
+- [file.googleapis.com/Instance](https://docs.cloud.google.com/filestore/docs/create-custom-constraints) (29 fields)
 - [file.googleapis.com/Snapshot](https://docs.cloud.google.com/filestore/docs/create-custom-constraints) (1 field)
 
 **Firestore**
@@ -486,13 +486,17 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [dataproc.googleapis.com/Session](https://docs.cloud.google.com/managed-spark/docs/guides/custom-constraints-serverless) (23 fields)
 - [dataproc.googleapis.com/SessionTemplate](https://docs.cloud.google.com/managed-spark/docs/guides/custom-constraints-serverless) (22 fields)
 
-**Memorystore**
+**Memorystore for Redis**
 
 - [redis.googleapis.com/Instance](https://docs.cloud.google.com/memorystore/docs/redis/custom-constraints) (26 fields)
 
 **Memorystore for Redis Cluster**
 
 - [redis.googleapis.com/Cluster](https://docs.cloud.google.com/memorystore/docs/cluster/custom-constraints) (13 fields)
+
+**Memorystore for Valkey**
+
+- [memorystore.googleapis.com/Instance](https://docs.cloud.google.com/memorystore/docs/valkey/use-custom-org-policies#supported-custom-constraints-and-operations) (31 fields)
 
 **Network Connectivity**
 
