@@ -511,6 +511,11 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [compute.googleapis.com/NetworkAttachment](https://docs.cloud.google.com/vpc/docs/custom-constraints) (6 fields)
 - [compute.googleapis.com/ServiceAttachment](https://docs.cloud.google.com/vpc/docs/custom-constraints) (15 fields)
 
+**Privileged Access Manager**
+
+- [privilegedaccessmanager.googleapis.com/Entitlement](https://docs.cloud.google.com/iam/docs/pam-custom-constraints) (11 fields)
+- [privilegedaccessmanager.googleapis.com/Grant](https://docs.cloud.google.com/iam/docs/pam-custom-constraints) (4 fields)
+
 **Pub/Sub**
 
 - [pubsub.googleapis.com/Schema](https://docs.cloud.google.com/pubsub/docs/custom-constraints) (3 fields)

@@ -6697,6 +6697,39 @@
       ]
     },
     {
+      "service": "Privileged Access Manager",
+      "namespace": "privilegedaccessmanager",
+      "resource_type": "privilegedaccessmanager.googleapis.com/Entitlement",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/iam/docs/pam-custom-constraints",
+      "fields": [
+        "resource.additionalNotificationTargets.adminEmailRecipients",
+        "resource.additionalNotificationTargets.requesterEmailRecipients",
+        "resource.approvalWorkflow.manualApprovals.requireApproverJustification",
+        "resource.approvalWorkflow.manualApprovals.steps.approvalsNeeded",
+        "resource.approvalWorkflow.manualApprovals.steps.approverEmailRecipients",
+        "resource.maxRequestDuration",
+        "resource.name",
+        "resource.privilegedAccess.gcpIamAccess.resource",
+        "resource.privilegedAccess.gcpIamAccess.resourceType",
+        "resource.privilegedAccess.gcpIamAccess.roleBindings.conditionExpression",
+        "resource.privilegedAccess.gcpIamAccess.roleBindings.role"
+      ]
+    },
+    {
+      "service": "Privileged Access Manager",
+      "namespace": "privilegedaccessmanager",
+      "resource_type": "privilegedaccessmanager.googleapis.com/Grant",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/iam/docs/pam-custom-constraints",
+      "fields": [
+        "resource.additionalEmailRecipients",
+        "resource.justification.unstructuredJustification",
+        "resource.name",
+        "resource.requestedDuration"
+      ]
+    },
+    {
       "service": "Private Service Connect",
       "namespace": "compute",
       "resource_type": "compute.googleapis.com/NetworkAttachment",
