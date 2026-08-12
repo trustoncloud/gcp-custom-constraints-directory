@@ -11,6 +11,10 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [accesscontextmanager.googleapis.com/AuthorizedOrgsDesc](https://docs.cloud.google.com/access-context-manager/docs/custom-constraints) (4 fields)
 - [accesscontextmanager.googleapis.com/ServicePerimeter](https://docs.cloud.google.com/access-context-manager/docs/custom-constraints) (46 fields)
 
+**Agent Identity API**
+
+- [agentidentity.googleapis.com/AuthProvider](https://docs.cloud.google.com/iam/docs/agent-identity-custom-constraints) (12 fields)
+
 **AI Platform Training**
 
 - [aiplatform.googleapis.com/CustomJob](https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints) (40 fields)

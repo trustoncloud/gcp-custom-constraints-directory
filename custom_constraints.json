@@ -107,6 +107,27 @@
       ]
     },
     {
+      "service": "Agent Identity API",
+      "namespace": "agentidentity",
+      "resource_type": "agentidentity.googleapis.com/AuthProvider",
+      "launch_status": "Preview",
+      "doc_url": "https://docs.cloud.google.com/iam/docs/agent-identity-custom-constraints",
+      "fields": [
+        "resource.allowedScopes",
+        "resource.authProviderTypeParams.threeLeggedOauth.authorizationUrl",
+        "resource.authProviderTypeParams.threeLeggedOauth.clientId",
+        "resource.authProviderTypeParams.threeLeggedOauth.defaultContinueUri",
+        "resource.authProviderTypeParams.threeLeggedOauth.enablePkce",
+        "resource.authProviderTypeParams.threeLeggedOauth.tokenUrl",
+        "resource.authProviderTypeParams.twoLeggedOauth.clientId",
+        "resource.authProviderTypeParams.twoLeggedOauth.tokenUrl",
+        "resource.blockedScopes",
+        "resource.description",
+        "resource.name",
+        "resource.workloadIds"
+      ]
+    },
+    {
       "service": "AI Platform Training",
       "namespace": "aiplatform",
       "resource_type": "aiplatform.googleapis.com/CustomJob",
