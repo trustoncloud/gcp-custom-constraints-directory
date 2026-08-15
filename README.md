@@ -508,7 +508,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [networkconnectivity.googleapis.com/Hub](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (4 fields)
 - [networkconnectivity.googleapis.com/InternalRange](https://docs.cloud.google.com/vpc/docs/custom-constraints) (15 fields)
 - [networkconnectivity.googleapis.com/RegionalEndpoint](https://docs.cloud.google.com/vpc/docs/custom-constraints) (6 fields)
-- [networkconnectivity.googleapis.com/Spoke](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (20 fields)
+- [networkconnectivity.googleapis.com/Spoke](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (29 fields)
 
 **Private Service Connect**
 
