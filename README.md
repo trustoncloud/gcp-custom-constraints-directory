@@ -328,6 +328,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Developer Connect**
 
+- [developerconnect.googleapis.com/AccountConnector](https://docs.cloud.google.com/developer-connect/docs/custom-constraints)
 - [developerconnect.googleapis.com/Connection](https://docs.cloud.google.com/developer-connect/docs/custom-constraints)
 - [developerconnect.googleapis.com/GitRepositoryLink](https://docs.cloud.google.com/developer-connect/docs/custom-constraints)
 
@@ -414,6 +415,19 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [managedkafka.googleapis.com/Cluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints) (9 fields)
 
+**Google Cloud NetApp Volumes**
+
+- [netapp.googleapis.com/ActiveDirectory](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (13 fields)
+- [netapp.googleapis.com/Backup](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (7 fields)
+- [netapp.googleapis.com/BackupPolicy](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (6 fields)
+- [netapp.googleapis.com/BackupVault](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (11 fields)
+- [netapp.googleapis.com/HostGroup](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (5 fields)
+- [netapp.googleapis.com/KmsConfig](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (3 fields)
+- [netapp.googleapis.com/QuotaRule](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (4 fields)
+- [netapp.googleapis.com/Snapshot](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (2 fields)
+- [netapp.googleapis.com/StoragePool](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (21 fields)
+- [netapp.googleapis.com/Volume](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (77 fields)
+
 **Google Cloud VMware Engine**
 
 - [vmwareengine.googleapis.com/Cluster](https://docs.cloud.google.com/vmware-engine/docs/custom-constraints) (25 fields)
@@ -490,17 +504,14 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [dataproc.googleapis.com/Session](https://docs.cloud.google.com/managed-spark/docs/guides/custom-constraints-serverless) (23 fields)
 - [dataproc.googleapis.com/SessionTemplate](https://docs.cloud.google.com/managed-spark/docs/guides/custom-constraints-serverless) (22 fields)
 
-**Memorystore for Redis**
+**Memorystore**
 
+- [memorystore.googleapis.com/Instance](https://docs.cloud.google.com/memorystore/docs/valkey/use-custom-org-policies) (31 fields)
 - [redis.googleapis.com/Instance](https://docs.cloud.google.com/memorystore/docs/redis/custom-constraints) (26 fields)
 
 **Memorystore for Redis Cluster**
 
 - [redis.googleapis.com/Cluster](https://docs.cloud.google.com/memorystore/docs/cluster/custom-constraints) (13 fields)
-
-**Memorystore for Valkey**
-
-- [memorystore.googleapis.com/Instance](https://docs.cloud.google.com/memorystore/docs/valkey/use-custom-org-policies#supported-custom-constraints-and-operations) (31 fields)
 
 **Network Connectivity**
 
