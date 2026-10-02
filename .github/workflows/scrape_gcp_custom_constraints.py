@@ -18,6 +18,7 @@ OVERWRITE_URL = {
     'https://docs.cloud.google.com/backup-disaster-recovery/docs/custom-constraints': 'https://docs.cloud.google.com/backup-disaster-recovery/docs/customconstraints',
     'https://docs.cloud.google.com/resource-manager/docs/organization-policy/artifact-analysis/docs/custom-constraints': 'https://docs.cloud.google.com/artifact-analysis/docs/custom-constraints',
     'https://docs.cloud.google.com/dataproc-serverless/docs/guides/dataproc-serverless-custom-constraints': 'https://docs.cloud.google.com/managed-spark/docs/guides/custom-constraints-serverless',
+    'https://docs.cloud.google.com/organization-policy/reference/artifact-analysis/docs/custom-constraints': 'https://docs.cloud.google.com/artifact-analysis/docs/custom-constraints',
 }
 URLS_WITH_TEMPORARY_ISSUES = {}
 '''
