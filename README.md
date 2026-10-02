@@ -241,17 +241,17 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Cloud Service Mesh**
 
-- [networksecurity.googleapis.com/AuthorizationPolicy](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
-- [networksecurity.googleapis.com/ClientTlsPolicy](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (7 fields)
-- [networksecurity.googleapis.com/ServerTlsPolicy](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (9 fields)
-- [networkservices.googleapis.com/EndpointPolicy](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
+- [networksecurity.googleapis.com/AuthorizationPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (10 fields)
+- [networksecurity.googleapis.com/ClientTlsPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (7 fields)
+- [networksecurity.googleapis.com/ServerTlsPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (9 fields)
+- [networkservices.googleapis.com/EndpointPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (10 fields)
 - [networkservices.googleapis.com/Gateway](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (16 fields)
-- [networkservices.googleapis.com/GrpcRoute](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (23 fields)
-- [networkservices.googleapis.com/HttpRoute](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (73 fields)
-- [networkservices.googleapis.com/Mesh](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (4 fields)
-- [networkservices.googleapis.com/ServiceBinding](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (2 fields)
-- [networkservices.googleapis.com/TcpRoute](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
-- [networkservices.googleapis.com/TlsRoute](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
+- [networkservices.googleapis.com/GrpcRoute](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (23 fields)
+- [networkservices.googleapis.com/HttpRoute](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (73 fields)
+- [networkservices.googleapis.com/Mesh](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (4 fields)
+- [networkservices.googleapis.com/ServiceBinding](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (2 fields)
+- [networkservices.googleapis.com/TcpRoute](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (10 fields)
+- [networkservices.googleapis.com/TlsRoute](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (10 fields)
 
 **Cloud SQL**
 
@@ -377,7 +377,6 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - gkehub.googleapis.com/Fleet
 - gkehub.googleapis.com/Membership
 - gkehub.googleapis.com/MembershipBinding
-- gkehub.googleapis.com/MembershipFeature
 - gkehub.googleapis.com/Namespace
 - gkehub.googleapis.com/RBACRoleBinding
 - gkehub.googleapis.com/Scope
@@ -506,7 +505,6 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Memorystore**
 
-- [memorystore.googleapis.com/Instance](https://docs.cloud.google.com/memorystore/docs/valkey/use-custom-org-policies) (31 fields)
 - [redis.googleapis.com/Instance](https://docs.cloud.google.com/memorystore/docs/redis/custom-constraints) (26 fields)
 
 **Memorystore for Redis Cluster**
@@ -523,8 +521,8 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Private Service Connect**
 
-- [compute.googleapis.com/NetworkAttachment](https://docs.cloud.google.com/vpc/docs/custom-constraints) (6 fields)
-- [compute.googleapis.com/ServiceAttachment](https://docs.cloud.google.com/vpc/docs/custom-constraints) (15 fields)
+- [compute.googleapis.com/NetworkAttachment](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
+- [compute.googleapis.com/ServiceAttachment](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
 
 **Privileged Access Manager**
 
