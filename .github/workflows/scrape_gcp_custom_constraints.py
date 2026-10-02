@@ -21,6 +21,7 @@ OVERWRITE_URL = {
     'https://docs.cloud.google.com/organization-policy/reference/artifact-analysis/docs/custom-constraints': 'https://docs.cloud.google.com/artifact-analysis/docs/custom-constraints',
     'https://docs.cloud.google.com/service-mesh/docs/custom-constraints': 
     'https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints',
+    'https://docs.cloud.google.com/connectors/docs/custom-constraints': 'https://docs.cloud.google.com/integration-connectors/docs/custom-constraints',
 }
 URLS_WITH_TEMPORARY_ISSUES = {}
 '''
