@@ -364,7 +364,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **GKE**
 
-- [container.googleapis.com/Cluster](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/custom-org-policies) (296 fields)
+- [container.googleapis.com/Cluster](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/custom-org-policies) (298 fields)
 - [container.googleapis.com/NodePool](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/custom-org-policies) (112 fields)
 
 **GKE attached clusters**
