@@ -423,6 +423,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [netapp.googleapis.com/HostGroup](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (5 fields)
 - [netapp.googleapis.com/KmsConfig](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (3 fields)
 - [netapp.googleapis.com/QuotaRule](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (4 fields)
+- [netapp.googleapis.com/Replication](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (11 fields)
 - [netapp.googleapis.com/Snapshot](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (2 fields)
 - [netapp.googleapis.com/StoragePool](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (21 fields)
 - [netapp.googleapis.com/Volume](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints) (77 fields)

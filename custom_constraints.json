@@ -6171,6 +6171,26 @@
     {
       "service": "Google Cloud NetApp Volumes",
       "namespace": "netapp",
+      "resource_type": "netapp.googleapis.com/Replication",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints",
+      "fields": [
+        "resource.clusterLocation",
+        "resource.description",
+        "resource.destinationVolumeParameters.description",
+        "resource.destinationVolumeParameters.shareName",
+        "resource.destinationVolumeParameters.storagePool",
+        "resource.destinationVolumeParameters.tieringPolicy.coolingThresholdDays",
+        "resource.destinationVolumeParameters.tieringPolicy.hotTierBypassModeEnabled",
+        "resource.destinationVolumeParameters.tieringPolicy.tierAction",
+        "resource.destinationVolumeParameters.volumeId",
+        "resource.name",
+        "resource.replicationSchedule"
+      ]
+    },
+    {
+      "service": "Google Cloud NetApp Volumes",
+      "namespace": "netapp",
       "resource_type": "netapp.googleapis.com/Snapshot",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints",
