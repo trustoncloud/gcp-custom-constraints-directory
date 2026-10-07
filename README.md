@@ -241,7 +241,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Cloud Service Mesh**
 
-- [networksecurity.googleapis.com/AuthorizationPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (10 fields)
+- [networksecurity.googleapis.com/AuthorizationPolicy](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
 - [networksecurity.googleapis.com/ClientTlsPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (7 fields)
 - [networksecurity.googleapis.com/ServerTlsPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (9 fields)
 - [networkservices.googleapis.com/EndpointPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (10 fields)
@@ -610,7 +610,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Vertex AI**
 
-- [aiplatform.googleapis.com/DeploymentResourcePool](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (12 fields)
+- [aiplatform.googleapis.com/DeploymentResourcePool](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (13 fields)
 - [aiplatform.googleapis.com/Endpoint](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (28 fields)
 
 **Vertex AI Pipelines**

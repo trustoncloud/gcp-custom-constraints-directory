@@ -3502,7 +3502,7 @@
       "namespace": "networksecurity",
       "resource_type": "networksecurity.googleapis.com/AuthorizationPolicy",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.action",
         "resource.description",
@@ -8516,6 +8516,7 @@
       "fields": [
         "resource.dedicatedResources.machineSpec.acceleratorCount",
         "resource.dedicatedResources.machineSpec.acceleratorType",
+        "resource.dedicatedResources.machineSpec.gpuPartitionSize",
         "resource.dedicatedResources.machineSpec.machineType",
         "resource.dedicatedResources.machineSpec.reservationAffinity.key",
         "resource.dedicatedResources.machineSpec.reservationAffinity.reservationAffinityType",
