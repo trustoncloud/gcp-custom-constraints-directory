@@ -1447,15 +1447,9 @@
       "doc_url": "https://docs.cloud.google.com/bigtable/docs/custom-constraints",
       "fields": [
         "resource.automatedBackupPolicy.frequency",
+        "resource.automatedBackupPolicy.locations",
         "resource.automatedBackupPolicy.retentionPeriod",
         "resource.changeStreamConfig.retentionPeriod",
-        "resource.columnFamilies[*].gcRule.maxAge",
-        "resource.columnFamilies[*].gcRule.maxNumVersions",
-        "resource.columnFamilies[*].valueType.bytesType.encoding.raw.escapeNulls",
-        "resource.columnFamilies[*].valueType.int64Type.encoding.bigEndianBytes.bytesType.encoding.raw.escapeNulls",
-        "resource.columnFamilies[*].valueType.stringType.encoding.utf8Bytes.nullEscapeChar",
-        "resource.columnFamilies[*].valueType.structType.encoding.delimitedBytes.delimiter",
-        "resource.columnFamilies[*].valueType.timestampType.encoding.unixMicrosInt64.bigEndianBytes.bytesType.encoding.raw.escapeNulls",
         "resource.deletionProtection",
         "resource.name"
       ]

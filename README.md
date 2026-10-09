@@ -121,7 +121,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [bigtableadmin.googleapis.com/LogicalView](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (2 fields)
 - [bigtableadmin.googleapis.com/MaterializedView](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (2 fields)
 - [bigtableadmin.googleapis.com/SchemaBundle](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (2 fields)
-- [bigtableadmin.googleapis.com/Table](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (12 fields)
+- [bigtableadmin.googleapis.com/Table](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (6 fields)
 
 **Cloud Build**
 
