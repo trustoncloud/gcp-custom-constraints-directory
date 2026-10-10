@@ -41,7 +41,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Artifact Analysis**
 
 - [containeranalysis.googleapis.com/Note](https://docs.cloud.google.com/artifact-analysis/docs/custom-constraints) (24 fields)
-- [containeranalysis.googleapis.com/Occurrence](https://docs.cloud.google.com/artifact-analysis/docs/custom-constraints) (4 fields)
+- [containeranalysis.googleapis.com/Occurrence](https://docs.cloud.google.com/artifact-analysis/docs/custom-constraints) (27 fields)
 
 **Artifact Registry**
 
@@ -78,7 +78,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **BigQuery Migration Service**
 
-- [bigquerymigration.googleapis.com/MigrationWorkflow](https://docs.cloud.google.com/bigquery/docs/migration-custom-org-policies) (37 fields)
+- [bigquerymigration.googleapis.com/MigrationWorkflow](https://docs.cloud.google.com/bigquery/docs/migration-custom-org-policies) (39 fields)
 
 **BigQuery Reservation API**
 
@@ -242,7 +242,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Cloud Service Mesh**
 
 - [networksecurity.googleapis.com/AuthorizationPolicy](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
-- [networksecurity.googleapis.com/ClientTlsPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (7 fields)
+- [networksecurity.googleapis.com/ClientTlsPolicy](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (7 fields)
 - [networksecurity.googleapis.com/ServerTlsPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (9 fields)
 - [networkservices.googleapis.com/EndpointPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (10 fields)
 - [networkservices.googleapis.com/Gateway](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (16 fields)
@@ -471,7 +471,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [connectors.googleapis.com/Connection](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (206 fields)
 - [connectors.googleapis.com/EndpointAttachment](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (3 fields)
-- [connectors.googleapis.com/EventSubscription](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (25 fields)
+- [connectors.googleapis.com/EventSubscription](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (29 fields)
 - [connectors.googleapis.com/ManagedZone](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (4 fields)
 - [connectors.googleapis.com/RegionalSettings](https://docs.cloud.google.com/integration-connectors/docs/custom-constraints) (3 fields)
 
@@ -510,7 +510,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Memorystore for Redis Cluster**
 
-- [redis.googleapis.com/Cluster](https://docs.cloud.google.com/memorystore/docs/cluster/custom-constraints) (13 fields)
+- [redis.googleapis.com/Cluster](https://docs.cloud.google.com/memorystore/docs/cluster/custom-constraints) (25 fields)
 
 **Network Connectivity**
 
@@ -611,7 +611,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Vertex AI**
 
 - [aiplatform.googleapis.com/DeploymentResourcePool](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (13 fields)
-- [aiplatform.googleapis.com/Endpoint](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (28 fields)
+- [aiplatform.googleapis.com/Endpoint](https://docs.cloud.google.com/vertex-ai/docs/predictions/custom-constraints) (35 fields)
 
 **Vertex AI Pipelines**
 
