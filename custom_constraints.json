@@ -3556,13 +3556,14 @@
       "namespace": "networksecurity",
       "resource_type": "networksecurity.googleapis.com/ServerTlsPolicy",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.allowOpen",
         "resource.description",
         "resource.mtlsPolicy.clientValidationCa.certificateProviderInstance.pluginInstance",
         "resource.mtlsPolicy.clientValidationCa.grpcEndpoint.targetUri",
         "resource.mtlsPolicy.clientValidationMode",
+        "resource.mtlsPolicy.clientValidationRelaxations",
         "resource.mtlsPolicy.clientValidationTrustConfig",
         "resource.name",
         "resource.serverCertificate.certificateProviderInstance.pluginInstance",
@@ -3574,7 +3575,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/EndpointPolicy",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.authorizationPolicy",
         "resource.clientTlsPolicy",
@@ -3618,7 +3619,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/GrpcRoute",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.gateways",
@@ -3650,7 +3651,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/HttpRoute",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.gateways",
@@ -3732,7 +3733,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/Mesh",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.envoyHeaders",
@@ -3745,7 +3746,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/ServiceBinding",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.name"
@@ -3756,7 +3757,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/TcpRoute",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.gateways",
@@ -3775,7 +3776,7 @@
       "namespace": "networkservices",
       "resource_type": "networkservices.googleapis.com/TlsRoute",
       "launch_status": "GA",
-      "doc_url": "https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints",
+      "doc_url": "https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints",
       "fields": [
         "resource.description",
         "resource.gateways",
@@ -7583,6 +7584,26 @@
         "resource.prefixLength",
         "resource.targetCidrRange",
         "resource.usage"
+      ]
+    },
+    {
+      "service": "Network Connectivity",
+      "namespace": "networkconnectivity",
+      "resource_type": "networkconnectivity.googleapis.com/PolicyBasedRoute",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/vpc/docs/custom-constraints",
+      "fields": [
+        "resource.description",
+        "resource.filter.destRange",
+        "resource.filter.ipProtocol",
+        "resource.filter.protocolVersion",
+        "resource.filter.srcRange",
+        "resource.interconnectAttachment.region",
+        "resource.name",
+        "resource.network",
+        "resource.nextHopIlbIp",
+        "resource.nextHopOtherRoutes",
+        "resource.priority"
       ]
     },
     {

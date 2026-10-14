@@ -243,15 +243,15 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [networksecurity.googleapis.com/AuthorizationPolicy](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
 - [networksecurity.googleapis.com/ClientTlsPolicy](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (7 fields)
-- [networksecurity.googleapis.com/ServerTlsPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (9 fields)
-- [networkservices.googleapis.com/EndpointPolicy](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (10 fields)
+- [networksecurity.googleapis.com/ServerTlsPolicy](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
+- [networkservices.googleapis.com/EndpointPolicy](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
 - [networkservices.googleapis.com/Gateway](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (16 fields)
-- [networkservices.googleapis.com/GrpcRoute](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (23 fields)
-- [networkservices.googleapis.com/HttpRoute](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (73 fields)
-- [networkservices.googleapis.com/Mesh](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (4 fields)
-- [networkservices.googleapis.com/ServiceBinding](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (2 fields)
-- [networkservices.googleapis.com/TcpRoute](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (10 fields)
-- [networkservices.googleapis.com/TlsRoute](https://docs.cloud.google.com/service-mesh/docs/service-routing/custom-constraints) (10 fields)
+- [networkservices.googleapis.com/GrpcRoute](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (23 fields)
+- [networkservices.googleapis.com/HttpRoute](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (73 fields)
+- [networkservices.googleapis.com/Mesh](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (4 fields)
+- [networkservices.googleapis.com/ServiceBinding](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (2 fields)
+- [networkservices.googleapis.com/TcpRoute](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
+- [networkservices.googleapis.com/TlsRoute](https://docs.cloud.google.com/service-mesh/v1.25/docs/service-routing/custom-constraints) (10 fields)
 
 **Cloud SQL**
 
@@ -517,6 +517,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [networkconnectivity.googleapis.com/Group](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (2 fields)
 - [networkconnectivity.googleapis.com/Hub](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (4 fields)
 - [networkconnectivity.googleapis.com/InternalRange](https://docs.cloud.google.com/vpc/docs/custom-constraints) (15 fields)
+- [networkconnectivity.googleapis.com/PolicyBasedRoute](https://docs.cloud.google.com/vpc/docs/custom-constraints) (11 fields)
 - [networkconnectivity.googleapis.com/RegionalEndpoint](https://docs.cloud.google.com/vpc/docs/custom-constraints) (6 fields)
 - [networkconnectivity.googleapis.com/Spoke](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (29 fields)
 
