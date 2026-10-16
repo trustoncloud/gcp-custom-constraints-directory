@@ -412,7 +412,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Google Cloud Managed Service for Apache Kafka**
 
-- [managedkafka.googleapis.com/Cluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints) (9 fields)
+- [managedkafka.googleapis.com/Cluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints) (12 fields)
 
 **Google Cloud NetApp Volumes**
 
@@ -495,7 +495,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Managed Service for Apache Kafka**
 
-- [managedkafka.googleapis.com/ConnectCluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints) (9 fields)
+- [managedkafka.googleapis.com/ConnectCluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/custom-constraints) (8 fields)
 
 **Managed Service for Apache Spark**
 
