@@ -17,9 +17,9 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **AI Platform Training**
 
-- [aiplatform.googleapis.com/CustomJob](https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints) (40 fields)
-- [aiplatform.googleapis.com/HyperparameterTuningJob](https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints) (82 fields)
-- [aiplatform.googleapis.com/NasJob](https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints) (88 fields)
+- [aiplatform.googleapis.com/CustomJob](https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints) (47 fields)
+- [aiplatform.googleapis.com/HyperparameterTuningJob](https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints) (89 fields)
+- [aiplatform.googleapis.com/NasJob](https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints) (102 fields)
 
 **AlloyDB for PostgreSQL**
 
@@ -277,9 +277,9 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Colab Enterprise**
 
-- [aiplatform.googleapis.com/NotebookExecutionJob](https://docs.cloud.google.com/colab/docs/custom-constraints) (25 fields)
+- [aiplatform.googleapis.com/NotebookExecutionJob](https://docs.cloud.google.com/colab/docs/custom-constraints) (26 fields)
 - [aiplatform.googleapis.com/NotebookRuntime](https://docs.cloud.google.com/colab/docs/custom-constraints) (3 fields)
-- [aiplatform.googleapis.com/NotebookRuntimeTemplate](https://docs.cloud.google.com/colab/docs/custom-constraints) (25 fields)
+- [aiplatform.googleapis.com/NotebookRuntimeTemplate](https://docs.cloud.google.com/colab/docs/custom-constraints) (26 fields)
 
 **Compute Engine**
 
@@ -361,6 +361,10 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Firestore**
 
 - [firestore.googleapis.com/Database](https://docs.cloud.google.com/firestore/docs/custom-constraints) (8 fields)
+
+**Gemini Enterprise Agent Platform**
+
+- [aiplatform.googleapis.com/ReasoningEngine](https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/predictions/custom-constraints) (42 fields)
 
 **GKE**
 
@@ -517,7 +521,6 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [networkconnectivity.googleapis.com/Group](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (2 fields)
 - [networkconnectivity.googleapis.com/Hub](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (4 fields)
 - [networkconnectivity.googleapis.com/InternalRange](https://docs.cloud.google.com/vpc/docs/custom-constraints) (15 fields)
-- [networkconnectivity.googleapis.com/PolicyBasedRoute](https://docs.cloud.google.com/vpc/docs/custom-constraints) (11 fields)
 - [networkconnectivity.googleapis.com/RegionalEndpoint](https://docs.cloud.google.com/vpc/docs/custom-constraints) (6 fields)
 - [networkconnectivity.googleapis.com/Spoke](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (29 fields)
 
@@ -607,7 +610,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **Vector Search**
 
 - [aiplatform.googleapis.com/Index](https://docs.cloud.google.com/vertex-ai/docs/vector-search/custom-constraints) (6 fields)
-- [aiplatform.googleapis.com/IndexEndpoint](https://docs.cloud.google.com/vertex-ai/docs/vector-search/custom-constraints) (7 fields)
+- [aiplatform.googleapis.com/IndexEndpoint](https://docs.cloud.google.com/vertex-ai/docs/vector-search/custom-constraints) (9 fields)
 
 **Vertex AI**
 
@@ -616,7 +619,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Vertex AI Pipelines**
 
-- [aiplatform.googleapis.com/PipelineJob](https://docs.cloud.google.com/vertex-ai/docs/pipelines/use-custom-constraints) (18 fields)
+- [aiplatform.googleapis.com/PipelineJob](https://docs.cloud.google.com/vertex-ai/docs/pipelines/use-custom-constraints) (21 fields)
 
 **Vertex ML Metadata**
 
