@@ -4599,6 +4599,8 @@
       "fields": [
         "resource.cronSchedule",
         "resource.disabled",
+        "resource.invocationConfig.endUserAuthConfig.oauthConfig.additionalOauthScopes",
+        "resource.invocationConfig.executionMode",
         "resource.invocationConfig.fullyRefreshIncrementalTablesEnabled",
         "resource.invocationConfig.includedTags",
         "resource.invocationConfig.includedTargets.database",
@@ -4610,7 +4612,13 @@
         "resource.invocationConfig.transitiveDependentsIncluded",
         "resource.name",
         "resource.releaseConfig",
-        "resource.timeZone"
+        "resource.timeZone",
+        "resource.workflowTriggerConfig.condition",
+        "resource.workflowTriggerConfig.maxWaitDuration",
+        "resource.workflowTriggerConfig.minExecutionDuration",
+        "resource.workflowTriggerConfig.workflowTriggers.tableUpdateTrigger.table.database",
+        "resource.workflowTriggerConfig.workflowTriggers.tableUpdateTrigger.table.name",
+        "resource.workflowTriggerConfig.workflowTriggers.tableUpdateTrigger.table.schema"
       ]
     },
     {
@@ -4621,6 +4629,8 @@
       "doc_url": "https://docs.cloud.google.com/dataform/docs/create-custom-constraints",
       "fields": [
         "resource.compilationResult",
+        "resource.invocationConfig.endUserAuthConfig.oauthConfig.additionalOauthScopes",
+        "resource.invocationConfig.executionMode",
         "resource.invocationConfig.fullyRefreshIncrementalTablesEnabled",
         "resource.invocationConfig.includedTags",
         "resource.invocationConfig.includedTargets.database",
