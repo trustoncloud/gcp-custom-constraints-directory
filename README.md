@@ -516,11 +516,16 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [redis.googleapis.com/Cluster](https://docs.cloud.google.com/memorystore/docs/cluster/custom-constraints) (25 fields)
 
+**Model Armor**
+
+- [modelarmor.googleapis.com/Template](https://docs.cloud.google.com/model-armor/access-control/custom-constraints) (22 fields)
+
 **Network Connectivity**
 
 - [networkconnectivity.googleapis.com/Group](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (2 fields)
 - [networkconnectivity.googleapis.com/Hub](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (4 fields)
 - [networkconnectivity.googleapis.com/InternalRange](https://docs.cloud.google.com/vpc/docs/custom-constraints) (15 fields)
+- [networkconnectivity.googleapis.com/PolicyBasedRoute](https://docs.cloud.google.com/vpc/docs/custom-constraints) (11 fields)
 - [networkconnectivity.googleapis.com/RegionalEndpoint](https://docs.cloud.google.com/vpc/docs/custom-constraints) (6 fields)
 - [networkconnectivity.googleapis.com/Spoke](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/how-to/org-policy-constraints) (29 fields)
 
