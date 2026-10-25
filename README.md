@@ -23,9 +23,9 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **AlloyDB for PostgreSQL**
 
-- [alloydb.googleapis.com/Backup](https://docs.cloud.google.com/alloydb/docs/alloydb-custom-constraints)
-- [alloydb.googleapis.com/Cluster](https://docs.cloud.google.com/alloydb/docs/alloydb-custom-constraints)
-- [alloydb.googleapis.com/Instance](https://docs.cloud.google.com/alloydb/docs/alloydb-custom-constraints)
+- [alloydb.googleapis.com/Backup](https://docs.cloud.google.com/alloydb/docs/alloydb-custom-constraints) (9 fields)
+- [alloydb.googleapis.com/Cluster](https://docs.cloud.google.com/alloydb/docs/alloydb-custom-constraints) (49 fields)
+- [alloydb.googleapis.com/Instance](https://docs.cloud.google.com/alloydb/docs/alloydb-custom-constraints) (39 fields)
 
 **API keys**
 
