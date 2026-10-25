@@ -200,6 +200,10 @@ CUSTOM_SCRAPERS = {
 }
 
 MAX_REST_REFERENCE_DEPTH = 10
+# Field names never usable in a custom constraint condition (concurrency token, secrets)
+REST_REFERENCE_EXCLUDED_FIELDS = {"etag", "password"}
+# Output-only fields that custom constraints can still evaluate
+REST_REFERENCE_OUTPUT_ONLY_KEPT = {"resource.name"}
 
 
 @lru_cache(maxsize=300)
@@ -218,7 +222,9 @@ def _scrape_rest_reference_fields(url: str, prefix: str = "resource", stack: tup
     ``<code class="apitype">`` in the second cell. Nested messages are linked
     from the type (``object (<a href=...#Type>)``), either on the same page or
     on a sub-page, and are followed recursively. Output-only fields are skipped
-    as they cannot be set on CREATE/UPDATE.
+    as they cannot be set on CREATE/UPDATE, except those in
+    ``REST_REFERENCE_OUTPUT_ONLY_KEPT``. Fields in
+    ``REST_REFERENCE_EXCLUDED_FIELDS`` are skipped at any depth.
 
     Args:
         url: Absolute URL of the reference page, with an optional ``#Type``
@@ -246,12 +252,12 @@ def _scrape_rest_reference_fields(url: str, prefix: str = "resource", stack: tup
             continue
         # Repeated fields are rendered as "name[]"; arrays are flattened without index
         name = next(name_code.stripped_strings, "").removesuffix("[]")
-        if not name:
-            continue
-        description = cells[1].get_text(" ", strip=True)
-        if "Output only." in description:
+        if not name or name in REST_REFERENCE_EXCLUDED_FIELDS:
             continue
         path = f"{prefix}.{name}"
+        description = cells[1].get_text(" ", strip=True)
+        if "Output only." in description and path not in REST_REFERENCE_OUTPUT_ONLY_KEPT:
+            continue
         apitype = cells[1].find("code", class_="apitype")
         apitype_text = apitype.get_text(" ", strip=True) if apitype else ""
         link = apitype.find("a", href=True) if apitype else None
