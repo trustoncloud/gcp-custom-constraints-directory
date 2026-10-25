@@ -7,6 +7,7 @@ import random
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urljoin
 
 BASE_URL = "https://docs.cloud.google.com"
 MAIN_URL = "https://docs.cloud.google.com/resource-manager/docs/organization-policy/custom-constraint-supported-services"
@@ -198,6 +199,99 @@ CUSTOM_SCRAPERS = {
         _scrape_managed_spark_serverless,
 }
 
+MAX_REST_REFERENCE_DEPTH = 10
+
+
+@lru_cache(maxsize=300)
+def _fetch_soup(url: str) -> BeautifulSoup:
+    time.sleep(0.5)  # Be polite to GCP docs
+    resp = _http_get_with_retry(url)
+    return BeautifulSoup(resp.text, "html.parser")
+
+
+def _scrape_rest_reference_fields(url: str, prefix: str = "resource", stack: tuple = ()) -> set[str]:
+    """Recursively collect field paths from a REST API reference page.
+
+    REST reference pages render each message as a table with id
+    ``<Type>.FIELDS-table`` (or ``FIELDS-table`` on a standalone type page).
+    Each row holds the JSON field name in the first cell and the type in a
+    ``<code class="apitype">`` in the second cell. Nested messages are linked
+    from the type (``object (<a href=...#Type>)``), either on the same page or
+    on a sub-page, and are followed recursively. Output-only fields are skipped
+    as they cannot be set on CREATE/UPDATE.
+
+    Args:
+        url: Absolute URL of the reference page, with an optional ``#Type``
+            fragment selecting the message.
+        prefix: Path prefix for the fields of this message.
+        stack: ``(page, Type)`` pairs already being walked (cycle guard).
+
+    Returns:
+        Set of leaf field paths such as ``resource.encryptionConfig.kmsKeyName``.
+    """
+    page, _, type_name = url.partition("#")
+    table_id = f"{type_name}.FIELDS-table" if type_name else "FIELDS-table"
+    table = _fetch_soup(page).find("table", id=table_id)
+    if table is None:
+        raise ValueError(f"Could not find {table_id} in {page}")
+    stack = stack + ((page, type_name),)
+
+    fields: set[str] = set()
+    for row in table.find_all("tr"):
+        cells = row.find_all("td", recursive=False)
+        if len(cells) < 2:
+            continue
+        name_code = cells[0].find("code")
+        if name_code is None:
+            continue
+        # Repeated fields are rendered as "name[]"; arrays are flattened without index
+        name = next(name_code.stripped_strings, "").removesuffix("[]")
+        if not name:
+            continue
+        description = cells[1].get_text(" ", strip=True)
+        if "Output only." in description:
+            continue
+        path = f"{prefix}.{name}"
+        apitype = cells[1].find("code", class_="apitype")
+        apitype_text = apitype.get_text(" ", strip=True) if apitype else ""
+        link = apitype.find("a", href=True) if apitype else None
+        if (link and "/docs/reference/rest/" in link["href"]
+                and apitype_text.startswith(("object", "array (object"))):
+            nested_url = urljoin(page, link["href"])
+            nested_page, _, nested_type = nested_url.partition("#")
+            if (nested_page, nested_type) not in stack and len(stack) <= MAX_REST_REFERENCE_DEPTH:
+                nested_fields = _scrape_rest_reference_fields(nested_url, path, stack)
+                if nested_fields:
+                    fields |= nested_fields
+                    continue
+        fields.add(path)
+    return fields
+
+
+def _parse_fields_reference_table(table) -> dict[str, list[str]]:
+    """Parse a summary table whose "fields reference" column links to REST docs.
+
+    Args:
+        table: ``<table>`` with the resource type in the first column and a link
+            to the REST reference of that resource in the last column.
+
+    Returns:
+        Mapping of ``resource_type`` to a sorted list of ``resource.*`` field paths.
+    """
+    resource_fields: dict[str, list[str]] = {}
+    for row in table.find_all("tr"):
+        cells = row.find_all("td")
+        if len(cells) < 2:
+            continue
+        code = cells[0].find("code", string=re.compile(r"\w+\.googleapis\.com/"))
+        link = cells[-1].find("a", href=True)
+        if code is None or link is None:
+            continue
+        resource_fields[code.get_text(strip=True)] = sorted(
+            _scrape_rest_reference_fields(urljoin(BASE_URL, link["href"]))
+        )
+    return resource_fields
+
 
 @lru_cache(maxsize=300)
 def fetch_fields(doc_url) -> list | dict[list]:
@@ -261,6 +355,9 @@ def fetch_fields(doc_url) -> list | dict[list]:
                 table = t
                 break
         if table:
+            headers = [th.get_text(strip=True).lower() for th in table.find_all("th")]
+            if any("field" in h and "reference" in h for h in headers):
+                return _parse_fields_reference_table(table)
             resource_fields = parse_resource_field_table(table)
             # If only one resource_type in this doc, attach all fields to it
             if None in resource_fields:
