@@ -1035,7 +1035,7 @@
       "service": "BigQuery Migration Service",
       "namespace": "bigquerymigration",
       "resource_type": "bigquerymigration.googleapis.com/MigrationWorkflow",
-      "launch_status": "Preview",
+      "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/bigquery/docs/migration-custom-org-policies",
       "fields": [
         "resource.displayName",
