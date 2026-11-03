@@ -15,6 +15,14 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [agentidentity.googleapis.com/AuthProvider](https://docs.cloud.google.com/iam/docs/agent-identity-custom-constraints) (12 fields)
 
+**AI Commerce Search API**
+
+- [retail.googleapis.com/AttributesConfig](https://docs.cloud.google.com/gemini-enterprise-cx/ai-commerce-search/custom-constraints) (23 fields)
+- [retail.googleapis.com/Catalog](https://docs.cloud.google.com/gemini-enterprise-cx/ai-commerce-search/custom-constraints) (16 fields)
+- [retail.googleapis.com/Control](https://docs.cloud.google.com/gemini-enterprise-cx/ai-commerce-search/custom-constraints) (30 fields)
+- [retail.googleapis.com/Product](https://docs.cloud.google.com/gemini-enterprise-cx/ai-commerce-search/custom-constraints) (53 fields)
+- [retail.googleapis.com/ServingConfig](https://docs.cloud.google.com/gemini-enterprise-cx/ai-commerce-search/custom-constraints) (24 fields)
+
 **AI Platform Training**
 
 - [aiplatform.googleapis.com/CustomJob](https://docs.cloud.google.com/vertex-ai/docs/training/custom-constraints) (47 fields)
@@ -121,7 +129,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 - [bigtableadmin.googleapis.com/LogicalView](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (2 fields)
 - [bigtableadmin.googleapis.com/MaterializedView](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (2 fields)
 - [bigtableadmin.googleapis.com/SchemaBundle](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (2 fields)
-- [bigtableadmin.googleapis.com/Table](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (6 fields)
+- [bigtableadmin.googleapis.com/Table](https://docs.cloud.google.com/bigtable/docs/custom-constraints) (5 fields)
 
 **Cloud Build**
 
