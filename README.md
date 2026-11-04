@@ -291,10 +291,12 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Compute Engine**
 
+- [compute.googleapis.com/CrossSiteNetwork](https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/custom-constraints) (2 fields)
 - [compute.googleapis.com/Disk](https://docs.cloud.google.com/compute/docs/access/custom-constraints) (6 fields)
 - [compute.googleapis.com/Image](https://docs.cloud.google.com/compute/docs/access/custom-constraints) (1 field)
 - [compute.googleapis.com/Instance](https://docs.cloud.google.com/compute/docs/access/custom-constraints) (34 fields)
 - [compute.googleapis.com/PreviewFeature](https://docs.cloud.google.com/compute/docs/access/custom-constraints)
+- [compute.googleapis.com/WireGroup](https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/custom-constraints) (9 fields)
 
 **Data Lineage API**
 

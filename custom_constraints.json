@@ -4501,6 +4501,17 @@
     {
       "service": "Compute Engine",
       "namespace": "compute",
+      "resource_type": "compute.googleapis.com/CrossSiteNetwork",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/custom-constraints",
+      "fields": [
+        "resource.description",
+        "resource.name"
+      ]
+    },
+    {
+      "service": "Compute Engine",
+      "namespace": "compute",
       "resource_type": "compute.googleapis.com/Disk",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
@@ -4573,6 +4584,24 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/compute/docs/access/custom-constraints",
       "fields": []
+    },
+    {
+      "service": "Compute Engine",
+      "namespace": "compute",
+      "resource_type": "compute.googleapis.com/WireGroup",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/custom-constraints",
+      "fields": [
+        "resource.adminEnabled",
+        "resource.description",
+        "resource.endpoints[*].interconnects[*].interconnect",
+        "resource.endpoints[*].interconnects[*].vlanTags",
+        "resource.name",
+        "resource.wireProperties.bandwidthAllocation",
+        "resource.wireProperties.bandwidthUnmetered",
+        "resource.wireProperties.faultResponse",
+        "resource.wireProperties.flowManagement"
+      ]
     },
     {
       "service": "Data Lineage API",
