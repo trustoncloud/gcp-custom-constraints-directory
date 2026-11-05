@@ -4883,8 +4883,11 @@
       "fields": [
         "resource.containingFolder",
         "resource.displayName",
+        "resource.endUserAuthConfig.oauthConfig.additionalOauthScopes",
+        "resource.gitRemoteSettings.accountConnector",
         "resource.gitRemoteSettings.authenticationTokenSecretVersion",
         "resource.gitRemoteSettings.defaultBranch",
+        "resource.gitRemoteSettings.gitRepositoryLink",
         "resource.gitRemoteSettings.sshAuthenticationConfig.hostPublicKey",
         "resource.gitRemoteSettings.sshAuthenticationConfig.userPrivateKeySecretVersion",
         "resource.gitRemoteSettings.url",
@@ -4917,6 +4920,7 @@
       "fields": [
         "resource.cronSchedule",
         "resource.disabled",
+        "resource.invocationConfig.concurrentActionsLimit",
         "resource.invocationConfig.endUserAuthConfig.oauthConfig.additionalOauthScopes",
         "resource.invocationConfig.executionMode",
         "resource.invocationConfig.fullyRefreshIncrementalTablesEnabled",
@@ -4947,6 +4951,7 @@
       "doc_url": "https://docs.cloud.google.com/dataform/docs/create-custom-constraints",
       "fields": [
         "resource.compilationResult",
+        "resource.invocationConfig.concurrentActionsLimit",
         "resource.invocationConfig.endUserAuthConfig.oauthConfig.additionalOauthScopes",
         "resource.invocationConfig.executionMode",
         "resource.invocationConfig.fullyRefreshIncrementalTablesEnabled",
