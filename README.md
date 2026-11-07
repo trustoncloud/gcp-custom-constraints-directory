@@ -15,13 +15,9 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 - [agentidentity.googleapis.com/AuthProvider](https://docs.cloud.google.com/iam/docs/agent-identity-custom-constraints) (12 fields)
 
-**AI Commerce Search API**
+**Agent Registry**
 
-- [retail.googleapis.com/AttributesConfig](https://docs.cloud.google.com/gemini-enterprise-cx/ai-commerce-search/custom-constraints) (23 fields)
-- [retail.googleapis.com/Catalog](https://docs.cloud.google.com/gemini-enterprise-cx/ai-commerce-search/custom-constraints) (16 fields)
-- [retail.googleapis.com/Control](https://docs.cloud.google.com/gemini-enterprise-cx/ai-commerce-search/custom-constraints) (30 fields)
-- [retail.googleapis.com/Product](https://docs.cloud.google.com/gemini-enterprise-cx/ai-commerce-search/custom-constraints) (53 fields)
-- [retail.googleapis.com/ServingConfig](https://docs.cloud.google.com/gemini-enterprise-cx/ai-commerce-search/custom-constraints) (24 fields)
+- [agentregistry.googleapis.com/Skill](https://docs.cloud.google.com/agent-registry/scan-skills#org-policy)
 
 **AI Platform Training**
 
@@ -72,6 +68,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 **BigQuery**
 
 - [bigquery.googleapis.com/Dataset](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (17 fields)
+- [bigquery.googleapis.com/Model](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (3 fields)
 - [bigquery.googleapis.com/Routine](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (3 fields)
 - [bigquery.googleapis.com/RowAccessPolicy](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (4 fields)
 - [bigquery.googleapis.com/Table](https://docs.cloud.google.com/bigquery/docs/custom-constraints) (3 fields)
