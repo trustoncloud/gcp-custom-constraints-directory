@@ -7609,6 +7609,7 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/dataproc/docs/concepts/dataproc-custom-constraints",
       "fields": [
+        "resource.autopilot.enabled",
         "resource.config.autoscalingConfig.policyUri",
         "resource.config.encryptionConfig.gcePdKmsKeyName",
         "resource.config.endpointConfig.enableHttpPortAccess",
@@ -7647,8 +7648,7 @@
         "resource.config.workerConfig.imageUri",
         "resource.config.workerConfig.machineTypeUri",
         "resource.config.workerConfig.numInstances",
-        "resource.labels",
-        "resource.management.autoUpgrade"
+        "resource.labels"
       ]
     },
     {
