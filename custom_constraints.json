@@ -761,7 +761,7 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/artifact-registry/docs/custom-constraints",
       "fields": [
-        "resource.management.autoUpgrade"
+        "resource.autopilot.enabled"
       ]
     },
     {
@@ -3507,6 +3507,7 @@
         "resource.allowed[]",
         "resource.allowed[].IPProtocol",
         "resource.allowed[].ports[]",
+        "resource.autopilot.enabled",
         "resource.denied[]",
         "resource.denied[].IPProtocol",
         "resource.denied[].ports[]",
@@ -3514,7 +3515,6 @@
         "resource.destinationRanges[]",
         "resource.direction",
         "resource.disabled",
-        "resource.management.autoUpgrade",
         "resource.name",
         "resource.network",
         "resource.priority",
@@ -3530,7 +3530,7 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/firewall/docs/custom-constraints-fw-policy",
       "fields": [
-        "resource.management.autoUpgrade",
+        "resource.autopilot.enabled",
         "resource.rules[].action",
         "resource.rules[].description",
         "resource.rules[].direction",
@@ -4439,8 +4439,8 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/dataplex/docs/lineage-custom-constraints",
       "fields": [
+        "resource.autopilot.enabled",
         "resource.displayName",
-        "resource.management.autoUpgrade",
         "resource.name",
         "resource.origin.name",
         "resource.origin.sourceType"
@@ -6297,7 +6297,7 @@
       "launch_status": "Preview",
       "doc_url": "https://docs.cloud.google.com/contact-center/ccai-platform/docs/ccaip-custom-constraints",
       "fields": [
-        "resource.management.autoUpgrade",
+        "resource.autopilot.enabled",
         "resource.name"
       ]
     },
@@ -6762,8 +6762,8 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/iam/docs/org-policy-custom-constraints",
       "fields": [
-        "resource.bindings",
-        "resource.management.autoUpgrade"
+        "resource.autopilot.enabled",
+        "resource.bindings"
       ]
     },
     {
@@ -7503,20 +7503,30 @@
         "resource.config.nodeConfig.network",
         "resource.config.nodeConfig.serviceAccount",
         "resource.config.nodeConfig.subnetwork",
+        "resource.config.nodeConfig.trafficRoutingConfig.cloudRunFunctionsRouting",
         "resource.config.privateEnvironmentConfig.cloudComposerConnectionSubnetwork",
         "resource.config.privateEnvironmentConfig.enablePrivateBuildsOnly",
         "resource.config.privateEnvironmentConfig.enablePrivateEnvironment",
         "resource.config.privateEnvironmentConfig.enablePrivatelyUsedPublicIps",
         "resource.config.privateEnvironmentConfig.networkingConfig.connectionType",
+        "resource.config.privateEnvironmentConfig.networkingType",
         "resource.config.privateEnvironmentConfig.privateClusterConfig.enablePrivateEndpoint",
         "resource.config.recoveryConfig.scheduledSnapshotsConfig.enabled",
         "resource.config.recoveryConfig.scheduledSnapshotsConfig.snapshotCreationSchedule",
         "resource.config.recoveryConfig.scheduledSnapshotsConfig.snapshotLocation",
         "resource.config.recoveryConfig.scheduledSnapshotsConfig.timeZone",
         "resource.config.resilienceMode",
+        "resource.config.softwareConfig.airflowConfigOverrides",
+        "resource.config.softwareConfig.airflowRbacConfig.bindings.members",
+        "resource.config.softwareConfig.airflowRbacConfig.bindings.role",
+        "resource.config.softwareConfig.auditLogsReplicationMode",
         "resource.config.softwareConfig.cloudDataLineageIntegration.enabled",
         "resource.config.softwareConfig.imageVersion",
         "resource.config.softwareConfig.webServerPluginsMode",
+        "resource.config.userWorkloadsConfig.serviceAccounts.googleServiceAccount",
+        "resource.config.userWorkloadsConfig.serviceAccounts.kubernetesServiceAccount",
+        "resource.config.webServerNetworkAccessControl.allowedIpRanges.description",
+        "resource.config.webServerNetworkAccessControl.allowedIpRanges.value",
         "resource.config.workloadsConfig.dagProcessor.count",
         "resource.config.workloadsConfig.dagProcessor.cpu",
         "resource.config.workloadsConfig.dagProcessor.memoryGb",
@@ -7536,7 +7546,8 @@
         "resource.config.workloadsConfig.worker.memoryGb",
         "resource.config.workloadsConfig.worker.minCount",
         "resource.config.workloadsConfig.worker.storageGb",
-        "resource.name"
+        "resource.name",
+        "resource.operationSettings.strategy"
       ]
     },
     {
@@ -7724,6 +7735,7 @@
         "resource.alternativeLocationId",
         "resource.authEnabled",
         "resource.authorizedNetwork",
+        "resource.autopilot.enabled",
         "resource.availableMaintenanceVersions",
         "resource.connectMode",
         "resource.customerManagedKey",
@@ -7732,7 +7744,6 @@
         "resource.maintenancePolicy.description",
         "resource.maintenancePolicy.weeklyMaintenanceWindow.day",
         "resource.maintenanceVersion",
-        "resource.management.autoUpgrade",
         "resource.memorySizeGb",
         "resource.name",
         "resource.persistenceConfig.persistenceMode",
@@ -8436,7 +8447,7 @@
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/vpc/docs/configure-serverless-vpc-access#custom-constraints",
       "fields": [
-        "resource.management.autoUpgrade",
+        "resource.autopilot.enabled",
         "resource.network"
       ]
     },

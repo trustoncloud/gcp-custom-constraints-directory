@@ -502,7 +502,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Managed Service for Apache Airflow**
 
-- [composer.googleapis.com/Environment](https://docs.cloud.google.com/composer/docs/latest/create-custom-constraints) (41 fields)
+- [composer.googleapis.com/Environment](https://docs.cloud.google.com/composer/docs/latest/create-custom-constraints) (52 fields)
 
 **Managed Service for Apache Kafka**
 
