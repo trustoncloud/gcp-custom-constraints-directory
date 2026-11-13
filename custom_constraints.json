@@ -7797,6 +7797,14 @@
     {
       "service": "Model Armor",
       "namespace": "modelarmor",
+      "resource_type": "modelarmor.googleapis.com/FloorSetting",
+      "launch_status": "GA",
+      "doc_url": "https://docs.cloud.google.com/model-armor/access-control/custom-constraints",
+      "fields": []
+    },
+    {
+      "service": "Model Armor",
+      "namespace": "modelarmor",
       "resource_type": "modelarmor.googleapis.com/Template",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/model-armor/access-control/custom-constraints",

@@ -525,6 +525,7 @@ Regularly-updated directory of all custom constraint resource types and fields a
 
 **Model Armor**
 
+- [modelarmor.googleapis.com/FloorSetting](https://docs.cloud.google.com/model-armor/access-control/custom-constraints)
 - [modelarmor.googleapis.com/Template](https://docs.cloud.google.com/model-armor/access-control/custom-constraints) (22 fields)
 
 **Network Connectivity**
