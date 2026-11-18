@@ -7800,7 +7800,26 @@
       "resource_type": "modelarmor.googleapis.com/FloorSetting",
       "launch_status": "GA",
       "doc_url": "https://docs.cloud.google.com/model-armor/access-control/custom-constraints",
-      "fields": []
+      "fields": [
+        "resource.aiPlatformFloorSetting.enableCloudLogging",
+        "resource.aiPlatformFloorSetting.inspectAndBlock",
+        "resource.aiPlatformFloorSetting.inspectOnly",
+        "resource.enableFloorSettingEnforcement",
+        "resource.filterConfig.maliciousUriFilterSettings.filterEnforcement",
+        "resource.filterConfig.piAndJailbreakFilterSettings.confidenceLevel",
+        "resource.filterConfig.piAndJailbreakFilterSettings.filterEnforcement",
+        "resource.filterConfig.raiSettings.raiFilters.confidenceLevel",
+        "resource.filterConfig.raiSettings.raiFilters.filterType",
+        "resource.filterConfig.sdpSettings.advancedConfig.deidentifyTemplate",
+        "resource.filterConfig.sdpSettings.advancedConfig.inspectTemplate",
+        "resource.filterConfig.sdpSettings.basicConfig.filterEnforcement",
+        "resource.floorSettingMetadata.multiLanguageDetection.enableMultiLanguageDetection",
+        "resource.googleMcpServerFloorSetting.enableCloudLogging",
+        "resource.googleMcpServerFloorSetting.inspectAndBlock",
+        "resource.googleMcpServerFloorSetting.inspectOnly",
+        "resource.integratedServices",
+        "resource.name"
+      ]
     },
     {
       "service": "Model Armor",
